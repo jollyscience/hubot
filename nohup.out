@@ -1,0 +1,1318 @@
+[Thu May 30 2013 19:57:55 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Thu May 30 2013 19:57:56 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Thu May 30 2013 19:58:17 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 19:58:27 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 19:58:33 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:00:24 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:57:31)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:01:19 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:01:25 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:01:39 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:01:48 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:01:51 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:01:54 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:02:00 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:02:16 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:02:34 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 20:04:11 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:17 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:21 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:24 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:36 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:41 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:44 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:04:47 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot call method 'toLowerCase' of undefined
+TypeError: Cannot call method 'toLowerCase' of undefined
+  at Brain.usersForRawFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:120:23)
+  at Brain.usersForFuzzyName (/opt/hubot/node_modules/hubot/src/brain.coffee:130:27)
+  at TextListener.callback (/opt/hubot/scripts/roles.coffee:31:29)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 20:06:00 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+  at errnoException (net.js:884:11)
+  at Server._listen2 (net.js:1022:14)
+  at listen (net.js:1044:10)
+  at Server.listen (net.js:1110:5)
+  at Function.app.listen (/opt/hubot/node_modules/hubot/node_modules/express/lib/application.js:532:24)
+  at Robot.setupExpress (/opt/hubot/node_modules/hubot/src/robot.coffee:209:25)
+  at new Robot (/opt/hubot/node_modules/hubot/src/robot.coffee:46:14)
+  at Object.module.exports.loadBot (/opt/hubot/node_modules/hubot/index.coffee:34:12)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:75:11, <js>:78:19)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:147:4)
+  at Module._compile (module.js:456:26)
+
+[Thu May 30 2013 20:06:14 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+  at errnoException (net.js:884:11)
+  at Server._listen2 (net.js:1022:14)
+  at listen (net.js:1044:10)
+  at Server.listen (net.js:1110:5)
+  at Function.app.listen (/opt/hubot/node_modules/hubot/node_modules/express/lib/application.js:532:24)
+  at Robot.setupExpress (/opt/hubot/node_modules/hubot/src/robot.coffee:209:25)
+  at new Robot (/opt/hubot/node_modules/hubot/src/robot.coffee:46:14)
+  at Object.module.exports.loadBot (/opt/hubot/node_modules/hubot/index.coffee:34:12)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:75:11, <js>:78:19)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:147:4)
+  at Module._compile (module.js:456:26)
+
+[Thu May 30 2013 20:09:22 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+  at errnoException (net.js:884:11)
+  at Server._listen2 (net.js:1022:14)
+  at listen (net.js:1044:10)
+  at Server.listen (net.js:1110:5)
+  at Function.app.listen (/opt/hubot/node_modules/hubot/node_modules/express/lib/application.js:532:24)
+  at Robot.setupExpress (/opt/hubot/node_modules/hubot/src/robot.coffee:209:25)
+  at new Robot (/opt/hubot/node_modules/hubot/src/robot.coffee:46:14)
+  at Object.module.exports.loadBot (/opt/hubot/node_modules/hubot/index.coffee:34:12)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:75:11, <js>:78:19)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:147:4)
+  at Module._compile (module.js:456:26)
+
+[Thu May 30 2013 20:22:17 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Thu May 30 2013 20:22:18 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Thu May 30 2013 20:22:19 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Thu May 30 2013 20:24:46 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+  at errnoException (net.js:884:11)
+  at Server._listen2 (net.js:1022:14)
+  at listen (net.js:1044:10)
+  at Server.listen (net.js:1110:5)
+  at Function.app.listen (/opt/hubot/node_modules/hubot/node_modules/express/lib/application.js:532:24)
+  at Robot.setupExpress (/opt/hubot/node_modules/hubot/src/robot.coffee:209:25)
+  at new Robot (/opt/hubot/node_modules/hubot/src/robot.coffee:46:14)
+  at Object.module.exports.loadBot (/opt/hubot/node_modules/hubot/index.coffee:34:12)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:75:11, <js>:78:19)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot/bin/hubot:147:4)
+  at Module._compile (module.js:456:26)
+
+[Thu May 30 2013 20:25:24 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Thu May 30 2013 20:25:25 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Thu May 30 2013 20:25:25 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Thu May 30 2013 20:25:26 GMT-0400 (EDT)] ERROR Unable to load /opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram: Error: Cannot find module 'wolfram'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram.coffee:4:13)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram.coffee:19:4)
+  at Module._compile (module.js:456:26)
+  at Object.loadFile (/opt/hubot/node_modules/hubot/node_modules/coffee-script/lib/coffee-script/coffee-script.js:179:19)
+  at Module.load (module.js:356:32)
+  at Function.Module._load (module.js:312:12)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Robot.loadFile (/opt/hubot/node_modules/hubot/src/robot.coffee:133:11)
+  at Robot.loadHubotScripts (/opt/hubot/node_modules/hubot/src/robot.coffee:169:28)
+  at /opt/hubot/node_modules/hubot/bin/hubot:98:15, <js>:101:30
+  at fs.js:266:14
+  at Object.oncomplete (fs.js:107:15)
+
+[Thu May 30 2013 20:25:32 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Thu May 30 2013 20:25:33 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Thu May 30 2013 20:25:34 GMT-0400 (EDT)] ERROR Unable to load /opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram: Error: Cannot find module 'wolfram'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram.coffee:4:13)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/wolfram.coffee:19:4)
+  at Module._compile (module.js:456:26)
+  at Object.loadFile (/opt/hubot/node_modules/hubot/node_modules/coffee-script/lib/coffee-script/coffee-script.js:179:19)
+  at Module.load (module.js:356:32)
+  at Function.Module._load (module.js:312:12)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Robot.loadFile (/opt/hubot/node_modules/hubot/src/robot.coffee:133:11)
+  at Robot.loadHubotScripts (/opt/hubot/node_modules/hubot/src/robot.coffee:169:28)
+  at /opt/hubot/node_modules/hubot/bin/hubot:98:15, <js>:101:30
+  at fs.js:266:14
+  at Object.oncomplete (fs.js:107:15)
+
+[Thu May 30 2013 21:54:49 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Thu May 30 2013 21:54:50 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Thu May 30 2013 21:54:52 GMT-0400 (EDT)] INFO Loading knowledge
+[Thu May 30 2013 22:00:48 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:01:01 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:01:18 GMT-0400 (EDT)] ERROR Bad response from FYN: 503
+[Thu May 30 2013 22:08:06 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot read property 'Josh Miller' of undefined
+TypeError: Cannot read property 'Josh Miller' of undefined
+  at award_points (/opt/hubot/node_modules/hubot-scripts/src/scripts/points.coffee:9:23)
+  at TextListener.callback (/opt/hubot/node_modules/hubot-scripts/src/scripts/points.coffee:25:7)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 22:08:16 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot read property 'Josh Miller' of undefined
+TypeError: Cannot read property 'Josh Miller' of undefined
+  at TextListener.callback (/opt/hubot/node_modules/hubot-scripts/src/scripts/points.coffee:60:25)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 22:08:27 GMT-0400 (EDT)] ERROR Unable to call the listener: TypeError: Cannot read property '@JoshMiller' of undefined
+TypeError: Cannot read property '@JoshMiller' of undefined
+  at award_points (/opt/hubot/node_modules/hubot-scripts/src/scripts/points.coffee:9:23)
+  at TextListener.callback (/opt/hubot/node_modules/hubot-scripts/src/scripts/points.coffee:25:7)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Thu May 30 2013 22:10:35 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:10:50 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:11:03 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:11:09 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:11:36 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:12:17 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Thu May 30 2013 22:12:41 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:11:08 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:11:25 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:11:46 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:16:47 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:29:57 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:31:13 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:31:48 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:32:21 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:32:28 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:32:34 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+
+/opt/hubot/node_modules/hubot/src/robot.coffee:253
+          throw err;
+                ^
+Error: ENOENT, open '/opt/hubot/node_modules/hubot-scripts/src/scripts/redis-notify.js.coffee'
+
+
+[Fri May 31 2013 11:37:16 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:37:17 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:37:21 GMT-0400 (EDT)] INFO Loading knowledge
+[Fri May 31 2013 11:37:25 GMT-0400 (EDT)] ERROR Unable to call the listener: Error: Cannot find module '/opt/hubot/node_modules/hubot-scripts/src/scripts/dnssimple'
+Error: Cannot find module '/opt/hubot/node_modules/hubot-scripts/src/scripts/dnssimple'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.require.resolve (module.js:384:19)
+  at TextListener.callback (/opt/hubot/node_modules/hubot-scripts/src/scripts/script.coffee:34:28)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
+[Fri May 31 2013 11:37:51 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:46:06 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:46:07 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:46:08 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:46:11 GMT-0400 (EDT)] INFO Loading knowledge
+[Fri May 31 2013 11:47:13 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+http://animalsbeingdicks.com/post/26829161038/happy-monday#_=_
+[Fri May 31 2013 11:47:13 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[ { raw: 'img alt="Bear scratching his dick and balls. - AnimalsBeingDicks.com" src="http://i1112.photobucket.com/albums/k497/animalsbeingdicks/abd-275.gif"/',
+    data: 'img alt="Bear scratching his dick and balls. - AnimalsBeingDicks.com" src="http://i1112.photobucket.com/albums/k497/animalsbeingdicks/abd-275.gif"/',
+    type: 'tag',
+    name: 'img',
+    attribs: 
+     { alt: 'Bear scratching his dick and balls. - AnimalsBeingDicks.com',
+       src: 'http://i1112.photobucket.com/albums/k497/animalsbeingdicks/abd-275.gif' } } ]
+[Fri May 31 2013 11:47:42 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 11:48:45 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:48:46 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:48:46 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:48:49 GMT-0400 (EDT)] INFO Loading knowledge
+
+/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:277
+    this.socket.end();
+                ^
+TypeError: Cannot call method 'end' of undefined
+  at Client.Connection.onEnd (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:277:17)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:56:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at _stream_readable.js:895:16
+  at process._tickCallback (node.js:415:13)
+
+[Fri May 31 2013 11:50:53 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:50:53 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:50:54 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:50:56 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:50:57 GMT-0400 (EDT)] INFO Loading knowledge
+[Fri May 31 2013 11:52:35 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'jquery'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at /opt/hubot/node_modules/hubot-scripts/src/scripts/git-help.coffee:23:13
+  at IncomingMessage.<anonymous> (/opt/hubot/node_modules/hubot/node_modules/scoped-http-client/lib/index.js:70:20)
+  at IncomingMessage.EventEmitter.emit (events.js:117:20)
+  at _stream_readable.js:895:16
+  at process._tickCallback (node.js:415:13)
+
+[Fri May 31 2013 11:52:47 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:52:48 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:52:49 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:52:51 GMT-0400 (EDT)] INFO Loading knowledge
+[Fri May 31 2013 11:53:36 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 11:53:37 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+[Fri May 31 2013 11:53:38 GMT-0400 (EDT)] ERROR Unable to load /opt/hubot/node_modules/hubot-scripts/src/scripts/oauth: Error: Cannot find module 'scribe-node'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/oauth.coffee:4:12)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/oauth.coffee:128:4)
+  at Module._compile (module.js:456:26)
+  at Object.loadFile (/opt/hubot/node_modules/hubot/node_modules/coffee-script/lib/coffee-script/coffee-script.js:179:19)
+  at Module.load (module.js:356:32)
+  at Function.Module._load (module.js:312:12)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Robot.loadFile (/opt/hubot/node_modules/hubot/src/robot.coffee:133:11)
+  at Robot.loadHubotScripts (/opt/hubot/node_modules/hubot/src/robot.coffee:169:28)
+  at /opt/hubot/node_modules/hubot/bin/hubot:98:15, <js>:101:30
+  at fs.js:266:14
+  at Object.oncomplete (fs.js:107:15)
+
+[Fri May 31 2013 12:10:15 GMT-0400 (EDT)] INFO Connecting HipChat adapter...
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Connected to hipchat.com as @JoSi
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_topps_-_bowman@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_studio@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_hipchat,_and_other_software@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_finance@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_usa_the_moment@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_jolly_science@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_client.jollyscience.com@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_topps_-_seriesone@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_garnier_mobile_site@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_bpg_-_nbc_ready_for_love@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_pubmo_-_rock_your_style@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_holacracy,_agile,_and_systems@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO Joining 35604_publicis_modem@conf.hipchat.com
+[Fri May 31 2013 12:10:16 GMT-0400 (EDT)] INFO /opt/hubot/scripts/pugme.coffee is using deprecated documentation syntax
+Please set HUBOT_HARVEST_SUBDOMAIN in the environment to use the harvest plugin script.
+[Fri May 31 2013 12:10:19 GMT-0400 (EDT)] INFO Loading knowledge
+[Fri May 31 2013 12:10:55 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 12:11:30 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Fri May 31 2013 12:20:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 12:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 12:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 12:50:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 13:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:20:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 14:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:10:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:20:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 15:50:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 16:50:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:10:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:20:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 17:50:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:10:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 18:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 19:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:40:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 20:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:00:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:10:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:20:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 21:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 22:50:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:30:21 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Fri May 31 2013 23:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 00:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 01:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 02:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 03:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 04:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 05:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 06:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 07:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 08:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 09:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 10:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 11:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 12:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 13:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 14:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 15:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 16:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 17:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 18:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 19:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 20:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 21:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 22:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sat Jun 01 2013 23:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 00:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 01:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 02:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 03:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 04:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 05:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 06:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 07:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 08:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 09:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 10:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 11:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 12:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 13:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 14:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 15:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 16:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 17:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 18:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 19:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 20:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 21:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 22:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:30:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Sun Jun 02 2013 23:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 00:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 01:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 02:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 03:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 04:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:10:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 05:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:30:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 06:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:10:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:20:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 07:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 08:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 09:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 10:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:00:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 11:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:40:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 12:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:20:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:30:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 13:44:39 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Mon Jun 03 2013 13:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:10:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:20:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:30:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 14:50:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:10:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:20:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:30:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:40:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:50:22 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 15:54:09 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Mon Jun 03 2013 15:59:25 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Mon Jun 03 2013 15:59:27 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Mon Jun 03 2013 16:00:23 GMT-0400 (EDT)] ERROR ERROR: Not sure who to send to. envelope=
+[Mon Jun 03 2013 16:00:28 GMT-0400 (EDT)] WARNING @http() is going to be deprecated in 3.0.0 use @robot.http()
+[Mon Jun 03 2013 16:07:49 GMT-0400 (EDT)] ERROR Unable to load /opt/hubot/node_modules/hubot-scripts/src/scripts/mongo-brain: Error: Cannot find module 'mongodb'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/mongo-brain.coffee:4:13)
+  at Object.<anonymous> (/opt/hubot/node_modules/hubot-scripts/src/scripts/mongo-brain.coffee:63:4)
+  at Module._compile (module.js:456:26)
+  at Object.loadFile (/opt/hubot/node_modules/hubot/node_modules/coffee-script/lib/coffee-script/coffee-script.js:179:19)
+  at Module.load (module.js:356:32)
+  at Function.Module._load (module.js:312:12)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at Robot.loadFile (/opt/hubot/node_modules/hubot/src/robot.coffee:133:11)
+  at TextListener.callback (/opt/hubot/node_modules/hubot-scripts/src/scripts/script.coffee:36:20)
+  at TextListener.Listener.call (/opt/hubot/node_modules/hubot/src/listener.coffee:24:14)
+  at Robot.receive [as origReceive] (/opt/hubot/node_modules/hubot/src/robot.coffee:111:33)
+  at Robot.robot.receive (/opt/hubot/node_modules/hubot-scripts/src/scripts/conversation.coffee:22:20)
+  at HipChat.Adapter.receive (/opt/hubot/node_modules/hubot/src/adapter.coffee:45:25)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/hipchat.coffee:173:22)
+  at Connector.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:286:29)
+  at Connector.EventEmitter.emit (events.js:98:17)
+  at Connector.onStanza (/opt/hubot/node_modules/hubot-hipchat/src/connector.coffee:378:21)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.onRawStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/client.js:159:14)
+  at Client.EventEmitter.emit (events.js:95:17)
+  at Client.Connection.onStanza (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:237:14)
+  at StreamParser.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:136:14)
+  at StreamParser.EventEmitter.emit (events.js:95:17)
+  at [object Object].<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:42:22)
+  at [object Object].EventEmitter.emit (events.js:95:17)
+  at [object Object].Parser.parse (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/lib/node-expat.js:18:22)
+  at StreamParser.write (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/stream_parser.js:78:26)
+  at Client.Connection.onData (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:184:21)
+  at CleartextStream.<anonymous> (/opt/hubot/node_modules/hubot-hipchat/node_modules/node-xmpp/lib/xmpp/connection.js:53:14)
+  at CleartextStream.EventEmitter.emit (events.js:117:20)
+  at CleartextStream.<anonymous> (_stream_readable.js:720:14)
+  at CleartextStream.EventEmitter.emit (events.js:92:17)
+  at emitReadable_ (_stream_readable.js:392:10)
+  at _stream_readable.js:385:7
+  at process._tickCallback (node.js:415:13)
+
