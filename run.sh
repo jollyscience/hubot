@@ -8,3 +8,4 @@ export PORT="808080"
 export HUBOT_HARVEST_SUBDOMAIN="jollyscience"
 
 bin/hubot --adapter hipchat
+#bin/hubot
