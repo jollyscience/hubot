@@ -157,6 +157,14 @@ module.exports = (robot) ->
       exec command, (err, stdout, stderror) =>
         unless err?
           @msg.send 'Git origin updated!'
+          
+          command = 'git push origin --mirror'
+
+          exec command, (err, stdout, stderror) =>
+            unless err?
+              @msg.send 'All data pushed to origin'
+            else
+              @msg.send "There was an error pushing to origin: #{err}" 
         else
           @msg.send "There was an error updating the git repository origin: #{err}" 
 
