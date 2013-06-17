@@ -5,7 +5,11 @@
 #   mkdirp, mustache, randpass
 #
 # Configuration:
-#   None
+#   JS_WWW_DIR
+#   JS_DEV_URL
+#   JS_STAGE_URL
+#   JS_MYSQL_USER
+#   JS_MYSQL_PASSWORD
 #
 # Commands:
 #   hubot <keyword> tweet - Returns a link to a tweet about <keyword>
@@ -23,19 +27,26 @@
 
 module.exports = (robot) ->
 
+  mysql_user = process.env.JS_MYSQL_USER || "root"
+  mysql_pass = process.env.JS_MYSQL_PASSWORD || "root"
+  www_dir = process.env.JS_WWW_DIR || "/var/www/site/"
+  dev_url = process.env.JS_DEV_URL || "dev.jollyscience.info"
+  stage_url = process.env.JS_STAGE_URL || "stage.jollyscience.info"
+
   class JollyScience
     config: 
       sites:
-        directory: "/var/www/site/"
-        dev: "dev.jollyscience.info"
-        stage: "stage.jollyscience.info"
+        directory: www_dir
+        dev: dev_url
+        stage: stage_url
       concrete:
         gitPath: 'git@codebasehq.com:jollyscience/internal/concrete-skeleton.git'
         dump: 'sql/dump.sql'
         config: 'docroot/config/site.php'
       mysql:
-        rootUser: 'root'
-        rootPassword: 'j0lly5Ci!'
+        rootUser: mysql_user
+        rootPassword: mysql_pass
+        #'j0lly5Ci!'
 #         rootPassword: 'root'
   
     init: (msg, client, project) ->
@@ -138,6 +149,17 @@ module.exports = (robot) ->
       @msg.send "Site created! You can access it at http://#{@devURL}"
       @msg.send "You can login at http://#{@devURL}/dashboard. The admin username is `admin` and the password is `ChangeMe!`. Please make sure to change the administrator password."
 
+    setProjectRepo: (url) =>
+      exec = require('child_process').exec
+      
+      command = "cd #{@devPath} && git remote set-url origin #{url}"
+      
+      exec command, (err, stdout, stderror) =>
+        unless err?
+          @msg.send 'Git origin updated!'
+        else
+          @msg.send "There was an error updating the git repository origin: #{err}" 
+
   robot.respond /create project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
     client = msg.match[1]
     project = msg.match[2]
@@ -146,3 +168,13 @@ module.exports = (robot) ->
     js.init msg, client, project
     
     js.createDevDirectory()
+    
+  robot.respond /set project repo ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
+    client = msg.match[1]
+    project = msg.match[2]
+    repoURL = msg.match[3]
+      
+    js = new JollyScience
+    js.init msg, client, project
+    
+    js.setProjectRepo repoURL    
