@@ -26,7 +26,7 @@ module.exports = (robot) ->
   class JollyScience
     config: 
       sites:
-        directory: "/Users/sambernard/Sites"
+        directory: "/var/www/site/"
         dev: "dev.jollyscience.info"
         stage: "stage.jollyscience.info"
       concrete:
