@@ -223,7 +223,8 @@ module.exports = (robot) ->
       
       js.create()
     else
-      msg.send "This project already exists. If you had errors creating it, you can delete this project and start over."
+      current_project = projects[client][project]
+      msg.send "This project already exists. If you had errors creating it, you can manually delete the project folder `#{current_project.path}`, and the project database `#{current_project.db_name}`."
     
   robot.respond /(update|set) project repo(sitory)? ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
     client = msg.match[3]
