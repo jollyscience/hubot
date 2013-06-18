@@ -90,8 +90,7 @@ module.exports = (robot) ->
       
       gitPath = @config.types[@project.type].gitPath
       
-      #command = "git clone #{gitPath} #{@project.path}"
-      command = "ls"
+      command = "git clone #{gitPath} #{@project.path}"
       
       exec command, (err, stdout, stderror) =>
         unless err?
@@ -198,10 +197,6 @@ module.exports = (robot) ->
     type = msg.match[1]
     client = msg.match[2]
     project = msg.match[3]
-    
-    msg.send type
-    msg.send client
-    msg.send project
     
     js = new JollyScience
     js.init msg, client, project, type
