@@ -152,22 +152,11 @@ module.exports = (robot) ->
     setProjectRepo: (url) =>
       exec = require('child_process').exec
       
-      command = "cd #{@devPath} && git remote set-url origin #{url}"
+      command = "cd #{@devPath} && git remote set-url origin #{url} && git push origin --mirror"
       
       exec command, (err, stdout, stderror) =>
         unless err?
-          @msg.send 'Git origin updated!'
-          
-          exec = require('child_process').exec
-          command = 'git push origin --mirror'
-
-          exec command, (err, stdout, stderror) =>
-            unless err?
-              @msg.send 'All data pushed to origin'
-            else
-              @msg.send "There was an error pushing to origin: #{err}"
-              @msg.send stdout
-              @msg.send stderror 
+          @msg.send 'All data has been pushed to new origin'          
         else
           @msg.send "There was an error updating the git repository origin: #{err}" 
           @msg.send stdout
