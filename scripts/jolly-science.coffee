@@ -62,13 +62,17 @@ module.exports = (robot) ->
       type: ''
       repo_url: ''
   
-    init: (msg, client, project, type) ->
+    init: (robot, msg, client, project, type) ->
+      @robot = robot
       @msg = msg
       @project.client_code = client
       @project.project_code = project
       @project.type = type      
       @project.url = "#{client}-#{project}.#{@config.sites.dev}"
       @project.path = "#{@config.sites.directory}/#{@project.url}"
+    
+    loadData: (data) =>
+      @project = data
     
     create: =>
       @createDevDirectory()  
@@ -129,14 +133,14 @@ module.exports = (robot) ->
             exec command, (err, stdout, stderror) =>
               unless err?
                 @msg.send "Database dump loaded!"
-                @finishedMessage()
+                @finished()
               else
                 @msg.send "Error creating database: #{err}"
                 @msg.send "#{stdout}"
                 @msg.send "#{stderror}"
                 @msg.send command
           else
-            @finishedMessage()
+            @finished()
         else
           @msg.send "Error creating database: #{err}"    
     
@@ -171,14 +175,25 @@ module.exports = (robot) ->
         else
           @msg.send "Error reading config template"
     
-    finishedMessage: =>
+    loadProjectData: =>
+    
+    
+    finished: =>
       @msg.send "Site created! You can access it at http://#{@project.url}"
       
       if @project.type is 'concrete'
         @msg.send "You can login at http://#{@project.url}/dashboard. The admin username is `admin` and the password is `ChangeMe!`. Please make sure to change the administrator password."
       else
-        @msg.send "The mysql configuration information can be found in #{@project.path}/#{config.types[@project.type].mysqlConfig}"
-
+        @msg.send "The mysql configuration information can be found in #{@project.path}/#{@config.types[@project.type].mysqlConfig}"
+      
+      projects = @robot.brain.get('generated_projects') or {}
+      
+      unless projects[@project.client_code]? then projects[@project.client_code] = {}
+      
+      projects[@project.client_code][@project.project_code] = @project 
+      
+      @robot.brain.set 'generated_projects', projects
+      
     setProjectRepo: (url) =>
       exec = require('child_process').exec
       
@@ -193,22 +208,69 @@ module.exports = (robot) ->
           @msg.send stderror
           @msg.send command
 
+
   robot.respond /create (empty|concrete) project ([a-z_0-9-]{3,7}) ([a-z_0-9-]{3,8})/i, (msg) ->    
     type = msg.match[1]
     client = msg.match[2]
     project = msg.match[3]
     
-    js = new JollyScience
-    js.init msg, client, project, type
-    
-    js.create()
+    projects = robot.brain.get('generated_projects') or null
+
+    unless projects? and projects[client]? and projects[client][project]?    
+      msg.send "Creating Project…"
+      js = new JollyScience
+      js.init robot, msg, client, project, type
+      
+      js.create()
+    else
+      msg.send "This project already exists. If you had errors creating it, you can delete this project and start over."
     
   robot.respond /(update|set) project repo(sitory)? ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
     client = msg.match[3]
     project = msg.match[4]
     repoURL = msg.match[5]
     
-    js = new JollyScience
-    js.init msg, client, project
+    projects = robot.brain.get('generated_projects') or null
     
-    js.setProjectRepo repoURL    
+    if projects?
+      if projects[client]? and projects[client][project]?
+        current_project = projects[client][project]
+          
+        js = new JollyScience
+        js.robot = robot
+        js.msg = msg
+        js.loadData(current_project)
+        js.setProjectRepo repoURL
+        
+      else
+        msg.send "I don't know about this project. Perhaps you should create it?"
+    else
+      msg.send "I don't know about this project. Perhaps you should create it?"
+
+#   robot.respond /(delete|remove) project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->
+#     client = msg.match[2]
+#     project = msg.match[3]
+#     
+#     projects = robot.brain.get('generated_projects') or null
+#     
+#     if projects?
+#       if projects[client]? and projects[client][project]?
+#         current_project = projects[client][project]
+#           
+#         js = new JollyScience
+#         js.robot = robot
+#         js.msg = msg
+#         js.loadData(current_project)
+#         js.delete()
+#         
+#       else
+#         msg.send "I don't know about this project. Perhaps it doesn't exist?"
+#     else
+#       msg.send "I don't know about this project. Perhaps it doesn't exist?"
+  
+  robot.respond /(show|debug) project data/i, (msg) ->  
+    Util = require "util"
+    
+#     projects = robot.brain.get('generated_projects') or null
+    output = Util.inspect(msg.message.user.id, false, 4)
+    msg.send output
