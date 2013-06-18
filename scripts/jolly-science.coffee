@@ -158,15 +158,20 @@ module.exports = (robot) ->
         unless err?
           @msg.send 'Git origin updated!'
           
+          exec = require('child_process').exec
           command = 'git push origin --mirror'
 
           exec command, (err, stdout, stderror) =>
             unless err?
               @msg.send 'All data pushed to origin'
             else
-              @msg.send "There was an error pushing to origin: #{err}" 
+              @msg.send "There was an error pushing to origin: #{err}"
+              @msg.send stdout
+              @msg.send stderror 
         else
           @msg.send "There was an error updating the git repository origin: #{err}" 
+          @msg.send stdout
+          @msg.send stderror
 
   robot.respond /create project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
     client = msg.match[1]
@@ -177,11 +182,11 @@ module.exports = (robot) ->
     
     js.createDevDirectory()
     
-  robot.respond /set project repo ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
-    client = msg.match[1]
-    project = msg.match[2]
-    repoURL = msg.match[3]
-      
+  robot.respond /(update|set) project repo(sitory)? ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
+    client = msg.match[3]
+    project = msg.match[4]
+    repoURL = msg.match[5]
+    
     js = new JollyScience
     js.init msg, client, project
     
