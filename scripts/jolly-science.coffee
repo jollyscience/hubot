@@ -162,7 +162,7 @@ module.exports = (robot) ->
           @msg.send stdout
           @msg.send stderror
 
-  robot.respond /create project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
+  robot.respond /create concrete5 project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
     client = msg.match[1]
     project = msg.match[2]
     
