@@ -12,10 +12,10 @@
 #   JS_MYSQL_PASSWORD
 #
 # Commands:
-#   hubot <keyword> tweet - Returns a link to a tweet about <keyword>
+#   hubot create concrete5 project <client_code> <project_code> - Creates a Concrete5 project on the server. `client_code` and `project_code` should be between 3 and 7 characters, and contain only letters, numbers, dashes (-) and underscores (_)
+#   hubot (update|set) project repo <client_code> <project_code> <repo_url> - Sets the project repository, and pushes the current data to that repo
 #
 # Todo:
-#   Create Vhost
 #   Test Install
 #   Resume?
 #   Check for existing site
