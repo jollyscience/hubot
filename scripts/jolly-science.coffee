@@ -116,7 +116,7 @@ module.exports = (robot) ->
       randpass = require('randpass')
       
       @dbName = "#{@client}_#{@project}"
-      @dbName = @dbName.replace(/[^a-zA-Z0-9_]/, '_')
+      @dbName = @dbName.replace(/[^a-zA-Z0-9_]/g, '_')
       @dbUser = @dbName
       @dbPassword = randpass(10)
       
@@ -165,7 +165,7 @@ module.exports = (robot) ->
           @msg.send stderror
           @msg.send command
 
-  robot.respond /create concrete5 project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
+  robot.respond /create concrete5 project ([a-z_0-9-]{3,15}) ([a-z_0-9-]{3,15})/i, (msg) ->    
     client = msg.match[1]
     project = msg.match[2]
     
