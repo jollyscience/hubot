@@ -12,7 +12,7 @@
 #   JS_MYSQL_PASSWORD
 #
 # Commands:
-#   hubot create concrete5 project <client_code> <project_code> - Creates a Concrete5 project on the server. `client_code` and `project_code` should be between 3 and 7 characters, and contain only letters, numbers, dashes (-) and underscores (_)
+#   hubot create (empty|concrete) project <client_code> <project_code> - Creates an empty/Concrete5 project on the server. `client_code` and `project_code` should be between 3 and 7 characters, and contain only letters, numbers, dashes (-) and underscores (_)
 #   hubot (update|set) project repo <client_code> <project_code> <repo_url> - Sets the project repository, and pushes the current data to that repo
 #
 # Todo:
@@ -39,54 +39,118 @@ module.exports = (robot) ->
         directory: www_dir
         dev: dev_url
         stage: stage_url
-      concrete:
-        gitPath: 'git@codebasehq.com:jollyscience/internal/concrete-skeleton.git'
-        dump: 'sql/dump.sql'
-        config: 'docroot/config/site.php'
       mysql:
         rootUser: mysql_user
         rootPassword: mysql_pass
-        #'j0lly5Ci!'
-#         rootPassword: 'root'
-  
-    init: (msg, client, project) ->
-      @msg = msg
-      @client = client
-      @project = project
-      @devURL = "#{client}-#{project}.#{@config.sites.dev}"
-      @devPath = "#{@config.sites.directory}/#{@devURL}"
-      @msg.send "Initializing Project. Client Code: #{client} -- Project Code: #{project}"
+      types:
+        concrete:
+          gitPath: 'git@codebasehq.com:jollyscience/internal/concrete-skeleton.git'
+          dump: 'sql/dump.sql'
+          mysqlConfig: 'docroot/config/site.php'
+        empty:
+          gitPath: 'git@codebasehq.com:jollyscience/internal/empty-skeleton.git'
+          dump: null
+          mysqlConfig: 'resources/mysql.mdown'
 
+    project:
+      client_code: ''
+      project_code: ''
+      db_user: ''
+      db_name: ''
+      url: ''
+      path: ''
+      type: ''
+      repo_url: ''
+  
+    init: (robot, msg, client, project, type) ->
+      @robot = robot
+      @msg = msg
+      @project.client_code = client
+      @project.project_code = project
+      @project.type = type      
+      @project.url = "#{client}-#{project}.#{@config.sites.dev}"
+      @project.path = "#{@config.sites.directory}/#{@project.url}"
+    
+    loadData: (data) =>
+      @project = data
+    
+    create: =>
+      @createDevDirectory()  
+    
     createDevDirectory: =>      
       mkdirp = require("mkdirp")
-
-      mkdirp "#{@devPath}", (err) =>
+      mkdirp @project.path, (err) =>
         unless err
-          @msg.send "#{@devPath} created!"
-          @cloneConcreteFiles()
+          @msg.send "#{@project.path} created!"
+          @cloneSkeleton()
         else
-          @msg.send "Error creating #{@devPath}, #{err}"      
+          @msg.send "Error creating #{@project.path}, #{err}"      
     
-    cloneConcreteFiles: () ->
+    cloneSkeleton: () ->
       sys = require 'sys'
       exec = require('child_process').exec
       
       @msg.send "Cloning Git Repo (this may take awhile)"
       
-      command = "git clone #{@config.concrete.gitPath} #{@devPath}"
+      gitPath = @config.types[@project.type].gitPath
+      
+      command = "git clone #{gitPath} #{@project.path}"
       
       exec command, (err, stdout, stderror) =>
         unless err?
-          @msg.send 'Concrete5 Directory Cloned'
+          @msg.send "#{@project.type} skeleton repository cloned"
           @createDatabase()          
         else
-          @msg.send "There was an error cloning the concrete5 repository: #{err}"    
+          @msg.send "There was an error cloning the #{@project.type} skeleton repository: #{err}"    
           @msg.send command
+    
+    createDatabase: () =>
+      exec = require('child_process').exec
+      randpass = require('randpass')
+      
+      @project.db_name = "#{@project.client_code}_#{@project.project_code}"
+      @project.db_name = @project.db_name.replace(/[^a-zA-Z0-9_]/g, '_')
+      @project.db_user = @project.db_name
+      @dbPassword = randpass(10)
+      
+      @createConfigFiles()
+      
+      mysqlCommand = 
+      "CREATE DATABASE #{@project.db_name};
+      GRANT ALL PRIVILEGES ON #{@project.db_name}.* TO #{@project.db_user}@localhost IDENTIFIED BY \"#{@dbPassword}\";"
+      
+      command = "mysql -u #{@config.mysql.rootUser} -p'#{@config.mysql.rootPassword}' -e '#{mysqlCommand}'"
+      
+      exec command, (err, stdout, stderror) =>
+        unless err?
+          @msg.send "Database and user created!"
+          
+          if @config.types[@project.type].dump?          
+            @msg.send "Installing the database dump (this may take awhile)"
+                    
+            command = "mysql -u #{@config.mysql.rootUser} -p'#{@config.mysql.rootPassword}' #{@project.db_name} < #{@project.path}/sql/dump.sql"
+            
+            exec command, (err, stdout, stderror) =>
+              unless err?
+                @msg.send "Database dump loaded!"
+                @finished()
+              else
+                @msg.send "Error creating database: #{err}"
+                @msg.send "#{stdout}"
+                @msg.send "#{stderror}"
+                @msg.send command
+          else
+            @finished()
+        else
+          @msg.send "Error creating database: #{err}"    
     
     createConfigFiles: () =>
       fs = require('fs');
-      output =  "#{@devPath}/#{@config.concrete.config}"
+      configFile = @config.types[@project.type].mysqlConfig
+      output =  "#{@project.path}/#{configFile}"
       template = "#{output}.scaffold"
+      
+      @msg.send template
       
       fs.readFile template, 'utf8', (err, data) =>
         unless err?
@@ -96,9 +160,9 @@ module.exports = (robot) ->
           view = 
             db:
               host: 'localhost'
-              user: @dbUser
+              user: @project.db_user
               password: @dbPassword
-              database: @dbName
+              database: @project.db_name
           
           rendered = Mustache.render template, view
           
@@ -111,50 +175,29 @@ module.exports = (robot) ->
         else
           @msg.send "Error reading config template"
     
-    createDatabase: () =>
-      exec = require('child_process').exec
-      randpass = require('randpass')
-      
-      @dbName = "#{@client}_#{@project}"
-      @dbName = @dbName.replace(/[^a-zA-Z0-9_]/g, '_')
-      @dbUser = @dbName
-      @dbPassword = randpass(10)
-      
-      @createConfigFiles()
-      
-      mysqlCommand = 
-      "CREATE DATABASE #{@dbName};
-      GRANT ALL PRIVILEGES ON #{@dbName}.* TO #{@dbUser}@localhost IDENTIFIED BY \"#{@dbPassword}\";"
-      
-      command = "mysql -u #{@config.mysql.rootUser} -p'#{@config.mysql.rootPassword}' -e '#{mysqlCommand}'"
-      
-      exec command, (err, stdout, stderror) =>
-        unless err?
-          @msg.send "Database and user created!"
-          @msg.send "Installing the database dump (this may take awhile)"
-                  
-          command = "mysql -u #{@config.mysql.rootUser} -p'#{@config.mysql.rootPassword}' #{@dbName} < #{@devPath}/sql/dump.sql"
-          
-          exec command, (err, stdout, stderror) =>
-            unless err?
-              @msg.send "Database dump loaded!"
-              @finishedMessage()
-            else
-              @msg.send "Error creating database: #{err}"
-              @msg.send "#{stdout}"
-              @msg.send "#{stderror}"
-              @msg.send command
-        else
-          @msg.send "Error creating database: #{err}"
+    loadProjectData: =>
     
-    finishedMessage: =>
-      @msg.send "Site created! You can access it at http://#{@devURL}"
-      @msg.send "You can login at http://#{@devURL}/dashboard. The admin username is `admin` and the password is `ChangeMe!`. Please make sure to change the administrator password."
-
+    
+    finished: =>
+      @msg.send "Site created! You can access it at http://#{@project.url}"
+      
+      if @project.type is 'concrete'
+        @msg.send "You can login at http://#{@project.url}/dashboard. The admin username is `admin` and the password is `ChangeMe!`. Please make sure to change the administrator password."
+      else
+        @msg.send "The mysql configuration information can be found in #{@project.path}/#{@config.types[@project.type].mysqlConfig}"
+      
+      projects = @robot.brain.get('generated_projects') or {}
+      
+      unless projects[@project.client_code]? then projects[@project.client_code] = {}
+      
+      projects[@project.client_code][@project.project_code] = @project 
+      
+      @robot.brain.set 'generated_projects', projects
+      
     setProjectRepo: (url) =>
       exec = require('child_process').exec
       
-      command = "cd #{@devPath} && git remote set-url origin #{url} && git push origin --mirror"
+      command = "cd #{@project.path} && git remote set-url origin #{url} && git push origin --mirror"
       
       exec command, (err, stdout, stderror) =>
         unless err?
@@ -165,21 +208,70 @@ module.exports = (robot) ->
           @msg.send stderror
           @msg.send command
 
-  robot.respond /create concrete5 project ([a-z_0-9-]{3,7}) ([a-z_0-9-]{3,8})/i, (msg) ->    
-    client = msg.match[1]
-    project = msg.match[2]
+
+  robot.respond /create (empty|concrete) project ([a-z_0-9-]{3,7}) ([a-z_0-9-]{3,8})/i, (msg) ->    
+    type = msg.match[1]
+    client = msg.match[2]
+    project = msg.match[3]
     
-    js = new JollyScience
-    js.init msg, client, project
-    
-    js.createDevDirectory()
+    projects = robot.brain.get('generated_projects') or null
+
+    unless projects? and projects[client]? and projects[client][project]?    
+      msg.send "Creating Project…"
+      js = new JollyScience
+      js.init robot, msg, client, project, type
+      
+      js.create()
+    else
+      current_project = projects[client][project]
+      msg.send "This project already exists. If you had errors creating it, you can manually delete the project folder `#{current_project.path}`, and the project database `#{current_project.db_name}`."
     
   robot.respond /(update|set) project repo(sitory)? ([a-z_0-9-]+) ([a-z_0-9-]+) ([^\s]+)/i, (msg) ->
     client = msg.match[3]
     project = msg.match[4]
     repoURL = msg.match[5]
     
-    js = new JollyScience
-    js.init msg, client, project
+    projects = robot.brain.get('generated_projects') or null
     
-    js.setProjectRepo repoURL    
+    if projects?
+      if projects[client]? and projects[client][project]?
+        current_project = projects[client][project]
+          
+        js = new JollyScience
+        js.robot = robot
+        js.msg = msg
+        js.loadData(current_project)
+        js.setProjectRepo repoURL
+        
+      else
+        msg.send "I don't know about this project. Perhaps you should create it?"
+    else
+      msg.send "I don't know about this project. Perhaps you should create it?"
+
+#   robot.respond /(delete|remove) project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->
+#     client = msg.match[2]
+#     project = msg.match[3]
+#     
+#     projects = robot.brain.get('generated_projects') or null
+#     
+#     if projects?
+#       if projects[client]? and projects[client][project]?
+#         current_project = projects[client][project]
+#           
+#         js = new JollyScience
+#         js.robot = robot
+#         js.msg = msg
+#         js.loadData(current_project)
+#         js.delete()
+#         
+#       else
+#         msg.send "I don't know about this project. Perhaps it doesn't exist?"
+#     else
+#       msg.send "I don't know about this project. Perhaps it doesn't exist?"
+  
+  robot.respond /(show|debug) project data/i, (msg) ->  
+    Util = require "util"
+    
+#     projects = robot.brain.get('generated_projects') or null
+    output = Util.inspect(msg.message.user.id, false, 4)
+    msg.send output
