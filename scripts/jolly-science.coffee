@@ -123,7 +123,7 @@ module.exports = (robot) ->
       @createConfigFiles()
       
       mysqlCommand = 
-      "CREATE DATABASE IF NOT EXISTS #{@dbName};
+      "CREATE DATABASE #{@dbName};
       GRANT ALL PRIVILEGES ON #{@dbName}.* TO #{@dbUser}@localhost IDENTIFIED BY \"#{@dbPassword}\";"
       
       command = "mysql -u #{@config.mysql.rootUser} -p'#{@config.mysql.rootPassword}' -e '#{mysqlCommand}'"
