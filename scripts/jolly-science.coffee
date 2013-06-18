@@ -81,6 +81,7 @@ module.exports = (robot) ->
           @createDatabase()          
         else
           @msg.send "There was an error cloning the concrete5 repository: #{err}"    
+          @msg.send command
     
     createConfigFiles: () =>
       fs = require('fs');
@@ -142,6 +143,7 @@ module.exports = (robot) ->
               @msg.send "Error creating database: #{err}"
               @msg.send "#{stdout}"
               @msg.send "#{stderror}"
+              @msg.send command
         else
           @msg.send "Error creating database: #{err}"
     
@@ -161,6 +163,7 @@ module.exports = (robot) ->
           @msg.send "There was an error updating the git repository origin: #{err}" 
           @msg.send stdout
           @msg.send stderror
+          @msg.send command
 
   robot.respond /create concrete5 project ([a-z_0-9-]+) ([a-z_0-9-]+)/i, (msg) ->    
     client = msg.match[1]
