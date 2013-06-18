@@ -1,7 +1,5 @@
-# TBD
-
 # Description:
-#   TBD
+#   Habit RPG
 #
 # Dependencies:
 #   None
