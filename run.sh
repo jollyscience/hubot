@@ -6,6 +6,7 @@ export HUBOT_AUTH_ADMIN="245953,245954,246044"
 export HUBOT_LOG_LEVEL="debug"
 export PORT="808080"
 export HUBOT_HARVEST_SUBDOMAIN="jollyscience"
+#export MONGOLAB_URI=""
 
 bin/hubot --adapter hipchat
 #bin/hubot
