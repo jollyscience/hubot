@@ -44,7 +44,6 @@
  "imdb.coffee",
  "insult.coffee",
  "mta.coffee",
- "mongo-brain.coffee",
  "oauth.coffee",
  "oblique.coffee",
  "phpdoc.coffee",
