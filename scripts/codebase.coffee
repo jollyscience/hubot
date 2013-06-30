@@ -8,26 +8,6 @@
 #   None
 #
 # Commands:
-<<<<<<< HEAD
-#   None
-
-Codebase = require('node-codebase')
-
-cb = new Codebase(
-  'https://api3.codebasehq.com',
-  'jollyscience/jollyscience:3kqo5bdat3uln2bnv90mvvti1stuonjg99bnz1p4'
-)
-
-module.exports = (robot) ->
-  robot.respond /codebase activity/i, (msg) ->
-    msg.send( 'Checking codebase activity...' )
-
-    ret = (err, data) ->
-      msg.send( JSON.stringify( data ) )
-
-    cb.activity( ret );
-
-=======
 # report codebase users
 # report codebase activity
 # report codebase projects
@@ -182,4 +162,3 @@ module.exports = (robot) ->
 				msg.send "Great news! I created a new ticket."
 				msg.send "The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}"
 		)
->>>>>>> 7c0ee69f752240c822ee8e5970d3274e7ca88dee
