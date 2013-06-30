@@ -25,7 +25,8 @@
     "hubot-hipchat": "~2.5.1-1",
     "mkdirp": "*",
     "mustache": "*",
-    "randpass": "*"
+    "randpass": "*",
+    "mongodb": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
