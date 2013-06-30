@@ -43,6 +43,7 @@
  "google.coffee",
  "imdb.coffee",
  "insult.coffee",
+ "karma.coffee",
  "mta.coffee",
  "oauth.coffee",
  "oblique.coffee",
