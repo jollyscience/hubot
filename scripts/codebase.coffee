@@ -9,19 +9,20 @@
 #
 # Commands:
 #   None
-#
 
 Codebase = require('node-codebase')
+
 cb = new Codebase(
-	'http://api3.codebasehq.com',
-    'jollyscience/jollyscience:3kqo5bdat3uln2bnv90mvvti1stuonjg99bnz1p4'
+  'https://api3.codebasehq.com',
+  'jollyscience/jollyscience:3kqo5bdat3uln2bnv90mvvti1stuonjg99bnz1p4'
 )
 
 module.exports = (robot) ->
-
   robot.respond /codebase activity/i, (msg) ->
-  	console.log ( 'Checking codebase activity...' )
+    msg.send( 'Checking codebase activity...' )
 
-  	ret = (err, data) ->
+    ret = (err, data) ->
       msg.send( JSON.stringify( data ) )
+
     cb.activity( ret );
+
