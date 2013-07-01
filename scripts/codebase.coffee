@@ -67,9 +67,9 @@ module.exports = (robot) ->
 
 			r = []
 			for item in data.events.event then do (item) =>
-				r.push item.htmlTitle
+				r.push '#{item.timestamp} - #{item.title}'
 
-			msg.send r.join(', ')
+			msg.send r.join('\n')
 		)
 
 # REPORT SINGLE PROJECT
