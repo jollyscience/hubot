@@ -8,14 +8,14 @@
 #   None
 #
 # Commands:
-# report codebase users
-# report codebase activity
-# report codebase projects
-# report codebase project <permalink>
-# create codebase project <Full Project Name>
-# delete codebase project <permalink>
-# create codebase ticket in project <permalink> with summary <summary>
-# report codebase updates to ticket <ticket_id> in project <permalink>
+# report codebase users - 'These are the users I know about...'
+# report codebase activity - 'Here are the latest 20 updates.'
+# report codebase projects - 'These are all of the projects I can find.'
+# report codebase project <permalink> - 'Here is what I know about <permalink>'
+# create codebase project <Full Project Name> - 'New Project created!'
+# delete codebase project <permalink> - 'Permanently delete the project?'
+# create codebase ticket in project <permalink> with summary <summary> - 'New ticket created! Here is the link.'
+# report codebase updates to ticket <ticket_id> in project <permalink> - 'That ticket has XX updates. Here they are...'
 
 
 Codebase = require('node-codebase')
@@ -23,7 +23,7 @@ _ = require('underscore')
 
 module.exports = (robot) ->
 
-	baseUrl = process.env.HUBOT_CODEBASE_BASEURL || "jollyscience.codebasehq.com"
+	baseUrl = process.env.HUBOT_CODEBASE_BASEURL || 'jollyscience.codebasehq.com'
 	apiUrl = process.env.HUBOT_CODEBASE_APIURL || 'api3.codebasehq.com'
 	auth = process.env.HUBOT_CODEBASE_APIAUTH || 'jollyscience/jollyscience:3kqo5bdat3uln2bnv90mvvti1stuonjg99bnz1p4'
 
@@ -35,22 +35,23 @@ module.exports = (robot) ->
 
 # REPORT USERS
 	robot.respond /report codebase users/i, (msg) ->
-		msg.send "Okay. I\'ll go get a list of all Codebase users..."
+		msg.send 'Okay. I\'ll go get a list of all Codebase users...'
 
 		cb.users.all( (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
 			else
 				r = []
 				ul = data.users.user
 				for user in ul then do (user) =>
 					if _.isObject(user.company[0])
-						co = "Freelance"
+						co = 'Freelance'
 					else
 						co = user.company.join(', ')
 
-					r.push "#{user.firstName} #{user.lastName} (#{co})"
+					r.push '#{user.firstName} #{user.lastName} (#{co})'
 
 				msg.send r.join(', ')
 		)
@@ -61,10 +62,14 @@ module.exports = (robot) ->
 
 		cb.activity( (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
+			r = []
 			for item in data.events.event then do (item) =>
-				msg.send item.title
+				r.push item.htmlTitle
+
+			msg.send r.join(', ')
 		)
 
 # REPORT SINGLE PROJECT
@@ -73,11 +78,12 @@ module.exports = (robot) ->
 
 		cb.projects.specific( msg.match[1], (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
 			p = data.project
-			msg.send "#{p.name} is an #{p.status} project in the #{p.groupId} group, and is described as #{p.overview}."
-			msg.send "You can visit the project on Codebase here: http://#{baseUrl}/projects/#{p.permalink}"
+			msg.send '#{p.name} is an #{p.status} project in the #{p.groupId} group, and is described as #{p.overview}.'
+			msg.send 'You can visit the project on Codebase here: http://#{baseUrl}/projects/#{p.permalink}'
 		)
 
 # REPORT ALL PROJECTS
@@ -86,14 +92,15 @@ module.exports = (robot) ->
 
 		cb.projects.all( (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
-			r = ["The Codebase projects I know about are as follows:"]
+			r = ['The Codebase projects I know about are as follows:']
 			for item in data.projects.project then do (item) =>
-				r.push "#{item.name} (#{item.permalink})"
+				r.push '#{item.name} (#{item.permalink})'
 
 			msg.send r.join(' | ')
-			msg.send "That is all of them. #{r.length} total."
+			msg.send 'That is all of them. #{r.length} total.'
 		)
 
 # CREATE PROJECT
@@ -106,21 +113,21 @@ module.exports = (robot) ->
 			msg.send 'navigating the matrix...'
 
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
 			else
 				project = data.project
-				msg.send "Project Created!\n#{project.name} - #{project.permalink}"
+				msg.send 'Project Created!\n#{project.name} - #{project.permalink}'
 		)
 
 # DELETE PROJECT
 	robot.respond /delete codebase project (.*)/i, (msg) ->
 		msg.send 'I am not allowed do that right now. It is just too unsafe.'
-
 		# cb.projects.deleteProject( msg.match[1], (err, data) ->
 		# 	if (err)
 		# 		e = JSON.stringify(data.data)
-		# 		msg.send ("Awe man... I messed up... #{e}")
+		# 		msg.send ('Awe man... I messed up... #{e}')
 
 		# 	msg.send JSON.stringify(data)
 		# )
@@ -130,19 +137,20 @@ module.exports = (robot) ->
 		t = msg.match[1]
 		p = msg.match[2]
 
-		msg.send "Okay. I\'ll try to find ticket #{t} in #{p}"
+		msg.send 'Okay. I\'ll try to find ticket #{t} in #{p}'
 
 		cb.tickets.notes.all( p, t, (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 
 			else
 				r = []
 				l = data.ticketNotes.ticketNote.length - 1
-				msg.send "Ticket #{t} has been updated #{l} times."
+				msg.send 'Ticket #{t} has been updated #{l} times.'
 		
 				for note in data.ticketNotes.ticketNote then do (note) =>
-					r.push "#{note.updates}"
+					r.push '#{note.updates}'
 
 				msg.send r.join()
 		)
@@ -152,12 +160,13 @@ module.exports = (robot) ->
 		p = msg.match[1]
 		s = msg.match[2]
 
-		msg.send "Okay. I\'ll try to create a new ticket in #{p} with a summary of \"#{s}\""
+		msg.send 'Okay. I\'ll try to create a new ticket in #{p} with a summary of \'#{s}\''
 		
 		cb.tickets.create( p, { summary: s, description: 'DUMMY Description'}, (err, data) ->
 			if (err)
-				msg.send "Oh no! #{data}"
+				errmsg = JSON.stringify(data)
+				msg.send 'Oh no! #{errmsg}'
 			else
-				msg.send "Great news! I created a new ticket."
-				msg.send "The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}"
+				msg.send 'Great news! I created a new ticket.'
+				msg.send 'The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}'
 		)
