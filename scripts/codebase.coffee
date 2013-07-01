@@ -115,16 +115,15 @@ module.exports = (robot) ->
 
 # DELETE PROJECT
 	robot.respond /delete codebase project (.*)/i, (msg) ->
-		cb.projects.deleteProject( msg.match[1], (err, data) ->
+		msg.send 'I am not allowed do that right now. It is just too unsafe.'
 
-			msg.send 'I am not allowed do that right now. It is just too unsafe.'
+		# cb.projects.deleteProject( msg.match[1], (err, data) ->
+		# 	if (err)
+		# 		e = JSON.stringify(data.data)
+		# 		msg.send ("Awe man... I messed up... #{e}")
 
-			# if (err)
-			# 	e = JSON.stringify(data.data)
-			# 	msg.send ("Awe man... I messed up... #{e}")
-
-			# msg.send JSON.stringify(data)
-		)
+		# 	msg.send JSON.stringify(data)
+		# )
 
 # GET TICKET UPDATES
 	robot.respond /report codebase updates to ticket ([0-9]+) in project ([a-z_0-9-]+)/i, (msg) ->
