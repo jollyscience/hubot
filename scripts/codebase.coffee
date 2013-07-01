@@ -40,7 +40,7 @@ module.exports = (robot) ->
 		cb.users.all( (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			else
 				r = []
@@ -51,7 +51,7 @@ module.exports = (robot) ->
 					else
 						co = user.company.join(', ')
 
-					r.push '#{user.firstName} #{user.lastName} (#{co})'
+					r.push "#{user.firstName} #{user.lastName} (#{co})"
 
 				msg.send r.join(', ')
 		)
@@ -63,13 +63,13 @@ module.exports = (robot) ->
 		cb.activity( (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			r = []
 			for item in data.events.event then do (item) =>
-				r.push '#{item.timestamp} - #{item.title}'
+				r.push "#{item.timestamp} - #{item.title}"
 
-			msg.send r.join('\n')
+			msg.send r.join("\n")
 		)
 
 # REPORT SINGLE PROJECT
@@ -79,11 +79,11 @@ module.exports = (robot) ->
 		cb.projects.specific( msg.match[1], (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			p = data.project
-			msg.send '#{p.name} is an #{p.status} project in the #{p.groupId} group, and is described as #{p.overview}.'
-			msg.send 'You can visit the project on Codebase here: http://#{baseUrl}/projects/#{p.permalink}'
+			msg.send "#{p.name} is an #{p.status} project in the #{p.groupId} group, and is described as #{p.overview}."
+			msg.send "You can visit the project on Codebase here: http://#{baseUrl}/projects/#{p.permalink}"
 		)
 
 # REPORT ALL PROJECTS
@@ -93,14 +93,14 @@ module.exports = (robot) ->
 		cb.projects.all( (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			r = ['The Codebase projects I know about are as follows:']
 			for item in data.projects.project then do (item) =>
-				r.push '#{item.name} (#{item.permalink})'
+				r.push "#{item.name} (#{item.permalink})"
 
 			msg.send r.join(' | ')
-			msg.send 'That is all of them. #{r.length} total.'
+			msg.send "That is all of them. #{r.length} total."
 		)
 
 # CREATE PROJECT
@@ -114,11 +114,11 @@ module.exports = (robot) ->
 
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			else
 				project = data.project
-				msg.send 'Project Created!\n#{project.name} - #{project.permalink}'
+				msg.send "Project Created!\n#{project.name} - #{project.permalink}"
 		)
 
 # DELETE PROJECT
@@ -137,20 +137,20 @@ module.exports = (robot) ->
 		t = msg.match[1]
 		p = msg.match[2]
 
-		msg.send 'Okay. I\'ll try to find ticket #{t} in #{p}'
+		msg.send "Okay. I\'ll try to find ticket #{t} in #{p}"
 
 		cb.tickets.notes.all( p, t, (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 
 			else
 				r = []
 				l = data.ticketNotes.ticketNote.length - 1
-				msg.send 'Ticket #{t} has been updated #{l} times.'
+				msg.send "Ticket #{t} has been updated #{l} times."
 		
 				for note in data.ticketNotes.ticketNote then do (note) =>
-					r.push '#{note.updates}'
+					r.push "#{note.updates}"
 
 				msg.send r.join()
 		)
@@ -160,13 +160,13 @@ module.exports = (robot) ->
 		p = msg.match[1]
 		s = msg.match[2]
 
-		msg.send 'Okay. I\'ll try to create a new ticket in #{p} with a summary of \'#{s}\''
+		msg.send "Okay. I\'ll try to create a new ticket in #{p} with a summary of \'#{s}\'"
 		
 		cb.tickets.create( p, { summary: s, description: 'DUMMY Description'}, (err, data) ->
 			if (err)
 				errmsg = JSON.stringify(data)
-				msg.send 'Oh no! #{errmsg}'
+				msg.send "Oh no! #{errmsg}"
 			else
 				msg.send 'Great news! I created a new ticket.'
-				msg.send 'The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}'
+				msg.send "The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}"
 		)
