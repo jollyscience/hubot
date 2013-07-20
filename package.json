@@ -26,7 +26,8 @@
     "mkdirp": "*",
     "mustache": "*",
     "randpass": "*",
-    "mongodb": "*"
+    "mongodb": "*",
+    "node-codein": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
