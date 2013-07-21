@@ -6,7 +6,11 @@
 #   node-codein
 #
 # Configuration:
-#   None
+#   HUBOT_JOSI_NICKNAME
+
+HUBOT_JOSI_NICKNAME = process.env.HUBOT_JOSI_NICKNAME || "JoSi"
+
+console.log "Hubot shall thus be known as #{HUBOT_JOSI_NICKNAME}"
 
 codein = require("node-codein")
 
@@ -14,13 +18,12 @@ codein = require("node-codein")
 
 module.exports = (robot) ->
   cache = new HubotCache(robot)
-  GLOBAL._cache = cache
-  
-  robot.hear /josi[,\s]+(.+)/i, (msg) ->
+
+  robot.hear new RegExp("^@?#{HUBOT_JOSI_NICKNAME}[:,]?\\s+(.+)", 'i'), (msg) ->
     real_message = msg.match[1]
     msg.message.text = "#{msg.robot.name} #{real_message}"
-    
-    cache.recordMessage(msg)   
+
+    cache.recordMessage(msg)
     
     unless cache.respondCache(msg) then msg.robot.receive msg.message
   
