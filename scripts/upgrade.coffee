@@ -7,13 +7,6 @@ module.exports = (robot) ->
     @exec = require('child_process').exec
     command = 'restart hubot'
 
-    @exec command, (error, stdout, stderr) ->
-      msg.send error if error
-      msg.send stdout if stdout
-      msg.send stderr if stderr
-
-    command = 'restart hubot'
-
     msg.send 'Goodbye, cruel world...      Hello. My name is O.B. I know kung fu.'
     @exec command, (error, stdout, stderr) ->
       msg.send error if error
