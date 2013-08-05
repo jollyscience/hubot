@@ -12,7 +12,7 @@ module.exports = (robot) ->
       msg.send stdout if stdout
       msg.send stderr if stderr
 
-    # command = 'restart hubot'
+    command = 'restart hubot'
 
     msg.send 'Goodbye, cruel world...      Hello. My name is O.B. I know kung fu.'
     @exec command, (error, stdout, stderr) ->
