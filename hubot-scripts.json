@@ -53,6 +53,7 @@
  "pomodoro.coffee",
  "redis-brain.coffee",
  "reddit-jokes.coffee",
+ "reload.coffee",
  "remind.coffee",
  "responders.coffee",
  "robot-memes.coffee",
