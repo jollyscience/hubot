@@ -15,8 +15,8 @@
 # create codebase project <Full Project Name> - 'New Project created!'
 # delete codebase project <permalink> - 'Permanently delete the project?'
 # create codebase ticket in project <permalink> with summary <summary> - 'New ticket created! Here is the link.'
+# report codebase open tickets in project <permalink> - 'Here are the open tickets I found...'
 # report codebase updates to ticket <ticket_id> in project <permalink> - 'That ticket has XX updates. Here they are...'
-
 
 Codebase = require('node-codebase')
 _ = require('underscore')
@@ -82,6 +82,7 @@ module.exports = (robot) ->
 				msg.send "Oh no! #{errmsg}"
 
 			p = data.project
+			p.overview = 'No Description' if !_.isString(p.overview)
 			msg.send "#{p.name} is an #{p.status} project in the #{p.groupId} group, and is described as #{p.overview}."
 			msg.send "You can visit the project on Codebase here: http://#{baseUrl}/projects/#{p.permalink}"
 		)
@@ -131,6 +132,28 @@ module.exports = (robot) ->
 
 		# 	msg.send JSON.stringify(data)
 		# )
+
+# GET OPEN TICKETS
+	robot.respond /report codebase open tickets in project ([a-z_0-9-]+)/i, (msg) ->
+	# robot.respond /cb report open tix in ([a-z_0-9-]+)/i, (msg) ->
+		p = msg.match[1]
+		msg.send "Okay. I\'ll look up open tickets in #{p}..."
+
+		cb.tickets.allQuery(p, {query: 'resolution:open', page: 1}, (err, data) ->
+			if (err)
+				errmsg = JSON.stringify(data)
+				msg.send "Oh no! #{errmsg}"
+			else
+				r = []
+				msg.send "found some..."
+				tix = data.tickets.ticket
+				for ticket in tix then do (ticket) =>
+					ticket.assignee = 'Unassigned' if !_.isString(ticket.assignee)
+					r.push "##{ticket.ticketId[0]._} (#{ticket.ticketType}) | #{ticket.summary}\n[#{ticket.reporter} -> #{ticket.assignee}]\n---"
+
+				m = r.join('\n')
+				msg.send "Here are the open tickets I found: \n#{m}"
+		)
 
 # GET TICKET UPDATES
 	robot.respond /report codebase updates to ticket ([0-9]+) in project ([a-z_0-9-]+)/i, (msg) ->
