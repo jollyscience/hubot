@@ -15,9 +15,12 @@ module.exports = (robot) ->
   getAmbiguousUserText = (users) ->
     "Be more specific, I know #{users.length} people named like that: #{(user.name for user in users).join(", ")}"
 
+# Who is...?
   robot.respond /who is @?([\w .\-]+)\?*$/i, (msg) ->
     joiner = ', '
     name = msg.match[1].trim()
+
+    msg.send "I am #{robot.name}"
 
     if name is "you"
       msg.send "Who ain't I?"
@@ -82,4 +85,3 @@ module.exports = (robot) ->
         msg.send getAmbiguousUserText users
       else
         msg.send "I don't know anything about #{name}."
-
