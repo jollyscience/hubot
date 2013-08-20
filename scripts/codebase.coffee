@@ -51,7 +51,11 @@ module.exports = (robot) ->
 					else
 						co = user.company.join(', ')
 
-					r.push "#{user.firstName} #{user.lastName} (#{co})"
+					hcuser = robot.brain.userForName(user.firstName + user.lastName)
+
+					console.log hcuser
+
+					r.push "#{user.firstName} #{user.lastName} (#{co}) | #{hcuser}\n"
 
 				msg.send r.join(', ')
 		)
@@ -200,3 +204,9 @@ module.exports = (robot) ->
 		me = msg.message.user.name
 
 		msg.reply "Okay. #{me} I\'ll look for your open tickets..."
+
+# Sync Users
+	robot.respond /sync codebase users/i, (msg) ->
+
+		msg.send "Okay. I\'ll try to synchronize my user records with the Codebase user list..."
+
