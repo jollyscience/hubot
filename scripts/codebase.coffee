@@ -193,3 +193,10 @@ module.exports = (robot) ->
 				msg.send 'Great news! I created a new ticket.'
 				msg.send "The ticket can be found here: http://#{baseUrl}/projects/#{p}/tickets/#{data.ticket.ticketId[0]._} with the summary: #{data.ticket.summary}"
 		)
+
+# MY Stuff
+	robot.respond /report codebase my open tickets in project ([a-z_0-9-]+)/i, (msg) -> 
+		project = msg.match[1]
+		me = msg.message.user.name
+
+		msg.reply "Okay. #{me} I\'ll look for your open tickets..."
