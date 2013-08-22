@@ -6,7 +6,8 @@
 # Configuration:
 #
 # Commands:
-#   hubot <user> has <role> role - Assigns a role to a user
+#   hubot i am <alias> on <context> - adds / updates your alias within the given context
+#   hubot i am not known on <context> - 
 #
 # Notes:
 #
@@ -15,43 +16,127 @@
 # 
 # TODO: Rewrite this to manage users' identity in the robot brain, and allow users to provide **contextual aliases**
 
-TextMessage = require('hubot').TextMessage
-
 module.exports = (robot) ->
 
-  robot.respond /i am ([a-z0-9-]+) on ([a-z0-9-]+)/i, (msg) ->
-    alias = msg.match[1]
-    context = msg.match[2]
-    user = robot.brain.userForName(msg.message.user.name)
-    user.aliases = user.aliases or {}
-    user.aliases[context] = alias
-    msg.send "You are now known as: #{alias} on #{context}"
+# API
+  class Alias
 
-  robot.respond /who am i on ([a-z0-9-]+)/i, (msg) -> 
-    context = msg.match[1]
+    model: (_args) ->
+      {
+        name: _args.name or ''
+        url: _args.url or ''
+        key: _args.key or ''
+      }
 
-    user = robot.brain.userForName(msg.message.user.name)
-    alias = user.aliases[context]
-    if (alias)
-      msg.send "You are #{alias} on #{context}"
-    else
-      msg.send "You are not known in that context."
+    getMe: (msg) ->
+      robot.brain.userForName(msg.message.user.name)
 
-  robot.respond /show aliases/i, (msg) ->
-    theReply = [ ]
-    theReply.push("Here are the aliases I know:")
-    for own key, user of robot.brain.users()
-      if(user.aliases)
+    setAlias: (msg) ->
+      alias = msg.match[1]
+      context = msg.match[2]
+      user = @getMe(msg)
+      user.aliases = user.aliases or {}
+      user.aliases[context] = @model({ name: alias })
+      "You are now known as #{alias} on #{context}"
+
+    updateMyAlias: (msg) ->
+      context = msg.match[1]
+      prop = msg.match[2]
+      val = msg.match[3]
+      user = @getMe(msg)
+      c = user.aliases[context]
+      c[prop] = val
+      "You are now known as #{c.name} on #{context} with #{prop} as #{val}"
+
+    forgetAlias: (msg) ->
+      context = msg.match[1]
+      user = @getMe(msg)
+      user.aliases = user.aliases or {}
+      user.aliases[context] = {}
+      "You are now known as undefined on #{context}"
+
+    getAlias: (msg) ->
+      context = msg.match[1]
+      user = @getMe(msg)
+      alias = user.aliases[context]
+      if (alias)
+        "You are known as #{alias.name} on #{context}"
+      else
+        "You are not known in that context."
+
+    showMyContext: (msg) ->
+      context = msg.match[1]
+      user = @getMe(msg)
+      a = user.aliases[context]
+
+      if (a)
+        astr = JSON.stringify(a)
+        "Here is what I know about the #{context} context:\n#{astr}"
+      else
+        "You are not known in that context."
+
+    listAllAlias: (msg) ->
+      theReply = [ ]
+      theReply.push("Here are the aliases I know:")
+
+      for own key, user of robot.brain.users()
+        if(user.aliases)
+          alist = [ ]
+          for own context, alias of user.aliases
+            alist.push("\'#{alias.name}\' on #{context}")
+          astr = alist.join(', and by ')
+          theReply.push("- #{user.name} goes by #{astr}")
+
+      theReply.join('\n') + "."
+  
+    listMyAlias: (msg) ->
+      user = @getMe(msg)
+      if (user.aliases)
+        theReply = [ ]
+        theReply.push("Here are the ways you are known:")
         alist = [ ]
         for own context, alias of user.aliases
-          alist.push("\'#{alias}\' on #{context}")
+          alist.push("\'#{alias.name}\' on #{context}")
         astr = alist.join(', and by ')
-        theReply.push("- #{user.name} goes by #{astr}")
-    msg.send theReply.join('\n') + "."
-
-  robot.respond /clear aliases/i, (msg) ->
-    for own key, user of robot.brain.users()
+        theReply.push("You are known as #{astr}")
+        theReply.join('\n') + "."
+      else
+        "You don\'t have any aliases."
+  
+    clearMyAliases: (msg) ->
+      user = @getMe(msg)
       user.aliases = {}
-    msg.send "Hope you knew what you were doing!"
-    msg.message.text = "hubot show aliases"
-    msg.robot.receive msg.message
+      "Hope you knew what you were doing!"
+
+# ROUTES
+  robot.respond /i am ([a-z0-9-]+) on ([a-z0-9-]+)/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.setAlias(msg)
+
+  robot.respond /forget me on ([a-z0-9-]+)/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.forgetAlias(msg)
+
+  robot.respond /who am i on ([a-z0-9-]+)/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.getAlias(msg)
+
+  robot.respond /show my alias(es)?/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.listMyAlias(msg)
+
+  robot.respond /show all alias(es)?/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.listAllAlias(msg)
+
+  robot.respond /show my context ([a-z0-9-]+)/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.showMyContext(msg)
+
+  robot.respond /clear my alias(es)?/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.clearMyAliases(msg)
+
+  robot.respond /update context ([a-z0-9-]+) with (key|url|name) ([a-z0-9-]+)/i, (msg) ->
+    robot.alias = robot.alias or new Alias
+    msg.send robot.alias.updateMyAlias(msg)
