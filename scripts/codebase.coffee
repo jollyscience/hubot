@@ -51,15 +51,15 @@ module.exports = (robot) ->
 					else
 						co = user.company.join(', ')
 
-					knownusers = robot.brain.usersForFuzzyName(user.firstName)
 					u = "not found"
+					fuzz = user.firstName.substr(3)
+					knownusers = robot.brain.usersForFuzzyName(fuzz)
 					if knownusers.length is 1
 						u = knownusers[0]
 
 					r.push "#{user.username} | #{user.firstName} #{user.lastName} (#{co}) - #{u}"
       				# robot.brain.emit "new-alias", { context: 'codebase', alias: user }
 					# console.log "USER: " + user
-
 				msg.send r.join('\n')
 		)
 
