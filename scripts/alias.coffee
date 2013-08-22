@@ -44,5 +44,5 @@ module.exports = (robot) ->
     for own key, user of robot.brain.users()
       user.aliases = {}
     msg.send "Hope you knew what you were doing!"
-    msg.message.text = "#{robot.name} show aliases"
+    msg.message.text = "hubot show aliases"
     msg.robot.receive msg.message
