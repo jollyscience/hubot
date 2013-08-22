@@ -7,4 +7,5 @@ export HUBOT_AUTH_ADMIN="245953,245954,246044"
 export PORT="808080"
 process.env['VARIABLE'] = 'value';
 
-bin/hubot --adapter hipchat
+#bin/hubot --adapter hipchat
+bin/hubot
