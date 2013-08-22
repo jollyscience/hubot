@@ -25,8 +25,17 @@ module.exports = (robot) ->
     user = robot.brain.userForName(msg.message.user.name)
     user.aliases = user.aliases or {}
     user.aliases[context] = alias
-    userStr = JSON.stringify(user.aliases)
-    msg.send "You are now known as: #{userStr}"
+    msg.send "You are now known as: #{alias} on #{context}"
+
+  robot.respond /who am i on ([a-z0-9-]+)/i, (msg) -> 
+    context = msg.match[1]
+
+    user = robot.brain.userForName(msg.message.user.name)
+    alias = user.aliases[context]
+    if (alias)
+      msg.send "You are #{alias} on #{context}"
+    else
+      msg.send "You are not known in that context."
 
   robot.respond /show aliases/i, (msg) ->
     theReply = [ ]
