@@ -7,14 +7,17 @@
 #
 # Commands:
 #   hubot i am <alias> on <context> - adds / updates your alias within the given context
-#   hubot i am not known on <context> - 
-#
+#   hubot forget me on <context> - removes your alias from <context>
+#   hubot who am i on <context> - shows your alias on <context>
+#   hubot show my alias(es)? - lists all of your aliases across contexts
+#   hubot show all alias(es)? - lists all users aliases across contexts
+#   hubot show my context <context> - shows your details within the context of <context>
+#   hubot clear my alias(es)? - removes all of your aliases across contexts
+#   hubot update context <context> with (key|url|name) <alias> - updates the details of your <context> with special features, including key and url
 # Notes:
 #
 # Author:
 #   meshachjackson
-# 
-# TODO: Rewrite this to manage users' identity in the robot brain, and allow users to provide **contextual aliases**
 
 module.exports = (robot) ->
 
