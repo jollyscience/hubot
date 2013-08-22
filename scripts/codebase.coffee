@@ -51,20 +51,16 @@ module.exports = (robot) ->
 					else
 						co = user.company.join(', ')
 
-					r.push "#{user.username} | #{user.firstName} #{user.lastName} (#{co})"
+					knownusers = robot.brain.usersForFuzzyName(user.firstName)
+					u = "not found"
+					if knownusers.length is 1
+						u = knownusers[0]
 
-					user.fullname = user.firstName + user.lastName
-					msg.send user.fullname
-					knownusers = robot.brain.usersForFuzzyName(user.fullname)
-					msg.send "KnownUsers: " + JSON.stringify(knownusers)
-
-					# if knownusers.length is 1
-					# 	u = knownusers[0]
-					# 	msg.send "Found user - #{u}"
+					r.push "#{user.username} | #{user.firstName} #{user.lastName} (#{co}) - #{u}"
       				# robot.brain.emit "new-alias", { context: 'codebase', alias: user }
 					# console.log "USER: " + user
 
-				# msg.send r.join('\n')
+				msg.send r.join('\n')
 		)
 
 # REPORT ALL ACTIVITY
