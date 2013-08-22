@@ -51,9 +51,18 @@ module.exports = (robot) ->
 					else
 						co = user.company.join(', ')
 
-					r.push "#{user.firstName} #{user.lastName} (#{co})"
+					r.push "#{user.username} | #{user.firstName} #{user.lastName} (#{co})"
 
-				msg.send r.join('\n')
+					user.fullname = user.firstName + user.lastName
+					msg.send user.fullname
+					knownusers = robot.brain.usersForFuzzyName(user.fullname.trim())
+					if knownusers.length is 1
+						u = knownusers[0]
+						msg.send "Found user - #{u}"
+      				# robot.brain.emit "new-alias", { context: 'codebase', alias: user }
+					# console.log "USER: " + user
+
+				# msg.send r.join('\n')
 		)
 
 # REPORT ALL ACTIVITY
@@ -198,5 +207,7 @@ module.exports = (robot) ->
 	robot.respond /report codebase my open tickets in project ([a-z_0-9-]+)/i, (msg) -> 
 		project = msg.match[1]
 		me = msg.message.user.name
+		user = robot.brain.userForName(me)
 
 		msg.reply "Okay. #{me} I\'ll look for your open tickets..."
+		console.log user
