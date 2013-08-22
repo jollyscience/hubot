@@ -55,10 +55,12 @@ module.exports = (robot) ->
 
 					user.fullname = user.firstName + user.lastName
 					msg.send user.fullname
-					knownusers = robot.brain.usersForFuzzyName(user.fullname.trim())
-					if knownusers.length is 1
-						u = knownusers[0]
-						msg.send "Found user - #{u}"
+					knownusers = robot.brain.usersForFuzzyName(user.fullname)
+					msg.send "KnownUsers: " + JSON.stringify(knownusers)
+
+					# if knownusers.length is 1
+					# 	u = knownusers[0]
+					# 	msg.send "Found user - #{u}"
       				# robot.brain.emit "new-alias", { context: 'codebase', alias: user }
 					# console.log "USER: " + user
 
