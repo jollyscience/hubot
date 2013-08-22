@@ -31,36 +31,37 @@ module.exports = (robot) ->
         key: _args.key or ''
       }
 
-    getUserAlias: (msg) ->
-      user = robot.brain.userForName(msg.message.user.name)
-      user.aliases = user.aliases or {}
+    getMe: (msg) ->
+      robot.brain.userForName(msg.message.user.name)
 
     setAlias: (msg) ->
       alias = msg.match[1]
       context = msg.match[2]
-      aliases = @getUserAlias(msg)      
-      aliases[context] = @model({ name: alias })
+      user = @getMe(msg)
+      user.aliases = user.aliases or {}
+      user.aliases[context] = @model({ name: alias })
       "You are now known as #{alias} on #{context}"
 
     updateMyAlias: (msg) ->
       context = msg.match[1]
       prop = msg.match[2]
       val = msg.match[3]
-      aliases = @getUserAlias(msg)      
-      c = aliases[context]
+      user = @getMe(msg)
+      c = user.aliases[context]
       c[prop] = val
       "You are now known as #{c.name} on #{context} with #{prop} as #{val}"
 
     forgetAlias: (msg) ->
       context = msg.match[1]
-      aliases = @getUserAlias(msg)      
-      aliases[context] = {}
+      user = @getMe(msg)
+      user.aliases = user.aliases or {}
+      user.aliases[context] = {}
       "You are now known as undefined on #{context}"
 
     getAlias: (msg) ->
       context = msg.match[1]
-      aliases = @getUserAlias(msg)      
-      alias = aliases[context]
+      user = @getMe(msg)
+      alias = user.aliases[context]
       if (alias)
         "You are known as #{alias.name} on #{context}"
       else
@@ -68,8 +69,8 @@ module.exports = (robot) ->
 
     showMyContext: (msg) ->
       context = msg.match[1]
-      aliases = @getUserAlias(msg)      
-      a = aliases[context]
+      user = @getMe(msg)
+      a = user.aliases[context]
 
       if (a)
         astr = JSON.stringify(a)
@@ -92,12 +93,12 @@ module.exports = (robot) ->
       theReply.join('\n') + "."
   
     listMyAlias: (msg) ->
-      aliases = @getUserAlias(msg)      
-      if (aliases)
+      user = @getMe(msg)
+      if (user.aliases)
         theReply = [ ]
         theReply.push("Here are the ways you are known:")
         alist = [ ]
-        for own context, alias of aliases
+        for own context, alias of user.aliases
           alist.push("\'#{alias.name}\' on #{context}")
         astr = alist.join(', and by ')
         theReply.push("You are known as #{astr}")
@@ -106,7 +107,8 @@ module.exports = (robot) ->
         "You don\'t have any aliases."
   
     clearMyAliases: (msg) ->
-      aliases = @getUserAlias(msg)      
+      user = @getMe(msg)
+      user.aliases = {}
       "Hope you knew what you were doing!"
 
 # ROUTES
@@ -141,3 +143,7 @@ module.exports = (robot) ->
   robot.respond /update context ([a-z0-9-]+) with (key|url|name) ([a-z0-9-]+)/i, (msg) ->
     robot.alias = robot.alias or new Alias
     msg.send robot.alias.updateMyAlias(msg)
+
+  robot.on "new-alias", (alias) ->
+    console.log "You have a new alias!"
+    console.log alias
