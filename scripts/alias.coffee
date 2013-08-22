@@ -143,3 +143,7 @@ module.exports = (robot) ->
   robot.respond /update context ([a-z0-9-]+) with (key|url|name) ([a-z0-9-]+)/i, (msg) ->
     robot.alias = robot.alias or new Alias
     msg.send robot.alias.updateMyAlias(msg)
+
+  robot.on "new-alias", (alias) ->
+    console.log "You have a new alias!"
+    console.log alias
