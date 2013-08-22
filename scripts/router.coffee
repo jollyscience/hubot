@@ -13,7 +13,7 @@
 #   meshachjackson
 
 module.exports = (robot) ->
-  robot.router.post '/chat/:room', (req, res) ->
+  robot.router.get '/chat/:room', (req, res) ->
     room = req.params.room
     data = JSON.parse req.body.payload
     secret = data.secret
