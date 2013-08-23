@@ -16,5 +16,6 @@ module.exports = (robot) ->
   robot.router.get '/hubot/ping', (req, res) ->
     res.send('pong')
 
-  robot.topic (msg) ->
-  	msg.send "Hey!"
+  robot.respond /set topic to ([a-z 0-9-_]+)/i, (msg) ->
+  	msg.topic "sometopic"
+  	msg.send "topic!"
