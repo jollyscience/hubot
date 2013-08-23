@@ -18,15 +18,17 @@ module.exports = (robot) ->
 
   robot.respond /make me laugh/i, (msg) ->
   	msg.send "Knock knock"
-  	msg.waitResponse (robot) ->
+  	msg.waitResponse (msg) ->
   		answer = "who\'s there?"
-  		if robot.match[1] != answer
+  		if msg.match[1] != answer
 	  		msg.send "Awe... You are supposed to say \"#{answer}\""
 	  	else
 	  		msg.send "Banana"
-		  	msg.waitResponse (robot) ->
+		  	msg.waitResponse (msg) ->
 		  		answer = "banana who?"
-		  		if robot.match[1] != answer
+		  		if msg.match[1] != answer
 		  			msg.send "Dude. Have you really never seen how this is done?"
 		  		else
-		  			msg.send "Yay. You made it to the end. Now there are exactly ZERO more knock knock jokes in the world."
+		  			msg.send "Yay. You made it to the end. Now there are exactly ZERO more knock knock jokes in the world. Here's a penguin."
+		  			msg.message.text = "#{robot.name} animate me psycho penguin"
+		  			robot.receive msg.message

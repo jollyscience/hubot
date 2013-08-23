@@ -201,13 +201,32 @@ module.exports = (robot) ->
 		)
 
 # MY Stuff
-	robot.respond /report codebase my open tickets in project ([a-z_0-9-]+)/i, (msg) -> 
-		project = msg.match[1]
-		me = msg.message.user.name
-		user = robot.brain.userForName(me)
-		if user.aliases.codebase
-			# robot.brain.codebase.users[user.aliases.codebase.name] = user
-			msg.send "Okay #{me}, I\'ll look for your open tickets as #{user.aliases.codebase.name}..."
+	robot.respond /show my open codebase tickets/i, (msg) ->
+		msg.send "Sure. Which project?"
+		msg.waitResponse (msg) ->
+			project = msg.match[1]
+			msg.send "Okay. I will check project #{project} for your open tickets. Now what is your user name?"
+			msg.waitResponse (msg) ->
+				username = msg.match[1]
+				msg.send "Okay #{username}. I will check #{project} for your open tickets."
+				msg.send "Just kidding."
+
+	robot.respond /codebase report/i, (msg) ->
+		user = robot.brain.userForName(msg.message.user.name)
+		if user
+			msg.send "Okay, #{user.name}. Would you like to hear about <activity>, or a specific <project>?"
+			msg.waitResponse (msg) ->
+				answer = msg.match[1]
+				if (answer == "activity")
+					msg.send "Okay. I will check on the activity."
+				else if (answer == "project")
+					msg.send "Okay. Which project?"
+				else
+					msg.send "Uh... you\'re confusing..."
+					msg.message.text = "hubot image me confused penguin"
+					robot.receive msg.message
 		else
-			msg.send "You do not have a codebase alias set. You should set one."
-		console.log user
+			msg.send "Woah. What is your codebase username?"
+			msg.waitResponse (msg) ->
+				username = msg.match[1]
+				msg.send = "Ok, #{username}"
