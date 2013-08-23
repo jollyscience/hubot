@@ -17,6 +17,4 @@ module.exports = (robot) ->
     res.send('pong')
 
   robot.respond /knock knock/i, (msg) ->
-  	msg.send "who is there?"
-	robot.waitResponse (msg) -> 
-		console.log msg
+  	msg.topic "Joke Time!"
