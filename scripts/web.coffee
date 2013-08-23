@@ -31,4 +31,4 @@ module.exports = (robot) ->
 		  		else
 		  			msg.send "Yay. You made it to the end. Now there are exactly ZERO more knock knock jokes in the world. Here's a penguin."
 		  			msg.message.text = "#{robot.name} animate me psycho penguin"
-		  			robot.receive msg.message
+		  			robot.origReceive msg.message
