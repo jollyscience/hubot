@@ -1,5 +1,4 @@
 [
- "achievement_unlocked.coffee",
  "ambush.coffee",
  "ascii.coffee",
  "applause.coffee",
@@ -10,8 +9,6 @@
  "base58.coffee",
  "base64.coffee",
  "birthday.coffee",
- "bitbucket.coffee",
- "bitbucket-activity.coffee",
  "brb.coffee",
  "chat.coffee",
  "cheer.coffee",
