@@ -18,3 +18,6 @@ module.exports = (robot) ->
 
   robot.respond /knock knock/i, (msg) ->
   	msg.topic "Joke Time!"
+  	msg.send "Who is there?"
+  	msg.waitResponse (msg) ->
+  		msg.send "huh?"
