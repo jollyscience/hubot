@@ -205,6 +205,9 @@ module.exports = (robot) ->
 		project = msg.match[1]
 		me = msg.message.user.name
 		user = robot.brain.userForName(me)
-
-		msg.reply "Okay. #{me} I\'ll look for your open tickets..."
+		if user.aliases.codebase
+			# robot.brain.codebase.users[user.aliases.codebase.name] = user
+			msg.send "Okay #{me}, I\'ll look for your open tickets as #{user.aliases.codebase.name}..."
+		else
+			msg.send "You do not have a codebase alias set. You should set one."
 		console.log user
