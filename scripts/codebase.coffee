@@ -27,6 +27,8 @@ module.exports = (robot) ->
 	apiUrl = process.env.HUBOT_CODEBASE_APIURL || 'api3.codebasehq.com'
 	auth = process.env.HUBOT_CODEBASE_APIAUTH || 'jollyscience/jollyscience:3kqo5bdat3uln2bnv90mvvti1stuonjg99bnz1p4'
 
+	robot.brain.codebase = robot.brain.codebase or {}
+
 	cb = new Codebase(
 		apiUrl, auth
 	)
@@ -36,6 +38,7 @@ module.exports = (robot) ->
 # REPORT USERS
 	robot.respond /report codebase users/i, (msg) ->
 		msg.send 'Okay. I\'ll go get a list of all Codebase users...'
+		robot.brain.codebase.users = robot.brain.codebase.users or {}
 
 		cb.users.all( (err, data) ->
 			if (err)
@@ -52,17 +55,11 @@ module.exports = (robot) ->
 						co = user.company.join(', ')
 
 					r.push "#{user.username} | #{user.firstName} #{user.lastName} (#{co})"
-
-					user.fullname = user.firstName + user.lastName
-					msg.send user.fullname
-					knownusers = robot.brain.usersForFuzzyName(user.fullname.trim())
-					if knownusers.length is 1
-						u = knownusers[0]
-						msg.send "Found user - #{u}"
-      				# robot.brain.emit "new-alias", { context: 'codebase', alias: user }
-					# console.log "USER: " + user
-
-				# msg.send r.join('\n')
+					# set the username in the codebase.users object, and store the data
+					robot.brain.codebase.users[user.username] = user
+				msg.send r.join('\n')
+				# emitting an event so we can capture the data elsewhere
+				robot.brain.emit "alias_context_update", { context: "codebase", source: "users", key: "username", msg: msg }
 		)
 
 # REPORT ALL ACTIVITY

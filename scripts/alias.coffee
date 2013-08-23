@@ -144,6 +144,7 @@ module.exports = (robot) ->
     robot.alias = robot.alias or new Alias
     msg.send robot.alias.updateMyAlias(msg)
 
-  robot.on "new-alias", (alias) ->
-    console.log "You have a new alias!"
-    console.log alias
+# listeners
+  robot.brain.on "alias_context_update", (args) ->
+    robot.alias = robot.alias or new Alias
+    args.msg.send "NEW ALIAS!\nTODO: store the users in the default \'cache\' location, to avoid double-storage.\nTODO: check for cached results before checking the api (BUT STILL EMIT EVENTS)\nTODO: sync users from HipChat with the users on Codebase, so we can begin to link identities."
