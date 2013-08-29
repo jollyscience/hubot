@@ -11,8 +11,7 @@
 
 Codebase = require('node-codebase')
 
-## TODO: Fix this. The issue is here: http://visionmedia.github.io/mocha/#getting-started
-
-assert = require('assert')
-
 module.exports = (robot) ->
+	
+	robot.respond /cb ping/, (msg) ->
+		msg.send "PONG"
