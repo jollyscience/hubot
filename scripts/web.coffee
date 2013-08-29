@@ -29,7 +29,5 @@ module.exports = (robot) ->
 		  		if msg.match[1] != answer
 		  			msg.send "Dude. Have you really never seen how this is done?"
 		  		else
-		  			msg.send "Yay. You made it to the end. Now there are exactly ZERO more knock knock jokes in the world. Here's a penguin."
-		  			console.log msg.message
-		  			msg.message.text = "#{robot.name} animate me psycho penguin"
+		  			msg.message.text = "#{robot.name} animate me banana"
 		  			robot.receive msg.message
