@@ -1,11 +1,9 @@
 [
  "ambush.coffee",
+ "conversation.coffee",
  "eardropping.coffee",
  "redis-brain.coffee",
  "reddit-jokes.coffee",
  "remind.coffee",
- "responders.coffee",
- "script.coffee",
- "secrets.coffee",
  "wikipedia.coffee"
 ]
