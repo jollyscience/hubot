@@ -22,5 +22,5 @@ module.exports = (robot) ->
 
     robot.messageRoom room, "New Harvest Project! #{msg}"
 
-	res.writeHead 204, { 'Content-Length': 0 }
+    res.writeHead 204, { 'Content-Length': 0 }
     res.end()
