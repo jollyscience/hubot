@@ -13,9 +13,7 @@
 #   meshachjackson
 
 module.exports = (robot) ->
-  robot.router.get '/josi/harvest/project/new', (req, res) ->
+  robot.router.post '/josi/harvest/project/new', (req, res) ->
     room = "180403"
     data = JSON.parse req.body.payload
-    robot.messageRoom "New Harvest Project! #{data}"
-    res.send "Thanks!"
-    res.send data
+    robot.messageRoom room, "New Harvest Project! #{data}"
