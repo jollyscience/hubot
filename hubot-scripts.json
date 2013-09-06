@@ -1,6 +1,5 @@
 [
  "ambush.coffee",
- "announce.coffee",
  "eardropping.coffee",
  "redis-brain.coffee",
  "remind.coffee",
