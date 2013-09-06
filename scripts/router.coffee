@@ -16,5 +16,8 @@ module.exports = (robot) ->
   robot.router.post '/josi/harvest/project/new', (req, res) ->
     room = "180403"
     data = JSON.parse req.body.payload
+    
     robot.messageRoom room, "New Harvest Project! #{data}"
-    res.end
+	
+	res.writeHead 204, { 'Content-Length': 0 }
+    res.end()
