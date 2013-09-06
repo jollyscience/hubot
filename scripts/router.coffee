@@ -17,3 +17,5 @@ module.exports = (robot) ->
     room = "180403"
     data = JSON.parse req.body.payload
     robot.messageRoom "New Harvest Project! #{data}"
+    res.send "Thanks!"
+    res.send data
