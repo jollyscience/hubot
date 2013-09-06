@@ -27,7 +27,8 @@
     "mustache": "*",
     "randpass": "*",
     "mongodb": "*",
-    "node-codein": "*"
+    "node-codein": "*",
+    "josi-speech": "*"
   },
   "engines": {
     "node": ">= 0.8.x",

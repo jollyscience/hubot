@@ -1,9 +1,7 @@
 [
  "ambush.coffee",
  "announce.coffee",
- "conversation.coffee",
  "eardropping.coffee",
- "polite.coffee",
  "redis-brain.coffee",
  "remind.coffee",
  "wikipedia.coffee"
