@@ -28,6 +28,9 @@
     "randpass": "*",
     "mongodb": "*",
     "node-codein": "*",
+    "josi-admin": "*",
+    "josi-plan": "*",
+    "josi-memory": "*",
     "josi-speech": "*"
   },
   "engines": {
