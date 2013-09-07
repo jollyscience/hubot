@@ -1,6 +1,10 @@
 [
+	"josi-access",
 	"josi-admin",
 	"josi-memory",
 	"josi-plan",
-	"josi-speech"
+	"josi-routes",
+	"josi-seek",
+	"josi-speech",
+	"josi-team"
 ]
