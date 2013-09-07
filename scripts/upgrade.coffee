@@ -6,8 +6,8 @@ module.exports = (robot) ->
   robot.respond /(upgrade|reboot|restart|power up|level up|learn)$/i, (msg) ->
 
     @exec = require('child_process').exec
-    command = 'stop hubot'
-    msg.send 'Goodbye, cruel world...      Hello. My name is O.B. I know kung fu.'
+    command = 'restart hubot'
+    msg.send 'Goodbye, cruel world...'
 
     @exec command, (error, stdout, stderr) ->
       msg.send error if error
