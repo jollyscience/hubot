@@ -29,13 +29,13 @@
     "mongodb": "*",
     "node-codein": "*",
     "josi-access": "0.0.2",
-    "josi-admin": "0.0.2",
     "josi-memory": "0.0.2",
     "josi-plan": "0.0.2",
     "josi-routes": "0.0.2",
-    "josi-seek": "0.0.2",
     "josi-speech": "0.0.2",
-    "josi-team": "0.0.2"
+    "josi-team": "0.0.2",
+    "node-codebase": "*",
+    "underscore": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
