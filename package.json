@@ -28,9 +28,12 @@
     "randpass": "*",
     "mongodb": "*",
     "node-codein": "*",
+    "josi-access": "0.0.1",
     "josi-admin": "0.0.1a",
     "josi-memory": "0.0.1a",
     "josi-plan": "0.0.1",
+    "josi-team": "0.0.1",
+    "josi-routes": "0.0.1",
     "josi-speech": "0.0.1a"
   },
   "engines": {
