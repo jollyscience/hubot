@@ -28,10 +28,10 @@
     "randpass": "*",
     "mongodb": "*",
     "node-codein": "*",
-    "josi-admin": "*",
-    "josi-plan": "*",
-    "josi-memory": "*",
-    "josi-speech": "*"
+    "josi-admin": "0.0.1",
+    "josi-memory": "0.0.1",
+    "josi-plan": "0.0.1",
+    "josi-speech": "0.0.1"
   },
   "engines": {
     "node": ">= 0.8.x",
