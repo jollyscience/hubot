@@ -3,6 +3,7 @@
 # upgrade|reboot|restart|power up|level up|learn.
 
 module.exports = (robot) ->
+
   robot.respond /(upgrade|reboot|restart|power up|level up|learn)$/i, (msg) ->
 
     @exec = require('child_process').exec
