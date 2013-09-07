@@ -31,7 +31,7 @@
     "josi-admin": "0.0.1",
     "josi-memory": "0.0.1a",
     "josi-plan": "0.0.1",
-    "josi-speech": "0.0.1"
+    "josi-speech": "0.0.1a"
   },
   "engines": {
     "node": ">= 0.8.x",
