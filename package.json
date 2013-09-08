@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "hubot": ">= 2.5.1",
-    "hubot-scripts": ">= 2.4.3",
+    "hubot-scripts": "2.5.6",
     "hubot-hipchat": "~2.5.1-1",
     "mkdirp": "*",
     "mustache": "*",
