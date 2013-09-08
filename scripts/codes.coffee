@@ -9,7 +9,7 @@
 
 module.exports = (robot) ->
 
-  robot.respond /code (red|blue|green|yellow) say (.+?)$/i, (msg) ->
+  robot.respond /code (red|yellow|green|gray|purple|random) say (.+?)$/i, (msg) ->
     url = "http://jollyscience.info:5555/hubot/hipchat?room_id=#{msg.message.room}&from=#{msg.message.user.name}&message=#{msg.match[2]}&color=#{msg.match[1]}"
     msg.http(url)
     .query()
