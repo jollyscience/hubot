@@ -27,7 +27,18 @@
     "mustache": "*",
     "randpass": "*",
     "mongodb": "*",
-    "node-codein": "*"
+    "node-codein": "*",
+    "cleverbot-node": "0.1.1",
+    "josi-access": "0.0.2",
+    "josi-auth": "0.0.1",
+    "josi-memory": "0.0.2a",
+    "josi-plan": "0.0.2a",
+    "josi-routes": "0.0.2",
+    "josi-seek": "*",
+    "josi-speech": "0.0.2",
+    "josi-team": "0.0.2",
+    "node-codebase": "*",
+    "underscore": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
