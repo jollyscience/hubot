@@ -1,164 +1,113 @@
 # Hubot
 
-<<<<<<< HEAD
-WARNING: This is Jolly Science's version of Hubot. It is configured for the Jolly Science environments and systems. 
+## Getting Started With Hubot
 
-## 'min'
+You will need [node.js](nodejs.org/) and [npm](https://npmjs.org/). Joyent has
+an [excellent blog post on how to get those installed](http://joyent.com/blog/installing-node-and-npm), so we'll omit those details here.
 
-This branch is being used to establish the base-level of functionality for JoSi. Think of this as "JoSi-lite". She handles all of the basic conversational and memory tasks, but has no complex configuration, and no dangerous access points. She is totally polite, stable, and harmless.
+Once node and npm are ready, we can install hubot and coffeescript:
 
-## 'max'
-=======
-## Playing with Hubot
->>>>>>> 2696141eb44070548df9ccf6e6e33b1840f21589
+    % npm install -g hubot coffee-script
 
-This branch will be everything that works. This is a stable, but full-featured. Dangerous, but specific. It's highly-customized to the Jolly Science environment, members, and processes. It's the library of all things JoSi. When she uses this branch, she's Cruella Deville.
+This will give us the `hubot` command, which is used for running a hubot, and more importantly now, generating your own hubot. The name of the new bot is
+the last argument, and will be created in the directory of the same name. For
+example, to create a new bot named myhubot:
 
-## 'master'
+    % hubot --create myhubot
 
-This is the default state for JoSi. Unless otherwise directed, she should always wake up on master. So should her children.
+If you are using git, the generated directory includes a .gitignore, so you can
+initialize and add everything:
 
-## 'develop'
+    % cd myhubot
+    % git init
+    % git add .
+    % git commit -m "Initial commit"
 
-This is the branch used for the engineers behind JoSi to work on her.
-
-<<<<<<< HEAD
-## 'hubot'
-
-This is the branch that only Hubot pays attention to.
-=======
-```coffeescript
-module.exports = (robot) ->
-  robot.router.get "/hubot/version", (req, res) ->
-    res.end robot.version
-```
-
-There are functions for GET, POST, PUT and DELETE, which all take a route and
-callback function that accepts a request and a response.
-
-### Redis
-
-If you are going to use the `redis-brain.coffee` script from `hubot-scripts`
-you will need to add the Redis to Go addon on Heroku which requires a verified
-account or you can create an account at [Redis to Go][redistogo] and manually
-set the `REDISTOGO_URL` variable.
-
-    % heroku config:add REDISTOGO_URL="..."
-
-If you don't require any persistence feel free to remove the
-`redis-brain.coffee` from `hubot-scripts.json` and you don't need to worry
-about redis at all.
-
-[redistogo]: https://redistogo.com/
-
-### Testing Hubot Locally
-
-You can test your hubot by running the following.
+You now have your own functional hubot! There's a `bin/hubot`
+command for convenience, to handle installing npm dependencies, loading scripts,
+and then launching your hubot.
 
     % bin/hubot
-
-You'll see some start up output about where your scripts come from and a
-prompt.
-
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading adapter shell
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading scripts from /home/tomb/Development/hubot/scripts
-    [Sun, 04 Dec 2011 18:41:11 GMT] INFO Loading scripts from /home/tomb/Development/hubot/src/scripts
     Hubot>
 
-Then you can interact with hubot by typing `hubot help`.
+This starts hubot using the [shell adapter](adapters/shell.md), which
+is mostly useful for development. Make note of  `Hubot>`; this is the name he'll
+`respond` to with commands. For example, to list available commands:
 
-    Hubot> hubot help
+    % bin/hubot
+    Hubot> hubot: help
+    hubot <keyword> tweet - Returns a link to a tweet about <keyword>
+    hubot <user> is a badass guitarist - assign a role to a user
+    hubot <user> is not a badass guitarist - remove a role from a user
+    hubot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
+    hubot convert me <expression> to <units> - Convert expression to given units.
+    hubot die - End hubot process
+    hubot echo <text> - Reply back with <text>
+    hubot fake event <event> - Triggers the <event> event for debugging reasons
+    hubot help - Displays all of the help commands that Hubot knows about.
+    hubot help <query> - Displays all help commands that match <query>.
+    hubot image me <query> - The Original. Queries Google Images for <query> and returns a random top result.
+    hubot map me <query> - Returns a map view of the area returned by `query`.
+    hubot math me <expression> - Calculate the given expression.
+    hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+    hubot mustache me <url> - Adds a mustache to the specified URL.
+    hubot ping - Reply with pong
+    hubot show storage - Display the contents that are persisted in the brain
+    hubot show users - Display all users that hubot knows about
+    hubot the rules - Make sure hubot still knows the rules.
+    hubot time - Reply with current time
+    hubot translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
+    hubot translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
+    hubot who is <user> - see what roles a user has
+    hubot youtube me <query> - Searches YouTube for the query and returns the video embed link.
+    pug bomb N - get N pugs
+    pug me - Receive a pug
+    ship it - Display a motivation squirrel
 
-    Hubot> animate me <query> - The same thing as `image me`, except adds a few
-    convert me <expression> to <units> - Convert expression to given units.
-    help - Displays all of the help commands that Hubot knows about.
-    ...
+You almost definitely will want to change his name to give him some more character. bin/hubot takes a `--name`:
 
-Take a look at the scripts in the `./scripts` folder for examples.
-Delete any scripts you think are silly.  Add whatever functionality you
-want hubot to have.
+    % bin/hubot --name myhubot
+    myhubot>
+
+Your hubot will now respond as `myhubot`. This is
+case-insensitive, and can be prefixed with `@` or suffixed with `:`. These are equivalent:
+
+    MYHUBOT help
+    myhubot help
+    @myhubot help
+    myhubot: help
+
+## Scripting
+
+Hubot's power comes through scripting. Read [docs/scripting.md](scripting.md) for the deal on bending hubot to your will using code.
+
+There are many community-contributed scripts available through [hubot-scripts](https://github.com/github/hubot-scripts). To use scripts from it:
+
+* Make sure `hubot-scripts` is listed as a dependency in `package.json` (it should by default)
+* Update `hubot-scripts.json` to include the script you want in the list. Make sure the file is still valid JSON!
+* Review the script to see if there's dependencies or configuration to add
+
+In addition, there are scripts released as npm packages. If you find one you want to use:
+
+1. Add the package to the list of `dependencies` into your `package.json`
+2. `npm install` to make sure its installed
+
+**Please note that external scripts may become the default for hubot scripts in future releases.**
 
 ## Adapters
 
-Adapters are the interface to the service you want your hubot to run on. This
-can be something like Campfire or IRC. There are a number of third party
-adapters that the community have contributed. Check the
-[hubot wiki][hubot-wiki] for the available ones.
+Hubot uses the adapter pattern to support multiple chat-backends. Read available adapters in [docs/adapters.md](adapters.md), along with how to configure them.
 
-If you would like to run a non-Campfire or shell adapter you will need to add
-the adapter package as a dependency to the `package.json` file in the
-`dependencies` section.
+## Deploying
 
-Once you've added the dependency and run `npm install` to install it you can
-then run hubot with the adapter.
+You can deploy hubot to Heroku, which is the officially supported method.
+Additionally you are able to deploy hubot to a UNIX-like system or Windows.
+Please note the support for deploying to Windows isn't officially supported.
 
-    % bin/hubot -a <adapter>
+* [Deploying Hubot onto Heroku](deploying/heroku.md)
+* [Deploying Hubot onto UNIX](deploying/unix.md)
+* [Deploying Hubot onto Windows](deploying/windows.md)
 
-Where `<adapter>` is the name of your adapter without the `hubot-` prefix.
+## Patterns
 
-[hubot-wiki]: https://github.com/github/hubot/wiki
-
-## hubot-scripts
-
-There will inevitably be functionality that everyone will want. Instead
-of adding it to hubot itself, you can submit pull requests to
-[hubot-scripts][hubot-scripts].
-
-To enable scripts from the hubot-scripts package, add the script name with
-extension as a double quoted string to the `hubot-scripts.json` file in this
-repo.
-
-[hubot-scripts]: https://github.com/github/hubot-scripts
-
-## external-scripts
-
-Tired of waiting for your script to be merged into `hubot-scripts`? Want to
-maintain the repository and package yourself? Then this added functionality
-maybe for you!
-
-Hubot is now able to load scripts from third-party `npm` packages! To enable
-this functionality you can follow the following steps.
-
-1. Add the packages as dependencies into your `package.json`
-2. `npm install` to make sure those packages are installed
-
-To enable third-party scripts that you've added you will need to add the package
-name as a double quoted string to the `external-scripts.json` file in this repo.
-
-## Deployment
-
-    % heroku create --stack cedar
-    % git push heroku master
-    % heroku ps:scale app=1
-
-If your Heroku account has been verified you can run the following to enable
-and add the Redis to Go addon to your app.
-
-    % heroku addons:add redistogo:nano
-
-If you run into any problems, checkout Heroku's [docs][heroku-node-docs].
-
-You'll need to edit the `Procfile` to set the name of your hubot.
-
-More detailed documentation can be found on the
-[deploying hubot onto Heroku][deploy-heroku] wiki page.
-
-### Deploying to UNIX or Windows
-
-If you would like to deploy to either a UNIX operating system or Windows.
-Please check out the [deploying hubot onto UNIX][deploy-unix] and
-[deploying hubot onto Windows][deploy-windows] wiki pages.
-
-[heroku-node-docs]: http://devcenter.heroku.com/articles/node-js
-[deploy-heroku]: https://github.com/github/hubot/wiki/Deploying-Hubot-onto-Heroku
-[deploy-unix]: https://github.com/github/hubot/wiki/Deploying-Hubot-onto-UNIX
-[deploy-windows]: https://github.com/github/hubot/wiki/Deploying-Hubot-onto-Windows
-
-[hubot-wiki]: https://github.com/github/hubot/wiki
-
-## Restart the bot
-
-    sudo restart hubot
-    sudo start hubot
-    sudo stop hubot
->>>>>>> 2696141eb44070548df9ccf6e6e33b1840f21589
+Using custom scripts, you can quickly customize Hubot to be the most life embettering robot he can be. Read [docs/patterns.md](patterns.md) for some nifty tricks that may come in handy as you teach him new skills.
