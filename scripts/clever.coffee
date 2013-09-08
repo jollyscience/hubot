@@ -19,6 +19,7 @@ module.exports = (robot) ->
 
   robot.catchAll (msg) ->
     if (robot.name != msg.message.user.name && !(new RegExp("^#{robot.name}", "i").test(msg.match)))
+        console.log '--caught--'
         sessionKey = if msg.message.room then msg.message.room else msg.message.user.name
         if not bot_sessions[sessionKey]?
             bot_sessions[sessionKey] = new cleverbot()
