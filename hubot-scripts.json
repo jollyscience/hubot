@@ -1,1 +1,14 @@
-[]
+[
+	"announce.coffee",
+	"ambush.coffee",
+	"auth.coffee",
+	"birthday.coffee",
+	"chat.coffee",
+	"cheer.coffee",
+	"conversation.coffee",
+	"encourage.coffee",
+	"polite.coffee",
+	"redis-brain.coffee",
+	"karma.coffee",
+	"points.coffee"
+]
