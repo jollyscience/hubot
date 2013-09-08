@@ -10,5 +10,6 @@
 	"polite.coffee",
 	"redis-brain.coffee",
 	"karma.coffee",
-	"points.coffee"
+	"points.coffee",
+	"update.coffee"
 ]
