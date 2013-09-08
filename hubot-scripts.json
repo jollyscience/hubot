@@ -7,8 +7,11 @@
 	"cheer.coffee",
 	"conversation.coffee",
 	"encourage.coffee",
+	"hipchat-api.coffee",
 	"polite.coffee",
 	"redis-brain.coffee",
+	"setenv.coffee",
+	"script.coffee",
 	"karma.coffee",
 	"points.coffee",
 	"update.coffee"
