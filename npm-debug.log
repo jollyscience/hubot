@@ -69,26 +69,26 @@
 37 verbose parsed url   href: '~2.5.1-1' }
 38 verbose addNamed [ 'hubot-hipchat', '~2.5.1-1' ]
 39 verbose addNamed [ null, '>=2.5.1-1 <2.6.0-' ]
-40 verbose already installed skipping mustache@* /Users/meshachjackson/cita/josi
-41 verbose already installed skipping mkdirp@* /Users/meshachjackson/cita/josi
+40 verbose already installed skipping mkdirp@* /Users/meshachjackson/cita/josi
+41 verbose already installed skipping mustache@* /Users/meshachjackson/cita/josi
 42 silly lockFile 1520376f-hubot-hipchat-2-5-1-1 hubot-hipchat@~2.5.1-1
 43 verbose lock hubot-hipchat@~2.5.1-1 /Users/meshachjackson/.npm/1520376f-hubot-hipchat-2-5-1-1.lock
-44 silly addNameRange { name: 'hubot-hipchat',
-44 silly addNameRange   range: '>=2.5.1-1 <2.6.0-',
-44 silly addNameRange   hasData: false }
-45 verbose already installed skipping randpass@* /Users/meshachjackson/cita/josi
-46 verbose url raw hubot-hipchat
-47 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-hipchat' ]
-48 verbose url resolved https://registry.npmjs.org/hubot-hipchat
-49 info trying registry request attempt 1 at 03:27:42
-50 verbose etag "EKTX4JXBWFSTHW2NN8T6EPZK0"
-51 http GET https://registry.npmjs.org/hubot-hipchat
-52 verbose already installed skipping cleverbot-node@0.1.1 /Users/meshachjackson/cita/josi
+44 verbose already installed skipping randpass@* /Users/meshachjackson/cita/josi
+45 silly addNameRange { name: 'hubot-hipchat',
+45 silly addNameRange   range: '>=2.5.1-1 <2.6.0-',
+45 silly addNameRange   hasData: false }
+46 verbose already installed skipping cleverbot-node@0.1.1 /Users/meshachjackson/cita/josi
+47 verbose url raw hubot-hipchat
+48 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-hipchat' ]
+49 verbose url resolved https://registry.npmjs.org/hubot-hipchat
+50 info trying registry request attempt 1 at 04:09:53
+51 verbose etag "EKTX4JXBWFSTHW2NN8T6EPZK0"
+52 http GET https://registry.npmjs.org/hubot-hipchat
 53 http 304 https://registry.npmjs.org/hubot-hipchat
 54 silly registry.get cb [ 304,
 54 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 54 silly registry.get     etag: '"EKTX4JXBWFSTHW2NN8T6EPZK0"',
-54 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:40 GMT',
+54 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:52 GMT',
 54 silly registry.get     'content-length': '0' } ]
 55 verbose etag hubot-hipchat from cache
 56 silly addNameRange number 2 { name: 'hubot-hipchat',
@@ -269,29 +269,29 @@
 124 verbose lock rsvp@~1.2.0 /Users/meshachjackson/.npm/bdabebdf-rsvp-1-2-0.lock
 125 silly addNameRange { name: 'underscore', range: '>=1.4.4- <1.5.0-', hasData: false }
 126 silly addNameRange { name: 'rsvp', range: '>=1.2.0- <1.3.0-', hasData: false }
-127 verbose url raw node-xmpp
-128 verbose url resolving [ 'https://registry.npmjs.org/', './node-xmpp' ]
-129 verbose url resolved https://registry.npmjs.org/node-xmpp
-130 info trying registry request attempt 1 at 03:27:43
-131 verbose etag "8JROKHOJH6SPW9BYTEYA156PS"
-132 http GET https://registry.npmjs.org/node-xmpp
-133 verbose url raw underscore
-134 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
-135 verbose url resolved https://registry.npmjs.org/underscore
-136 info trying registry request attempt 1 at 03:27:43
-137 verbose etag "A4PQTQI9R9PIOFU3NCIBYUU60"
-138 http GET https://registry.npmjs.org/underscore
+127 verbose url raw underscore
+128 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+129 verbose url resolved https://registry.npmjs.org/underscore
+130 info trying registry request attempt 1 at 04:09:54
+131 verbose etag "A4PQTQI9R9PIOFU3NCIBYUU60"
+132 http GET https://registry.npmjs.org/underscore
+133 verbose url raw node-xmpp
+134 verbose url resolving [ 'https://registry.npmjs.org/', './node-xmpp' ]
+135 verbose url resolved https://registry.npmjs.org/node-xmpp
+136 info trying registry request attempt 1 at 04:09:54
+137 verbose etag "8JROKHOJH6SPW9BYTEYA156PS"
+138 http GET https://registry.npmjs.org/node-xmpp
 139 verbose url raw rsvp
 140 verbose url resolving [ 'https://registry.npmjs.org/', './rsvp' ]
 141 verbose url resolved https://registry.npmjs.org/rsvp
-142 info trying registry request attempt 1 at 03:27:43
+142 info trying registry request attempt 1 at 04:09:54
 143 verbose etag "P6E9MMX0QFHP2HW81SK8O83"
 144 http GET https://registry.npmjs.org/rsvp
 145 http 304 https://registry.npmjs.org/underscore
 146 silly registry.get cb [ 304,
 146 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 146 silly registry.get     etag: '"A4PQTQI9R9PIOFU3NCIBYUU60"',
-146 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:40 GMT',
+146 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:52 GMT',
 146 silly registry.get     'content-length': '0' } ]
 147 verbose etag underscore from cache
 148 silly addNameRange number 2 { name: 'underscore', range: '>=1.4.4- <1.5.0-', hasData: true }
@@ -327,81 +327,81 @@
 151 verbose addNamed [ '1.4.4', '1.4.4' ]
 152 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
 153 verbose lock underscore@1.4.4 /Users/meshachjackson/.npm/c6b5e825-underscore-1-4-4.lock
-154 http 304 https://registry.npmjs.org/node-xmpp
-155 silly registry.get cb [ 304,
-155 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-155 silly registry.get     etag: '"8JROKHOJH6SPW9BYTEYA156PS"',
-155 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:40 GMT',
-155 silly registry.get     'content-length': '0' } ]
-156 verbose etag node-xmpp from cache
-157 verbose read json /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
-158 http 304 https://registry.npmjs.org/rsvp
-159 silly registry.get cb [ 304,
-159 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-159 silly registry.get     etag: '"P6E9MMX0QFHP2HW81SK8O83"',
-159 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:40 GMT',
-159 silly registry.get     'content-length': '0' } ]
-160 verbose etag rsvp from cache
-161 silly addNameRange number 2 { name: 'node-xmpp', range: '>=0.3.2- <0.4.0-', hasData: true }
-162 silly addNameRange versions [ 'node-xmpp',
-162 silly addNameRange   [ '0.0.3',
-162 silly addNameRange     '0.0.4',
-162 silly addNameRange     '0.1.0',
-162 silly addNameRange     '0.1.1',
-162 silly addNameRange     '0.2.0',
-162 silly addNameRange     '0.2.1',
-162 silly addNameRange     '0.2.2',
-162 silly addNameRange     '0.2.3',
-162 silly addNameRange     '0.2.4',
-162 silly addNameRange     '0.2.5',
-162 silly addNameRange     '0.2.6',
-162 silly addNameRange     '0.2.7',
-162 silly addNameRange     '0.2.8',
-162 silly addNameRange     '0.2.9',
-162 silly addNameRange     '0.2.10',
-162 silly addNameRange     '0.2.11',
-162 silly addNameRange     '0.3.0',
-162 silly addNameRange     '0.3.1',
-162 silly addNameRange     '0.3.2',
-162 silly addNameRange     '0.4.0',
-162 silly addNameRange     '0.4.1',
-162 silly addNameRange     '0.4.2',
-162 silly addNameRange     '0.4.3',
-162 silly addNameRange     '0.4.4',
-162 silly addNameRange     '0.4.5',
-162 silly addNameRange     '0.5.0',
-162 silly addNameRange     '0.5.1',
-162 silly addNameRange     '0.5.2',
-162 silly addNameRange     '0.5.3',
-162 silly addNameRange     '0.5.4',
-162 silly addNameRange     '0.5.5',
-162 silly addNameRange     '0.6.0',
-162 silly addNameRange     '0.6.1' ] ]
-163 verbose addNamed [ 'node-xmpp', '0.3.2' ]
-164 verbose addNamed [ '0.3.2', '0.3.2' ]
-165 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-166 verbose lock node-xmpp@0.3.2 /Users/meshachjackson/.npm/cc36b151-node-xmpp-0-3-2.lock
-167 silly addNameRange number 2 { name: 'rsvp', range: '>=1.2.0- <1.3.0-', hasData: true }
-168 silly addNameRange versions [ 'rsvp',
-168 silly addNameRange   [ '1.0.0',
-168 silly addNameRange     '1.1.0',
-168 silly addNameRange     '1.1.1',
-168 silly addNameRange     '1.2.0',
-168 silly addNameRange     '2.0.0',
-168 silly addNameRange     '2.0.1',
-168 silly addNameRange     '2.0.2',
-168 silly addNameRange     '2.0.3',
-168 silly addNameRange     '2.0.4' ] ]
-169 verbose addNamed [ 'rsvp', '1.2.0' ]
-170 verbose addNamed [ '1.2.0', '1.2.0' ]
-171 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
-172 verbose lock rsvp@1.2.0 /Users/meshachjackson/.npm/e40a26b8-rsvp-1-2-0.lock
-173 verbose read json /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
-174 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
-175 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
-176 verbose read json /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
-177 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
-178 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+154 verbose read json /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
+155 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
+156 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
+157 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+158 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+159 http 304 https://registry.npmjs.org/node-xmpp
+160 silly registry.get cb [ 304,
+160 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+160 silly registry.get     etag: '"8JROKHOJH6SPW9BYTEYA156PS"',
+160 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:52 GMT',
+160 silly registry.get     'content-length': '0' } ]
+161 verbose etag node-xmpp from cache
+162 silly addNameRange number 2 { name: 'node-xmpp', range: '>=0.3.2- <0.4.0-', hasData: true }
+163 silly addNameRange versions [ 'node-xmpp',
+163 silly addNameRange   [ '0.0.3',
+163 silly addNameRange     '0.0.4',
+163 silly addNameRange     '0.1.0',
+163 silly addNameRange     '0.1.1',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.2.2',
+163 silly addNameRange     '0.2.3',
+163 silly addNameRange     '0.2.4',
+163 silly addNameRange     '0.2.5',
+163 silly addNameRange     '0.2.6',
+163 silly addNameRange     '0.2.7',
+163 silly addNameRange     '0.2.8',
+163 silly addNameRange     '0.2.9',
+163 silly addNameRange     '0.2.10',
+163 silly addNameRange     '0.2.11',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '0.3.2',
+163 silly addNameRange     '0.4.0',
+163 silly addNameRange     '0.4.1',
+163 silly addNameRange     '0.4.2',
+163 silly addNameRange     '0.4.3',
+163 silly addNameRange     '0.4.4',
+163 silly addNameRange     '0.4.5',
+163 silly addNameRange     '0.5.0',
+163 silly addNameRange     '0.5.1',
+163 silly addNameRange     '0.5.2',
+163 silly addNameRange     '0.5.3',
+163 silly addNameRange     '0.5.4',
+163 silly addNameRange     '0.5.5',
+163 silly addNameRange     '0.6.0',
+163 silly addNameRange     '0.6.1' ] ]
+164 verbose addNamed [ 'node-xmpp', '0.3.2' ]
+165 verbose addNamed [ '0.3.2', '0.3.2' ]
+166 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
+167 verbose lock node-xmpp@0.3.2 /Users/meshachjackson/.npm/cc36b151-node-xmpp-0-3-2.lock
+168 http 304 https://registry.npmjs.org/rsvp
+169 silly registry.get cb [ 304,
+169 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+169 silly registry.get     etag: '"P6E9MMX0QFHP2HW81SK8O83"',
+169 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:52 GMT',
+169 silly registry.get     'content-length': '0' } ]
+170 verbose etag rsvp from cache
+171 verbose read json /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
+172 silly addNameRange number 2 { name: 'rsvp', range: '>=1.2.0- <1.3.0-', hasData: true }
+173 silly addNameRange versions [ 'rsvp',
+173 silly addNameRange   [ '1.0.0',
+173 silly addNameRange     '1.1.0',
+173 silly addNameRange     '1.1.1',
+173 silly addNameRange     '1.2.0',
+173 silly addNameRange     '2.0.0',
+173 silly addNameRange     '2.0.1',
+173 silly addNameRange     '2.0.2',
+173 silly addNameRange     '2.0.3',
+173 silly addNameRange     '2.0.4' ] ]
+174 verbose addNamed [ 'rsvp', '1.2.0' ]
+175 verbose addNamed [ '1.2.0', '1.2.0' ]
+176 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
+177 verbose lock rsvp@1.2.0 /Users/meshachjackson/.npm/e40a26b8-rsvp-1-2-0.lock
+178 verbose read json /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
 179 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
 180 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
 181 silly lockFile 28a1390c-node-xmpp-0-3-2 node-xmpp@~0.3.2
@@ -530,10 +530,10 @@
 236 silly gunzTarPerm extractEntry index.js
 237 silly gunzTarPerm extractEntry examples/c2s.js
 238 silly gunzTarPerm extractEntry examples/debug_c2s.js
-239 silly gunzTarPerm extractEntry underscore.js
-240 silly gunzTarPerm extractEntry index.html
-241 silly gunzTarPerm extractEntry examples/echo_bot.js
-242 silly gunzTarPerm extractEntry examples/echo_component.js
+239 silly gunzTarPerm extractEntry examples/echo_bot.js
+240 silly gunzTarPerm extractEntry examples/echo_component.js
+241 silly gunzTarPerm extractEntry underscore.js
+242 silly gunzTarPerm extractEntry index.html
 243 silly gunzTarPerm extractEntry b/rake2thor
 244 silly gunzTarPerm extractEntry b/thor
 245 silly gunzTarPerm extractEntry examples/echo_mixin.js
@@ -704,20 +704,20 @@
 360 verbose url raw node-expat
 361 verbose url resolving [ 'https://registry.npmjs.org/', './node-expat' ]
 362 verbose url resolved https://registry.npmjs.org/node-expat
-363 info trying registry request attempt 1 at 03:27:43
+363 info trying registry request attempt 1 at 04:09:54
 364 verbose etag "ERBH1RZI2CMXB0H61AAC1JCDJ"
 365 http GET https://registry.npmjs.org/node-expat
 366 verbose url raw ltx
 367 verbose url resolving [ 'https://registry.npmjs.org/', './ltx' ]
 368 verbose url resolved https://registry.npmjs.org/ltx
-369 info trying registry request attempt 1 at 03:27:43
+369 info trying registry request attempt 1 at 04:09:54
 370 verbose etag "61Y4N90B7U3S1AAJKDZXKG4QC"
 371 http GET https://registry.npmjs.org/ltx
 372 http 304 https://registry.npmjs.org/node-expat
 373 silly registry.get cb [ 304,
 373 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 373 silly registry.get     etag: '"ERBH1RZI2CMXB0H61AAC1JCDJ"',
-373 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:41 GMT',
+373 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:53 GMT',
 373 silly registry.get     'content-length': '0' } ]
 374 verbose etag node-expat from cache
 375 silly addNameRange number 2 { name: 'node-expat', range: '>=1.4.1', hasData: true }
@@ -756,7 +756,7 @@
 387 silly registry.get cb [ 304,
 387 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 387 silly registry.get     etag: '"61Y4N90B7U3S1AAJKDZXKG4QC"',
-387 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:41 GMT',
+387 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:53 GMT',
 387 silly registry.get     'content-length': '0' } ]
 388 verbose etag ltx from cache
 389 silly addNameRange number 2 { name: 'ltx', range: '>=0.1.1', hasData: true }
@@ -946,7 +946,7 @@
 478 verbose url raw sax
 479 verbose url resolving [ 'https://registry.npmjs.org/', './sax' ]
 480 verbose url resolved https://registry.npmjs.org/sax
-481 info trying registry request attempt 1 at 03:27:44
+481 info trying registry request attempt 1 at 04:09:55
 482 verbose etag "76AVUL91TQDVV9TYOCORQLLT2"
 483 http GET https://registry.npmjs.org/sax
 484 silly gunzTarPerm extractEntry deps/libexpat/doc/valid-xhtml10.png
@@ -1119,7 +1119,7 @@
 648 silly registry.get cb [ 304,
 648 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 648 silly registry.get     etag: '"76AVUL91TQDVV9TYOCORQLLT2"',
-648 silly registry.get     date: 'Sun, 08 Sep 2013 10:27:41 GMT',
+648 silly registry.get     date: 'Sun, 08 Sep 2013 11:09:53 GMT',
 648 silly registry.get     'content-length': '0' } ]
 649 verbose etag sax from cache
 650 silly addNameRange number 2 { name: 'sax', range: '>=0.3.5', hasData: true }
