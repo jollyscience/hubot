@@ -37,37 +37,37 @@
 28 verbose from cache /Users/meshachjackson/cita/josi/node_modules/underscore/package.json
 29 verbose already installed skipping hubot@>= 2.5.1 /Users/meshachjackson/cita/josi
 30 verbose already installed skipping hubot-scripts@2.5.6 /Users/meshachjackson/cita/josi
-31 verbose already installed skipping mkdirp@* /Users/meshachjackson/cita/josi
-32 verbose cache add [ 'hubot-hipchat@~2.5.1-1', null ]
-33 verbose cache add name=undefined spec="hubot-hipchat@~2.5.1-1" args=["hubot-hipchat@~2.5.1-1",null]
-34 verbose parsed url { protocol: null,
-34 verbose parsed url   slashes: null,
-34 verbose parsed url   auth: null,
-34 verbose parsed url   host: null,
-34 verbose parsed url   port: null,
-34 verbose parsed url   hostname: null,
-34 verbose parsed url   hash: null,
-34 verbose parsed url   search: null,
-34 verbose parsed url   query: null,
-34 verbose parsed url   pathname: 'hubot-hipchat@~2.5.1-1',
-34 verbose parsed url   path: 'hubot-hipchat@~2.5.1-1',
-34 verbose parsed url   href: 'hubot-hipchat@~2.5.1-1' }
-35 verbose cache add name="hubot-hipchat" spec="~2.5.1-1" args=["hubot-hipchat","~2.5.1-1"]
-36 verbose parsed url { protocol: null,
-36 verbose parsed url   slashes: null,
-36 verbose parsed url   auth: null,
-36 verbose parsed url   host: null,
-36 verbose parsed url   port: null,
-36 verbose parsed url   hostname: null,
-36 verbose parsed url   hash: null,
-36 verbose parsed url   search: null,
-36 verbose parsed url   query: null,
-36 verbose parsed url   pathname: '~2.5.1-1',
-36 verbose parsed url   path: '~2.5.1-1',
-36 verbose parsed url   href: '~2.5.1-1' }
-37 verbose addNamed [ 'hubot-hipchat', '~2.5.1-1' ]
-38 verbose addNamed [ null, '>=2.5.1-1 <2.6.0-' ]
-39 verbose already installed skipping mustache@* /Users/meshachjackson/cita/josi
+31 verbose cache add [ 'hubot-hipchat@~2.5.1-1', null ]
+32 verbose cache add name=undefined spec="hubot-hipchat@~2.5.1-1" args=["hubot-hipchat@~2.5.1-1",null]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: 'hubot-hipchat@~2.5.1-1',
+33 verbose parsed url   path: 'hubot-hipchat@~2.5.1-1',
+33 verbose parsed url   href: 'hubot-hipchat@~2.5.1-1' }
+34 verbose cache add name="hubot-hipchat" spec="~2.5.1-1" args=["hubot-hipchat","~2.5.1-1"]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: '~2.5.1-1',
+35 verbose parsed url   path: '~2.5.1-1',
+35 verbose parsed url   href: '~2.5.1-1' }
+36 verbose addNamed [ 'hubot-hipchat', '~2.5.1-1' ]
+37 verbose addNamed [ null, '>=2.5.1-1 <2.6.0-' ]
+38 verbose already installed skipping mustache@* /Users/meshachjackson/cita/josi
+39 verbose already installed skipping mkdirp@* /Users/meshachjackson/cita/josi
 40 silly lockFile 1520376f-hubot-hipchat-2-5-1-1 hubot-hipchat@~2.5.1-1
 41 verbose lock hubot-hipchat@~2.5.1-1 /Users/meshachjackson/.npm/1520376f-hubot-hipchat-2-5-1-1.lock
 42 silly addNameRange { name: 'hubot-hipchat',
@@ -77,14 +77,14 @@
 44 verbose url raw hubot-hipchat
 45 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-hipchat' ]
 46 verbose url resolved https://registry.npmjs.org/hubot-hipchat
-47 info trying registry request attempt 1 at 01:49:58
+47 info trying registry request attempt 1 at 01:54:53
 48 verbose etag "EKTX4JXBWFSTHW2NN8T6EPZK0"
 49 http GET https://registry.npmjs.org/hubot-hipchat
 50 http 304 https://registry.npmjs.org/hubot-hipchat
 51 silly registry.get cb [ 304,
 51 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 51 silly registry.get     etag: '"EKTX4JXBWFSTHW2NN8T6EPZK0"',
-51 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
+51 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:51 GMT',
 51 silly registry.get     'content-length': '0' } ]
 52 verbose etag hubot-hipchat from cache
 53 silly addNameRange number 2 { name: 'hubot-hipchat',
@@ -268,145 +268,179 @@
 124 verbose url raw node-xmpp
 125 verbose url resolving [ 'https://registry.npmjs.org/', './node-xmpp' ]
 126 verbose url resolved https://registry.npmjs.org/node-xmpp
-127 info trying registry request attempt 1 at 01:49:59
+127 info trying registry request attempt 1 at 01:54:54
 128 verbose etag "8JROKHOJH6SPW9BYTEYA156PS"
 129 http GET https://registry.npmjs.org/node-xmpp
 130 verbose url raw underscore
 131 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
 132 verbose url resolved https://registry.npmjs.org/underscore
-133 info trying registry request attempt 1 at 01:49:59
+133 info trying registry request attempt 1 at 01:54:54
 134 verbose etag "A4PQTQI9R9PIOFU3NCIBYUU60"
 135 http GET https://registry.npmjs.org/underscore
 136 verbose url raw rsvp
 137 verbose url resolving [ 'https://registry.npmjs.org/', './rsvp' ]
 138 verbose url resolved https://registry.npmjs.org/rsvp
-139 info trying registry request attempt 1 at 01:49:59
+139 info trying registry request attempt 1 at 01:54:54
 140 verbose etag "P6E9MMX0QFHP2HW81SK8O83"
 141 http GET https://registry.npmjs.org/rsvp
-142 http 304 https://registry.npmjs.org/node-xmpp
+142 http 304 https://registry.npmjs.org/rsvp
 143 silly registry.get cb [ 304,
 143 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-143 silly registry.get     etag: '"8JROKHOJH6SPW9BYTEYA156PS"',
-143 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
+143 silly registry.get     etag: '"P6E9MMX0QFHP2HW81SK8O83"',
+143 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:51 GMT',
 143 silly registry.get     'content-length': '0' } ]
-144 verbose etag node-xmpp from cache
-145 silly addNameRange number 2 { name: 'node-xmpp', range: '>=0.3.2- <0.4.0-', hasData: true }
-146 silly addNameRange versions [ 'node-xmpp',
-146 silly addNameRange   [ '0.0.3',
-146 silly addNameRange     '0.0.4',
-146 silly addNameRange     '0.1.0',
-146 silly addNameRange     '0.1.1',
-146 silly addNameRange     '0.2.0',
-146 silly addNameRange     '0.2.1',
-146 silly addNameRange     '0.2.2',
-146 silly addNameRange     '0.2.3',
-146 silly addNameRange     '0.2.4',
-146 silly addNameRange     '0.2.5',
-146 silly addNameRange     '0.2.6',
-146 silly addNameRange     '0.2.7',
-146 silly addNameRange     '0.2.8',
-146 silly addNameRange     '0.2.9',
-146 silly addNameRange     '0.2.10',
-146 silly addNameRange     '0.2.11',
-146 silly addNameRange     '0.3.0',
-146 silly addNameRange     '0.3.1',
-146 silly addNameRange     '0.3.2',
-146 silly addNameRange     '0.4.0',
-146 silly addNameRange     '0.4.1',
-146 silly addNameRange     '0.4.2',
-146 silly addNameRange     '0.4.3',
-146 silly addNameRange     '0.4.4',
-146 silly addNameRange     '0.4.5',
-146 silly addNameRange     '0.5.0',
-146 silly addNameRange     '0.5.1',
-146 silly addNameRange     '0.5.2',
-146 silly addNameRange     '0.5.3',
-146 silly addNameRange     '0.5.4',
-146 silly addNameRange     '0.5.5',
-146 silly addNameRange     '0.6.0',
-146 silly addNameRange     '0.6.1' ] ]
-147 verbose addNamed [ 'node-xmpp', '0.3.2' ]
-148 verbose addNamed [ '0.3.2', '0.3.2' ]
-149 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-150 verbose lock node-xmpp@0.3.2 /Users/meshachjackson/.npm/cc36b151-node-xmpp-0-3-2.lock
-151 http 304 https://registry.npmjs.org/rsvp
-152 silly registry.get cb [ 304,
-152 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-152 silly registry.get     etag: '"P6E9MMX0QFHP2HW81SK8O83"',
-152 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
-152 silly registry.get     'content-length': '0' } ]
-153 verbose etag rsvp from cache
-154 verbose read json /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
-155 silly addNameRange number 2 { name: 'rsvp', range: '>=1.2.0- <1.3.0-', hasData: true }
-156 silly addNameRange versions [ 'rsvp',
-156 silly addNameRange   [ '1.0.0',
-156 silly addNameRange     '1.1.0',
-156 silly addNameRange     '1.1.1',
-156 silly addNameRange     '1.2.0',
-156 silly addNameRange     '2.0.0',
-156 silly addNameRange     '2.0.1',
-156 silly addNameRange     '2.0.2',
-156 silly addNameRange     '2.0.3',
-156 silly addNameRange     '2.0.4' ] ]
-157 verbose addNamed [ 'rsvp', '1.2.0' ]
-158 verbose addNamed [ '1.2.0', '1.2.0' ]
-159 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
-160 verbose lock rsvp@1.2.0 /Users/meshachjackson/.npm/e40a26b8-rsvp-1-2-0.lock
-161 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-162 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-163 verbose read json /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
-164 silly lockFile 28a1390c-node-xmpp-0-3-2 node-xmpp@~0.3.2
-165 silly lockFile 28a1390c-node-xmpp-0-3-2 node-xmpp@~0.3.2
-166 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
-167 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
-168 silly lockFile bdabebdf-rsvp-1-2-0 rsvp@~1.2.0
-169 silly lockFile bdabebdf-rsvp-1-2-0 rsvp@~1.2.0
-170 http 304 https://registry.npmjs.org/underscore
-171 silly registry.get cb [ 304,
-171 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-171 silly registry.get     etag: '"A4PQTQI9R9PIOFU3NCIBYUU60"',
-171 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
-171 silly registry.get     'content-length': '0' } ]
-172 verbose etag underscore from cache
-173 silly addNameRange number 2 { name: 'underscore', range: '>=1.4.4- <1.5.0-', hasData: true }
-174 silly addNameRange versions [ 'underscore',
-174 silly addNameRange   [ '1.0.3',
-174 silly addNameRange     '1.0.4',
-174 silly addNameRange     '1.1.0',
-174 silly addNameRange     '1.1.1',
-174 silly addNameRange     '1.1.2',
-174 silly addNameRange     '1.1.3',
-174 silly addNameRange     '1.1.4',
-174 silly addNameRange     '1.1.5',
-174 silly addNameRange     '1.1.6',
-174 silly addNameRange     '1.1.7',
-174 silly addNameRange     '1.2.0',
-174 silly addNameRange     '1.2.1',
-174 silly addNameRange     '1.2.2',
-174 silly addNameRange     '1.2.3',
-174 silly addNameRange     '1.2.4',
-174 silly addNameRange     '1.3.0',
-174 silly addNameRange     '1.3.1',
-174 silly addNameRange     '1.3.2',
-174 silly addNameRange     '1.3.3',
-174 silly addNameRange     '1.4.0',
-174 silly addNameRange     '1.4.1',
-174 silly addNameRange     '1.4.2',
-174 silly addNameRange     '1.4.3',
-174 silly addNameRange     '1.4.4',
-174 silly addNameRange     '1.5.0',
-174 silly addNameRange     '1.5.1',
-174 silly addNameRange     '1.5.2' ] ]
-175 verbose addNamed [ 'underscore', '1.4.4' ]
-176 verbose addNamed [ '1.4.4', '1.4.4' ]
+144 verbose etag rsvp from cache
+145 silly addNameRange number 2 { name: 'rsvp', range: '>=1.2.0- <1.3.0-', hasData: true }
+146 silly addNameRange versions [ 'rsvp',
+146 silly addNameRange   [ '1.0.0',
+146 silly addNameRange     '1.1.0',
+146 silly addNameRange     '1.1.1',
+146 silly addNameRange     '1.2.0',
+146 silly addNameRange     '2.0.0',
+146 silly addNameRange     '2.0.1',
+146 silly addNameRange     '2.0.2',
+146 silly addNameRange     '2.0.3',
+146 silly addNameRange     '2.0.4' ] ]
+147 verbose addNamed [ 'rsvp', '1.2.0' ]
+148 verbose addNamed [ '1.2.0', '1.2.0' ]
+149 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
+150 verbose lock rsvp@1.2.0 /Users/meshachjackson/.npm/e40a26b8-rsvp-1-2-0.lock
+151 verbose read json /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
+152 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
+153 silly lockFile e40a26b8-rsvp-1-2-0 rsvp@1.2.0
+154 silly lockFile bdabebdf-rsvp-1-2-0 rsvp@~1.2.0
+155 silly lockFile bdabebdf-rsvp-1-2-0 rsvp@~1.2.0
+156 http 304 https://registry.npmjs.org/underscore
+157 silly registry.get cb [ 304,
+157 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+157 silly registry.get     etag: '"A4PQTQI9R9PIOFU3NCIBYUU60"',
+157 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:51 GMT',
+157 silly registry.get     'content-length': '0' } ]
+158 verbose etag underscore from cache
+159 http 304 https://registry.npmjs.org/node-xmpp
+160 silly registry.get cb [ 304,
+160 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+160 silly registry.get     etag: '"8JROKHOJH6SPW9BYTEYA156PS"',
+160 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:51 GMT',
+160 silly registry.get     'content-length': '0' } ]
+161 verbose etag node-xmpp from cache
+162 silly addNameRange number 2 { name: 'underscore', range: '>=1.4.4- <1.5.0-', hasData: true }
+163 silly addNameRange versions [ 'underscore',
+163 silly addNameRange   [ '1.0.3',
+163 silly addNameRange     '1.0.4',
+163 silly addNameRange     '1.1.0',
+163 silly addNameRange     '1.1.1',
+163 silly addNameRange     '1.1.2',
+163 silly addNameRange     '1.1.3',
+163 silly addNameRange     '1.1.4',
+163 silly addNameRange     '1.1.5',
+163 silly addNameRange     '1.1.6',
+163 silly addNameRange     '1.1.7',
+163 silly addNameRange     '1.2.0',
+163 silly addNameRange     '1.2.1',
+163 silly addNameRange     '1.2.2',
+163 silly addNameRange     '1.2.3',
+163 silly addNameRange     '1.2.4',
+163 silly addNameRange     '1.3.0',
+163 silly addNameRange     '1.3.1',
+163 silly addNameRange     '1.3.2',
+163 silly addNameRange     '1.3.3',
+163 silly addNameRange     '1.4.0',
+163 silly addNameRange     '1.4.1',
+163 silly addNameRange     '1.4.2',
+163 silly addNameRange     '1.4.3',
+163 silly addNameRange     '1.4.4',
+163 silly addNameRange     '1.5.0',
+163 silly addNameRange     '1.5.1',
+163 silly addNameRange     '1.5.2' ] ]
+164 verbose addNamed [ 'underscore', '1.4.4' ]
+165 verbose addNamed [ '1.4.4', '1.4.4' ]
+166 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
+167 verbose lock underscore@1.4.4 /Users/meshachjackson/.npm/c6b5e825-underscore-1-4-4.lock
+168 silly addNameRange number 2 { name: 'node-xmpp', range: '>=0.3.2- <0.4.0-', hasData: true }
+169 silly addNameRange versions [ 'node-xmpp',
+169 silly addNameRange   [ '0.0.3',
+169 silly addNameRange     '0.0.4',
+169 silly addNameRange     '0.1.0',
+169 silly addNameRange     '0.1.1',
+169 silly addNameRange     '0.2.0',
+169 silly addNameRange     '0.2.1',
+169 silly addNameRange     '0.2.2',
+169 silly addNameRange     '0.2.3',
+169 silly addNameRange     '0.2.4',
+169 silly addNameRange     '0.2.5',
+169 silly addNameRange     '0.2.6',
+169 silly addNameRange     '0.2.7',
+169 silly addNameRange     '0.2.8',
+169 silly addNameRange     '0.2.9',
+169 silly addNameRange     '0.2.10',
+169 silly addNameRange     '0.2.11',
+169 silly addNameRange     '0.3.0',
+169 silly addNameRange     '0.3.1',
+169 silly addNameRange     '0.3.2',
+169 silly addNameRange     '0.4.0',
+169 silly addNameRange     '0.4.1',
+169 silly addNameRange     '0.4.2',
+169 silly addNameRange     '0.4.3',
+169 silly addNameRange     '0.4.4',
+169 silly addNameRange     '0.4.5',
+169 silly addNameRange     '0.5.0',
+169 silly addNameRange     '0.5.1',
+169 silly addNameRange     '0.5.2',
+169 silly addNameRange     '0.5.3',
+169 silly addNameRange     '0.5.4',
+169 silly addNameRange     '0.5.5',
+169 silly addNameRange     '0.6.0',
+169 silly addNameRange     '0.6.1' ] ]
+170 verbose addNamed [ 'node-xmpp', '0.3.2' ]
+171 verbose addNamed [ '0.3.2', '0.3.2' ]
+172 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
+173 verbose lock node-xmpp@0.3.2 /Users/meshachjackson/.npm/cc36b151-node-xmpp-0-3-2.lock
+174 verbose read json /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
+175 verbose read json /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
+176 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
 177 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
-178 verbose lock underscore@1.4.4 /Users/meshachjackson/.npm/c6b5e825-underscore-1-4-4.lock
-179 verbose read json /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
-180 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
-181 silly lockFile c6b5e825-underscore-1-4-4 underscore@1.4.4
-182 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
-183 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
-184 silly resolved [ { name: 'node-xmpp',
+178 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
+179 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
+180 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+181 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+182 silly lockFile 28a1390c-node-xmpp-0-3-2 node-xmpp@~0.3.2
+183 silly lockFile 28a1390c-node-xmpp-0-3-2 node-xmpp@~0.3.2
+184 silly resolved [ { name: 'rsvp',
+184 silly resolved     version: '1.2.0',
+184 silly resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
+184 silly resolved     main: 'node/rsvp.js',
+184 silly resolved     directories: { lib: 'lib' },
+184 silly resolved     devDependencies: { jshint: '~0.9', 'promise-tests': '2.0.0', 'uglify-js': '~2.2' },
+184 silly resolved     scripts:
+184 silly resolved      { test: 'promise-tests all ./tests/test-adapter',
+184 silly resolved        lint: 'jshint lib' },
+184 silly resolved     repository: { type: 'git', url: 'git://github.com/tildeio/rsvp.js.git' },
+184 silly resolved     bugs: { url: 'https://github.com/tildeio/rsvp.js/issues' },
+184 silly resolved     keywords: [ 'promises', 'futures', 'events' ],
+184 silly resolved     author: { name: 'Tilde, Inc.' },
+184 silly resolved     license: 'MIT',
+184 silly resolved     readme: '# RSVP.js\n\nRSVP.js provides simple tools for organizing asynchronous code.\n\nSpecifically, it is a tiny implementation of Promises/A and a\nmixin for turning objects into event targets.\n\nIt works in node and the browser. You can get the browser build in\n`browser/rsvp.js` and `browser/rsvp.min.js`.\n\n## Promises\n\n`RSVP.Promise` is an implementation of\n[Promises/A](http://wiki.commonjs.org/wiki/Promises/A) that passes the\n[promises test suite](https://github.com/domenic/promise-tests) written\nby Domenic Denicola.\n\nIt passes both the primary suite, which tests explicit compliance with\nthe Promises/A spec, and the extension tests, which test compliance with\ncommonly accepted practices around promises in JavaScript.\n\nIt delivers all promises asynchronously, even if the value is already\navailable, to help you write consistent code that doesn\'t change if the\nunderlying data provider changes from synchronous to asynchronous.\n\nIt is compatible with [TaskJS](http://taskjs.org/), a library by Dave\nHerman of Mozilla that uses ES6 generators to allow you to write\nsynchronous code with promises. It currently works in Firefox, and will\nwork in any browser that adds support for ES6 generators. See the\nsection below on TaskJS for more information.\n\n### Basic Usage\n\n```javascript\nvar promise = new Promise();\n\npromise.then(function(value) {\n  // success\n}, function(value) {\n  // failure\n});\n\n// later...\n\npromise.resolve(value) // triggers first callback\npromise.reject(error) // triggers second callback\n```\n\nOnce a promise has been resolved or rejected, it cannot be resolved or\nrejected again.\n\nHere is an example of a simple XHR2 wrapper written using RSVP.js:\n\n```javascript\nvar getJSON = function(url) {\n  var promise = new RSVP.Promise();\n\n  var client = new XMLHttpRequest();\n  client.open("GET", url);\n  client.onreadystatechange = handler;\n  client.responseType = "json";\n  client.setRequestHeader("Accept", "application/json");\n  client.send();\n\n  function handler() {\n    if (this.readyState === this.DONE) {\n      if (this.status === 200) { promise.resolve(this.response); }\n      else { promise.reject(this); }\n    }\n  };\n\n  return promise;\n};\n\ngetJSON("/posts.json").then(function(json) {\n  // continue\n}, function(error) {\n  // handle errors\n});\n```\n\n### Chaining\n\nOne of the really awesome features of Promises/A promises are that they\ncan be chained together. In other words, the return value of the first\nresolve handler will be passed to the second resolve handler.\n\nIf you return a regular value, it will be passed, as is, to the next\nhandler.\n\n```javascript\ngetJSON("/posts.json").then(function(json) {\n  return json.post;\n}).then(function(post) {\n  // proceed\n});;\n```\n\nThe really awesome part comes when you return a promise from the first\nhandler:\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  // save off post\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n});;\n```\n\nThis allows you to flatten out nested callbacks, and is the main feature\nof promises that prevents "rightward drift" in programs with a lot of\nasynchronous code.\n\nErrors also propagate:\n\n```javascript\ngetJSON("/posts.json").then(function(posts) {\n\n}).then(null, function(error) {\n  // even though no error callback was passed to the\n  // first `.then`, the error propagates\n});\n```\n\nYou can use this to emulate `try/catch` logic in synchronous code.\nSimply chain as many resolve callbacks as a you want, and add a failure\nhandler at the end to catch errors.\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n}).then(null, function(error) {\n  // handle errors in either of the two requests\n});\n```\n\n## Arrays of promises\n\nSometimes you might want to work with many promises at once. If you\npass an array of promises to the `all()` method it will return a new\npromise that will be fulfilled when all of the promises in the array\nhave been fulfilled; or rejected immediately if any promise in the array\nis rejected.\n\n```javascript\nvar postIds = [2, 3, 5, 7, 11, 13];\nvar promises = [];\n\nfor(var i = 0; i < postIds.length; i++) {\n\tpromises.push(getJSON("/post/" + postIds[i] + ".json"));\n}\n\nRSVP.all(promises).then(function(posts) {\n\t// posts contains an array of results for the given promises\n});\n```\n\n## TaskJS\n\nThe [TaskJS](http://taskjs.org/) library makes it possible to take\npromises-oriented code and make it synchronous using ES6 generators.\n\nLet\'s review an earlier example:\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n}).then(null, function(error) {\n  // handle errors in either of the two requests\n});\n```\n\nWithout any changes to the implementation of `getJSON`, you could write\nthe following code with TaskJS:\n\n```javascript\nspawn(function *() {\n  try {\n    var post = yield getJSON("/post/1.json");\n    var comments = yield getJSON(post.commentURL);\n  } catch(error) {\n    // handle errors\n  }\n});\n```\n\nIn the above example, `function *` is new syntax in ES6 for\n[generators](http://wiki.ecmascript.org/doku.php?id=harmony:generators).\nInside a generator, `yield` pauses the generator, returning control to\nthe function that invoked the generator. In this case, the invoker is a\nspecial function that understands the semantics of Promises/A, and will\nautomatically resume the generator as soon as the promise is resolved.\n\nThe cool thing here is the same promises that work with current\nJavaScript using `.then` will work seamlessly with TaskJS once a browser\nhas implemented it!\n\n## Event Target\n\nRSVP also provides a mixin that you can use to convert any object into\nan event target. The promises implementation uses `RSVP.EventTarget`, so\n`RSVP` exposes it for your own use.\n\n### Basic Usage\n\nThe basic usage of `RSVP.EventTarget` is to mix it into an object, then\nuse `on` and `trigger` to register listeners and trigger them.\n\n```javascript\nvar object = {};\n\nRSVP.EventTarget.mixin(object);\n\nobject.on("finished", function(event) {\n  // handle event\n});\n\nobject.trigger("finished", { detail: value });\n```\n\n### Prototypes\n\nYou can mix `RSVP.EventTarget` into a prototype and it will work as\nexpected.\n\n```javascript\nvar Person = function() {};\nRSVP.EventTarget.mixin(Person.prototype);\n\nvar yehuda = new Person();\nvar tom = new Person();\n\nyehuda.on("poke", function(event) {\n  console.log("Yehuda says OW");\n});\n\ntom.on("poke", function(event) {\n  console.log("Tom says OW");\n});\n\nyehuda.trigger("poke");\ntom.trigger("poke");\n```\n\nThe example will work as expected. If you mix `RSVP.EventTarget` into a\nconstructor\'s prototype, each instance of that constructor will get its\nown callbacks.\n',
+184 silly resolved     readmeFilename: 'README.md',
+184 silly resolved     _id: 'rsvp@1.2.0',
+184 silly resolved     _from: 'rsvp@~1.2.0' },
+184 silly resolved   { name: 'underscore',
+184 silly resolved     description: 'JavaScript\'s functional programming helper library.',
+184 silly resolved     homepage: 'http://underscorejs.org',
+184 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+184 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+184 silly resolved     repository:
+184 silly resolved      { type: 'git',
+184 silly resolved        url: 'git://github.com/documentcloud/underscore.git' },
+184 silly resolved     main: 'underscore.js',
+184 silly resolved     version: '1.4.4',
+184 silly resolved     devDependencies: { phantomjs: '0.2.2' },
+184 silly resolved     scripts: { test: 'phantomjs test/vendor/runner.js test/index.html?noglobals=true' },
+184 silly resolved     readme: '                       __\n                      /\\ \\                                                         __\n     __  __    ___    \\_\\ \\     __   _ __   ____    ___    ___   _ __    __       /\\_\\    ____\n    /\\ \\/\\ \\ /\' _ `\\  /\'_  \\  /\'__`\\/\\  __\\/ ,__\\  / ___\\ / __`\\/\\  __\\/\'__`\\     \\/\\ \\  /\',__\\\n    \\ \\ \\_\\ \\/\\ \\/\\ \\/\\ \\ \\ \\/\\  __/\\ \\ \\//\\__, `\\/\\ \\__//\\ \\ \\ \\ \\ \\//\\  __/  __  \\ \\ \\/\\__, `\\\n     \\ \\____/\\ \\_\\ \\_\\ \\___,_\\ \\____\\\\ \\_\\\\/\\____/\\ \\____\\ \\____/\\ \\_\\\\ \\____\\/\\_\\ _\\ \\ \\/\\____/\n      \\/___/  \\/_/\\/_/\\/__,_ /\\/____/ \\/_/ \\/___/  \\/____/\\/___/  \\/_/ \\/____/\\/_//\\ \\_\\ \\/___/\n                                                                                  \\ \\____/\n                                                                                   \\/___/\n\nUnderscore.js is a utility-belt library for JavaScript that provides\nsupport for the usual functional suspects (each, map, reduce, filter...)\nwithout extending any core JavaScript objects.\n\nFor Docs, License, Tests, and pre-packed downloads, see:\nhttp://underscorejs.org\n\nMany thanks to our contributors:\nhttps://github.com/documentcloud/underscore/contributors\n',
+184 silly resolved     readmeFilename: 'README.md',
+184 silly resolved     _id: 'underscore@1.4.4',
+184 silly resolved     _from: 'underscore@~1.4.4' },
+184 silly resolved   { name: 'node-xmpp',
 184 silly resolved     version: '0.3.2',
 184 silly resolved     main: './lib/node-xmpp',
 184 silly resolved     description: 'Idiomatic XMPP client, component & server library for node.js',
@@ -440,71 +474,37 @@
 184 silly resolved     readme: '# node-xmpp\n\nidiomatic XMPP library for [node.js](http://nodejs.org/)\n\n\n## Installation\n\nWith package manager [npm](http://npmjs.org/):\n\n    npm install node-xmpp\n\n\n## Objectives of *node-xmpp:*\n\n* Use node.js conventions, especially `EventEmitter`, ie. for write\n  buffer control\n* Fast parsing, `node-expat` was written for this library\n* Client support for both XMPP clients and components\n* Optional server infrastructure with `Router`\n* After authentication, leave trivial protocol bits to the user, that\n  is XML handling according to any\n  [XEP](http://xmpp.org/xmpp-protocols/xmpp-extensions/)\n\n\n## Features\n\n* Client authentication with SASL DIGEST-MD5, PLAIN, ANONYMOUS, X-FACEBOOK-PLATFORM\n* `_xmpp-client._tcp` SRV record support\n* Simple JID parsing with Stringprep normalization\n  * Optional now, you won\'t need ICU for just node-xmpp\n  * Please be aware if you identify users by JIDs\n  * `npm install node-stringprep`\n* Uses [ltx](http://github.com/astro/ltx)\n  * Much easier to handle than a standard DOM\n  * xmlns-aware\n  * Easy XML builder like Strophe.js (see down)\n  * Non-buffering serialization\n  * Was split out of node-xmpp for modularization and resuability\n* [Component](http://xmpp.org/extensions/xep-0114.html) connections\n* Run your own server/talk to other servers with `xmpp.Router`\n\n\n## Dependencies\n\n* [node-expat](http://github.com/astro/node-expat)\n* [ltx](http://github.com/astro/ltx)\n\nOptional\n\n* [node-stringprep](http://github.com/astro/node-stringprep): for [icu](http://icu-project.org/)-based string normalization.\n\n\n## Related Libraries\n\n* [node-xmpp-bosh](http://code.google.com/p/node-xmpp-bosh/): BOSH & websocket server (connection manager)\n* [node-xmpp-via-bosh](https://github.com/anoopc/node-xmpp-via-bosh/): BOSH client connections from node.js\n* [node-simple-xmpp](https://github.com/arunoda/node-simple-xmpp/): Simpler high-level client layer\n* [xmpp-server](https://github.com/superfeedr/xmpp-server/): Reusable XMPP server on top of node-xmpp\n\n\n## Design\n\nInheritance tree and associations:\n\n    ┌────────────┐1     1┌────────────┐\n    │ net.Stream ├───────┤ Connection │\n    └────────────┘       └────────────┘\n                               ↑\n          ┌────────────┬───────┴───┬────────────┐\n          │            │           │            │\n    ┏━━━━━┷━━━━┓ ┏━━━━━┷━━━━━┓ ┌───┴────┐ ┌─────┴─────┐\n    ┃  Client  ┃ ┃ Component ┃ │ Server │ │ C2SStream │\n    ┗━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ └────────┘ └───────────┘\n                                   ↑            ↑0..*\n             ┌─────────────────────┤            │accepts\n             │                     │            │1\n    ┌────────┴───────┐ ┌───────────┴────┐ ┏━━━━━┷━━━━━┓\n    │ OutgoingServer │ │ IncomingServer │ ┃ C2SServer ┃\n    └─────────────┬──┘ └───┬────────────┘ ┗━━━━━┯━━━━━┛\n             0..* │        │ 0..*               │\n          creates │        │ accepts            │\n                 ┏┷━━━━━━━━┷┓                   │\n                 ┃  Router  ┃←──────────────────┘\n                 ┗━━━━━━━━━━┛ 1\n\n\nThis foundation is complemented by two basic data structures:\n\n* *JID:* a Jabber-Id, represented as a triple of `user`, `domain`,\n   `resource`\n* *Element:* any XML Element\n\n\n### Building XML Elements\n\nStrophe.js\' XML Builder is very convenient for producing XMPP\nstanzas. ltx includes it in a much more primitive way: the\n`c()`, `cnode()` and `t()` methods can be called on any *Element*\nobject, returning the new child element.\n\nThis can be confusing: in the end, you will hold the last-added child\nuntil you use `up()`, a getter for the parent. `Connection.send()`\nfirst invokes `tree()` to retrieve the uppermost parent, the XMPP\nstanza, before sending it out the wire.\n\n\n## TODO\n\n* More documentation\n* More tests (Using [Vows](http://vowsjs.org/))\n',
 184 silly resolved     readmeFilename: 'README.markdown',
 184 silly resolved     _id: 'node-xmpp@0.3.2',
-184 silly resolved     _from: 'node-xmpp@~0.3.2' },
-184 silly resolved   { name: 'rsvp',
-184 silly resolved     version: '1.2.0',
-184 silly resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
-184 silly resolved     main: 'node/rsvp.js',
-184 silly resolved     directories: { lib: 'lib' },
-184 silly resolved     devDependencies: { jshint: '~0.9', 'promise-tests': '2.0.0', 'uglify-js': '~2.2' },
-184 silly resolved     scripts:
-184 silly resolved      { test: 'promise-tests all ./tests/test-adapter',
-184 silly resolved        lint: 'jshint lib' },
-184 silly resolved     repository: { type: 'git', url: 'git://github.com/tildeio/rsvp.js.git' },
-184 silly resolved     bugs: { url: 'https://github.com/tildeio/rsvp.js/issues' },
-184 silly resolved     keywords: [ 'promises', 'futures', 'events' ],
-184 silly resolved     author: { name: 'Tilde, Inc.' },
-184 silly resolved     license: 'MIT',
-184 silly resolved     readme: '# RSVP.js\n\nRSVP.js provides simple tools for organizing asynchronous code.\n\nSpecifically, it is a tiny implementation of Promises/A and a\nmixin for turning objects into event targets.\n\nIt works in node and the browser. You can get the browser build in\n`browser/rsvp.js` and `browser/rsvp.min.js`.\n\n## Promises\n\n`RSVP.Promise` is an implementation of\n[Promises/A](http://wiki.commonjs.org/wiki/Promises/A) that passes the\n[promises test suite](https://github.com/domenic/promise-tests) written\nby Domenic Denicola.\n\nIt passes both the primary suite, which tests explicit compliance with\nthe Promises/A spec, and the extension tests, which test compliance with\ncommonly accepted practices around promises in JavaScript.\n\nIt delivers all promises asynchronously, even if the value is already\navailable, to help you write consistent code that doesn\'t change if the\nunderlying data provider changes from synchronous to asynchronous.\n\nIt is compatible with [TaskJS](http://taskjs.org/), a library by Dave\nHerman of Mozilla that uses ES6 generators to allow you to write\nsynchronous code with promises. It currently works in Firefox, and will\nwork in any browser that adds support for ES6 generators. See the\nsection below on TaskJS for more information.\n\n### Basic Usage\n\n```javascript\nvar promise = new Promise();\n\npromise.then(function(value) {\n  // success\n}, function(value) {\n  // failure\n});\n\n// later...\n\npromise.resolve(value) // triggers first callback\npromise.reject(error) // triggers second callback\n```\n\nOnce a promise has been resolved or rejected, it cannot be resolved or\nrejected again.\n\nHere is an example of a simple XHR2 wrapper written using RSVP.js:\n\n```javascript\nvar getJSON = function(url) {\n  var promise = new RSVP.Promise();\n\n  var client = new XMLHttpRequest();\n  client.open("GET", url);\n  client.onreadystatechange = handler;\n  client.responseType = "json";\n  client.setRequestHeader("Accept", "application/json");\n  client.send();\n\n  function handler() {\n    if (this.readyState === this.DONE) {\n      if (this.status === 200) { promise.resolve(this.response); }\n      else { promise.reject(this); }\n    }\n  };\n\n  return promise;\n};\n\ngetJSON("/posts.json").then(function(json) {\n  // continue\n}, function(error) {\n  // handle errors\n});\n```\n\n### Chaining\n\nOne of the really awesome features of Promises/A promises are that they\ncan be chained together. In other words, the return value of the first\nresolve handler will be passed to the second resolve handler.\n\nIf you return a regular value, it will be passed, as is, to the next\nhandler.\n\n```javascript\ngetJSON("/posts.json").then(function(json) {\n  return json.post;\n}).then(function(post) {\n  // proceed\n});;\n```\n\nThe really awesome part comes when you return a promise from the first\nhandler:\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  // save off post\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n});;\n```\n\nThis allows you to flatten out nested callbacks, and is the main feature\nof promises that prevents "rightward drift" in programs with a lot of\nasynchronous code.\n\nErrors also propagate:\n\n```javascript\ngetJSON("/posts.json").then(function(posts) {\n\n}).then(null, function(error) {\n  // even though no error callback was passed to the\n  // first `.then`, the error propagates\n});\n```\n\nYou can use this to emulate `try/catch` logic in synchronous code.\nSimply chain as many resolve callbacks as a you want, and add a failure\nhandler at the end to catch errors.\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n}).then(null, function(error) {\n  // handle errors in either of the two requests\n});\n```\n\n## Arrays of promises\n\nSometimes you might want to work with many promises at once. If you\npass an array of promises to the `all()` method it will return a new\npromise that will be fulfilled when all of the promises in the array\nhave been fulfilled; or rejected immediately if any promise in the array\nis rejected.\n\n```javascript\nvar postIds = [2, 3, 5, 7, 11, 13];\nvar promises = [];\n\nfor(var i = 0; i < postIds.length; i++) {\n\tpromises.push(getJSON("/post/" + postIds[i] + ".json"));\n}\n\nRSVP.all(promises).then(function(posts) {\n\t// posts contains an array of results for the given promises\n});\n```\n\n## TaskJS\n\nThe [TaskJS](http://taskjs.org/) library makes it possible to take\npromises-oriented code and make it synchronous using ES6 generators.\n\nLet\'s review an earlier example:\n\n```javascript\ngetJSON("/post/1.json").then(function(post) {\n  return getJSON(post.commentURL);\n}).then(function(comments) {\n  // proceed with access to posts and comments\n}).then(null, function(error) {\n  // handle errors in either of the two requests\n});\n```\n\nWithout any changes to the implementation of `getJSON`, you could write\nthe following code with TaskJS:\n\n```javascript\nspawn(function *() {\n  try {\n    var post = yield getJSON("/post/1.json");\n    var comments = yield getJSON(post.commentURL);\n  } catch(error) {\n    // handle errors\n  }\n});\n```\n\nIn the above example, `function *` is new syntax in ES6 for\n[generators](http://wiki.ecmascript.org/doku.php?id=harmony:generators).\nInside a generator, `yield` pauses the generator, returning control to\nthe function that invoked the generator. In this case, the invoker is a\nspecial function that understands the semantics of Promises/A, and will\nautomatically resume the generator as soon as the promise is resolved.\n\nThe cool thing here is the same promises that work with current\nJavaScript using `.then` will work seamlessly with TaskJS once a browser\nhas implemented it!\n\n## Event Target\n\nRSVP also provides a mixin that you can use to convert any object into\nan event target. The promises implementation uses `RSVP.EventTarget`, so\n`RSVP` exposes it for your own use.\n\n### Basic Usage\n\nThe basic usage of `RSVP.EventTarget` is to mix it into an object, then\nuse `on` and `trigger` to register listeners and trigger them.\n\n```javascript\nvar object = {};\n\nRSVP.EventTarget.mixin(object);\n\nobject.on("finished", function(event) {\n  // handle event\n});\n\nobject.trigger("finished", { detail: value });\n```\n\n### Prototypes\n\nYou can mix `RSVP.EventTarget` into a prototype and it will work as\nexpected.\n\n```javascript\nvar Person = function() {};\nRSVP.EventTarget.mixin(Person.prototype);\n\nvar yehuda = new Person();\nvar tom = new Person();\n\nyehuda.on("poke", function(event) {\n  console.log("Yehuda says OW");\n});\n\ntom.on("poke", function(event) {\n  console.log("Tom says OW");\n});\n\nyehuda.trigger("poke");\ntom.trigger("poke");\n```\n\nThe example will work as expected. If you mix `RSVP.EventTarget` into a\nconstructor\'s prototype, each instance of that constructor will get its\nown callbacks.\n',
-184 silly resolved     readmeFilename: 'README.md',
-184 silly resolved     _id: 'rsvp@1.2.0',
-184 silly resolved     _from: 'rsvp@~1.2.0' },
-184 silly resolved   { name: 'underscore',
-184 silly resolved     description: 'JavaScript\'s functional programming helper library.',
-184 silly resolved     homepage: 'http://underscorejs.org',
-184 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
-184 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
-184 silly resolved     repository:
-184 silly resolved      { type: 'git',
-184 silly resolved        url: 'git://github.com/documentcloud/underscore.git' },
-184 silly resolved     main: 'underscore.js',
-184 silly resolved     version: '1.4.4',
-184 silly resolved     devDependencies: { phantomjs: '0.2.2' },
-184 silly resolved     scripts: { test: 'phantomjs test/vendor/runner.js test/index.html?noglobals=true' },
-184 silly resolved     readme: '                       __\n                      /\\ \\                                                         __\n     __  __    ___    \\_\\ \\     __   _ __   ____    ___    ___   _ __    __       /\\_\\    ____\n    /\\ \\/\\ \\ /\' _ `\\  /\'_  \\  /\'__`\\/\\  __\\/ ,__\\  / ___\\ / __`\\/\\  __\\/\'__`\\     \\/\\ \\  /\',__\\\n    \\ \\ \\_\\ \\/\\ \\/\\ \\/\\ \\ \\ \\/\\  __/\\ \\ \\//\\__, `\\/\\ \\__//\\ \\ \\ \\ \\ \\//\\  __/  __  \\ \\ \\/\\__, `\\\n     \\ \\____/\\ \\_\\ \\_\\ \\___,_\\ \\____\\\\ \\_\\\\/\\____/\\ \\____\\ \\____/\\ \\_\\\\ \\____\\/\\_\\ _\\ \\ \\/\\____/\n      \\/___/  \\/_/\\/_/\\/__,_ /\\/____/ \\/_/ \\/___/  \\/____/\\/___/  \\/_/ \\/____/\\/_//\\ \\_\\ \\/___/\n                                                                                  \\ \\____/\n                                                                                   \\/___/\n\nUnderscore.js is a utility-belt library for JavaScript that provides\nsupport for the usual functional suspects (each, map, reduce, filter...)\nwithout extending any core JavaScript objects.\n\nFor Docs, License, Tests, and pre-packed downloads, see:\nhttp://underscorejs.org\n\nMany thanks to our contributors:\nhttps://github.com/documentcloud/underscore/contributors\n',
-184 silly resolved     readmeFilename: 'README.md',
-184 silly resolved     _id: 'underscore@1.4.4',
-184 silly resolved     _from: 'underscore@~1.4.4' } ]
-185 info install node-xmpp@0.3.2 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
-186 info install rsvp@1.2.0 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
-187 info install underscore@1.4.4 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
-188 info installOne node-xmpp@0.3.2
-189 info installOne rsvp@1.2.0
-190 info installOne underscore@1.4.4
-191 verbose from cache /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
-192 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp unbuild
-193 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/package.json
-194 verbose from cache /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
-195 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp unbuild
-196 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp/package.json
-197 verbose from cache /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
-198 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore unbuild
-199 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore/package.json
-200 verbose tar unpack /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz
-201 silly lockFile 293925e7-t-hipchat-node-modules-node-xmpp /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp
-202 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp /Users/meshachjackson/.npm/293925e7-t-hipchat-node-modules-node-xmpp.lock
-203 silly lockFile 13b59c04--npm-node-xmpp-0-3-2-package-tgz /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz
-204 verbose lock /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz /Users/meshachjackson/.npm/13b59c04--npm-node-xmpp-0-3-2-package-tgz.lock
-205 verbose tar unpack /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz
-206 silly lockFile 1ad0fa76--hubot-hipchat-node-modules-rsvp /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp
-207 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp /Users/meshachjackson/.npm/1ad0fa76--hubot-hipchat-node-modules-rsvp.lock
-208 silly lockFile 026831fc-ckson-npm-rsvp-1-2-0-package-tgz /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz
-209 verbose lock /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz /Users/meshachjackson/.npm/026831fc-ckson-npm-rsvp-1-2-0-package-tgz.lock
-210 verbose tar unpack /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz
-211 silly lockFile 46444202--hipchat-node-modules-underscore /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore
-212 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore /Users/meshachjackson/.npm/46444202--hipchat-node-modules-underscore.lock
-213 silly lockFile fca2f062-npm-underscore-1-4-4-package-tgz /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz
-214 verbose lock /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz /Users/meshachjackson/.npm/fca2f062-npm-underscore-1-4-4-package-tgz.lock
+184 silly resolved     _from: 'node-xmpp@~0.3.2' } ]
+185 info install rsvp@1.2.0 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
+186 info install underscore@1.4.4 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
+187 info install node-xmpp@0.3.2 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat
+188 info installOne rsvp@1.2.0
+189 info installOne underscore@1.4.4
+190 info installOne node-xmpp@0.3.2
+191 verbose from cache /Users/meshachjackson/.npm/rsvp/1.2.0/package/package.json
+192 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp unbuild
+193 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp/package.json
+194 verbose from cache /Users/meshachjackson/.npm/underscore/1.4.4/package/package.json
+195 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore unbuild
+196 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore/package.json
+197 verbose from cache /Users/meshachjackson/.npm/node-xmpp/0.3.2/package/package.json
+198 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp unbuild
+199 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/package.json
+200 verbose tar unpack /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz
+201 silly lockFile 1ad0fa76--hubot-hipchat-node-modules-rsvp /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp
+202 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/rsvp /Users/meshachjackson/.npm/1ad0fa76--hubot-hipchat-node-modules-rsvp.lock
+203 silly lockFile 026831fc-ckson-npm-rsvp-1-2-0-package-tgz /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz
+204 verbose lock /Users/meshachjackson/.npm/rsvp/1.2.0/package.tgz /Users/meshachjackson/.npm/026831fc-ckson-npm-rsvp-1-2-0-package-tgz.lock
+205 verbose tar unpack /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz
+206 silly lockFile 46444202--hipchat-node-modules-underscore /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore
+207 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/underscore /Users/meshachjackson/.npm/46444202--hipchat-node-modules-underscore.lock
+208 silly lockFile fca2f062-npm-underscore-1-4-4-package-tgz /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz
+209 verbose lock /Users/meshachjackson/.npm/underscore/1.4.4/package.tgz /Users/meshachjackson/.npm/fca2f062-npm-underscore-1-4-4-package-tgz.lock
+210 verbose tar unpack /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz
+211 silly lockFile 293925e7-t-hipchat-node-modules-node-xmpp /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp
+212 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp /Users/meshachjackson/.npm/293925e7-t-hipchat-node-modules-node-xmpp.lock
+213 silly lockFile 13b59c04--npm-node-xmpp-0-3-2-package-tgz /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz
+214 verbose lock /Users/meshachjackson/.npm/node-xmpp/0.3.2/package.tgz /Users/meshachjackson/.npm/13b59c04--npm-node-xmpp-0-3-2-package-tgz.lock
 215 silly gunzTarPerm modes [ '755', '644' ]
 216 silly gunzTarPerm modes [ '755', '644' ]
 217 silly gunzTarPerm modes [ '755', '644' ]
@@ -514,52 +514,52 @@
 221 silly gunzTarPerm extractEntry README.md
 222 silly gunzTarPerm extractEntry LICENSE
 223 silly gunzTarPerm extractEntry .npmignore
-224 silly gunzTarPerm extractEntry LICENSE
+224 silly gunzTarPerm extractEntry README.md
 225 silly gunzTarPerm extractEntry .npmignore
-226 silly gunzTarPerm extractEntry README.md
+226 silly gunzTarPerm extractEntry LICENSE
 227 silly gunzTarPerm extractEntry b/compile-modules
 228 silly gunzTarPerm extractEntry b/rake
-229 silly gunzTarPerm extractEntry .travis.yml
-230 silly gunzTarPerm extractEntry README.markdown
-231 silly gunzTarPerm extractEntry LICENSE
-232 silly gunzTarPerm extractEntry underscore-min.js
-233 silly gunzTarPerm extractEntry examples/c2s.js
-234 silly gunzTarPerm extractEntry examples/debug_c2s.js
-235 silly gunzTarPerm extractEntry index.js
+229 silly gunzTarPerm extractEntry LICENSE
+230 silly gunzTarPerm extractEntry underscore-min.js
+231 silly gunzTarPerm extractEntry .travis.yml
+232 silly gunzTarPerm extractEntry README.markdown
+233 silly gunzTarPerm extractEntry index.js
+234 silly gunzTarPerm extractEntry examples/c2s.js
+235 silly gunzTarPerm extractEntry examples/debug_c2s.js
 236 silly gunzTarPerm extractEntry b/rake2thor
 237 silly gunzTarPerm extractEntry b/thor
-238 silly gunzTarPerm extractEntry examples/echo_bot.js
-239 silly gunzTarPerm extractEntry examples/echo_component.js
-240 silly gunzTarPerm extractEntry underscore.js
-241 silly gunzTarPerm extractEntry index.html
-242 silly gunzTarPerm extractEntry examples/echo_mixin.js
-243 silly gunzTarPerm extractEntry compiled/lib/rsvp.js
-244 silly gunzTarPerm extractEntry node/rsvp.js
-245 silly gunzTarPerm extractEntry promise-tests/package.json
-246 silly gunzTarPerm extractEntry promise-tests/README.md
-247 silly gunzTarPerm extractEntry promise-tests/LICENSE.txt
-248 silly gunzTarPerm extractEntry promise-tests/lib/cli.js
-249 silly gunzTarPerm extractEntry promise-tests/lib/programmaticRunner.js
-250 silly gunzTarPerm extractEntry promise-tests/lib/adapters/README.md
-251 silly gunzTarPerm extractEntry promise-tests/lib/adapters/jquery.js
-252 silly gunzTarPerm extractEntry promise-tests/lib/adapters/promise-stream.js
-253 silly gunzTarPerm extractEntry promise-tests/lib/adapters/q.js
-254 silly gunzTarPerm extractEntry promise-tests/lib/adapters/when.js
-255 silly gunzTarPerm extractEntry promise-tests/lib/tests/always-async.js
-256 silly gunzTarPerm extractEntry promise-tests/lib/tests/promises-a.js
-257 silly gunzTarPerm extractEntry promise-tests/lib/tests/resolution-races.js
-258 silly gunzTarPerm extractEntry promise-tests/lib/tests/returning-a-promise.js
-259 silly gunzTarPerm extractEntry test.rb
+238 silly gunzTarPerm extractEntry underscore.js
+239 silly gunzTarPerm extractEntry index.html
+240 silly gunzTarPerm extractEntry examples/echo_bot.js
+241 silly gunzTarPerm extractEntry examples/echo_component.js
+242 silly gunzTarPerm extractEntry compiled/lib/rsvp.js
+243 silly gunzTarPerm extractEntry node/rsvp.js
+244 silly gunzTarPerm extractEntry promise-tests/package.json
+245 silly gunzTarPerm extractEntry promise-tests/README.md
+246 silly gunzTarPerm extractEntry promise-tests/LICENSE.txt
+247 silly gunzTarPerm extractEntry promise-tests/lib/cli.js
+248 silly gunzTarPerm extractEntry promise-tests/lib/programmaticRunner.js
+249 silly gunzTarPerm extractEntry promise-tests/lib/adapters/README.md
+250 silly gunzTarPerm extractEntry promise-tests/lib/adapters/jquery.js
+251 silly gunzTarPerm extractEntry promise-tests/lib/adapters/promise-stream.js
+252 silly gunzTarPerm extractEntry promise-tests/lib/adapters/q.js
+253 silly gunzTarPerm extractEntry promise-tests/lib/adapters/when.js
+254 silly gunzTarPerm extractEntry promise-tests/lib/tests/always-async.js
+255 silly gunzTarPerm extractEntry promise-tests/lib/tests/promises-a.js
+256 silly gunzTarPerm extractEntry promise-tests/lib/tests/resolution-races.js
+257 silly gunzTarPerm extractEntry promise-tests/lib/tests/returning-a-promise.js
+258 silly gunzTarPerm extractEntry test.rb
+259 silly gunzTarPerm extractEntry examples/echo_mixin.js
 260 silly gunzTarPerm extractEntry .travis.yml
 261 silly gunzTarPerm extractEntry CONTRIBUTING.md
 262 silly gunzTarPerm extractEntry examples/echo_server.js
 263 silly gunzTarPerm extractEntry examples/probe_server.js
 264 silly gunzTarPerm extractEntry examples/send_message.js
 265 silly gunzTarPerm extractEntry examples/send_message_component.js
-266 silly gunzTarPerm extractEntry lib/idle_timeout.js
-267 silly gunzTarPerm extractEntry lib/node-xmpp.js
-268 silly gunzTarPerm extractEntry CNAME
-269 silly gunzTarPerm extractEntry favicon.ico
+266 silly gunzTarPerm extractEntry CNAME
+267 silly gunzTarPerm extractEntry favicon.ico
+268 silly gunzTarPerm extractEntry lib/idle_timeout.js
+269 silly gunzTarPerm extractEntry lib/node-xmpp.js
 270 silly gunzTarPerm extractEntry lib/starttls.js
 271 silly gunzTarPerm extractEntry lib/stream_shaper.js
 272 silly gunzTarPerm extractEntry lib/xmpp.js
@@ -700,83 +700,83 @@
 357 verbose url raw node-expat
 358 verbose url resolving [ 'https://registry.npmjs.org/', './node-expat' ]
 359 verbose url resolved https://registry.npmjs.org/node-expat
-360 info trying registry request attempt 1 at 01:49:59
+360 info trying registry request attempt 1 at 01:54:54
 361 verbose etag "ERBH1RZI2CMXB0H61AAC1JCDJ"
 362 http GET https://registry.npmjs.org/node-expat
 363 verbose url raw ltx
 364 verbose url resolving [ 'https://registry.npmjs.org/', './ltx' ]
 365 verbose url resolved https://registry.npmjs.org/ltx
-366 info trying registry request attempt 1 at 01:49:59
+366 info trying registry request attempt 1 at 01:54:54
 367 verbose etag "61Y4N90B7U3S1AAJKDZXKG4QC"
 368 http GET https://registry.npmjs.org/ltx
 369 http 304 https://registry.npmjs.org/node-expat
 370 silly registry.get cb [ 304,
 370 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
 370 silly registry.get     etag: '"ERBH1RZI2CMXB0H61AAC1JCDJ"',
-370 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
+370 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:52 GMT',
 370 silly registry.get     'content-length': '0' } ]
 371 verbose etag node-expat from cache
-372 http 304 https://registry.npmjs.org/ltx
-373 silly registry.get cb [ 304,
-373 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-373 silly registry.get     etag: '"61Y4N90B7U3S1AAJKDZXKG4QC"',
-373 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:56 GMT',
-373 silly registry.get     'content-length': '0' } ]
-374 verbose etag ltx from cache
-375 silly addNameRange number 2 { name: 'node-expat', range: '>=1.4.1', hasData: true }
-376 silly addNameRange versions [ 'node-expat',
-376 silly addNameRange   [ '0.0.4',
-376 silly addNameRange     '0.0.5',
-376 silly addNameRange     '0.0.6',
-376 silly addNameRange     '1.0.0',
-376 silly addNameRange     '1.0.1',
-376 silly addNameRange     '1.1.0',
-376 silly addNameRange     '1.1.1',
-376 silly addNameRange     '1.2.0',
-376 silly addNameRange     '1.3.0',
-376 silly addNameRange     '1.3.1',
-376 silly addNameRange     '1.3.2',
-376 silly addNameRange     '1.4.0',
-376 silly addNameRange     '1.4.1',
-376 silly addNameRange     '1.4.2',
-376 silly addNameRange     '1.4.3',
-376 silly addNameRange     '1.4.4',
-376 silly addNameRange     '1.4.5',
-376 silly addNameRange     '1.5.0',
-376 silly addNameRange     '1.6.0',
-376 silly addNameRange     '1.6.1',
-376 silly addNameRange     '2.0.0' ] ]
-377 verbose addNamed [ 'node-expat', '2.0.0' ]
-378 verbose addNamed [ '2.0.0', '2.0.0' ]
-379 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
-380 verbose lock node-expat@2.0.0 /Users/meshachjackson/.npm/6c34ffd2-node-expat-2-0-0.lock
-381 silly addNameRange number 2 { name: 'ltx', range: '>=0.1.1', hasData: true }
-382 silly addNameRange versions [ 'ltx',
-382 silly addNameRange   [ '0.0.1',
-382 silly addNameRange     '0.0.3',
-382 silly addNameRange     '0.0.4',
-382 silly addNameRange     '0.0.5',
-382 silly addNameRange     '0.1.0',
-382 silly addNameRange     '0.1.1',
-382 silly addNameRange     '0.1.2',
-382 silly addNameRange     '0.1.3',
-382 silly addNameRange     '0.2.0',
-382 silly addNameRange     '0.2.1',
-382 silly addNameRange     '0.2.2',
-382 silly addNameRange     '0.2.3',
-382 silly addNameRange     '0.2.4' ] ]
-383 verbose addNamed [ 'ltx', '0.2.4' ]
-384 verbose addNamed [ '0.2.4', '0.2.4' ]
-385 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
-386 verbose lock ltx@0.2.4 /Users/meshachjackson/.npm/b461e8c1-ltx-0-2-4.lock
-387 verbose read json /Users/meshachjackson/.npm/node-expat/2.0.0/package/package.json
-388 verbose read json /Users/meshachjackson/.npm/ltx/0.2.4/package/package.json
-389 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
-390 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
-391 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
-392 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
-393 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
-394 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
+372 silly addNameRange number 2 { name: 'node-expat', range: '>=1.4.1', hasData: true }
+373 silly addNameRange versions [ 'node-expat',
+373 silly addNameRange   [ '0.0.4',
+373 silly addNameRange     '0.0.5',
+373 silly addNameRange     '0.0.6',
+373 silly addNameRange     '1.0.0',
+373 silly addNameRange     '1.0.1',
+373 silly addNameRange     '1.1.0',
+373 silly addNameRange     '1.1.1',
+373 silly addNameRange     '1.2.0',
+373 silly addNameRange     '1.3.0',
+373 silly addNameRange     '1.3.1',
+373 silly addNameRange     '1.3.2',
+373 silly addNameRange     '1.4.0',
+373 silly addNameRange     '1.4.1',
+373 silly addNameRange     '1.4.2',
+373 silly addNameRange     '1.4.3',
+373 silly addNameRange     '1.4.4',
+373 silly addNameRange     '1.4.5',
+373 silly addNameRange     '1.5.0',
+373 silly addNameRange     '1.6.0',
+373 silly addNameRange     '1.6.1',
+373 silly addNameRange     '2.0.0' ] ]
+374 verbose addNamed [ 'node-expat', '2.0.0' ]
+375 verbose addNamed [ '2.0.0', '2.0.0' ]
+376 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
+377 verbose lock node-expat@2.0.0 /Users/meshachjackson/.npm/6c34ffd2-node-expat-2-0-0.lock
+378 verbose read json /Users/meshachjackson/.npm/node-expat/2.0.0/package/package.json
+379 http 304 https://registry.npmjs.org/ltx
+380 silly registry.get cb [ 304,
+380 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+380 silly registry.get     etag: '"61Y4N90B7U3S1AAJKDZXKG4QC"',
+380 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:52 GMT',
+380 silly registry.get     'content-length': '0' } ]
+381 verbose etag ltx from cache
+382 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
+383 silly lockFile 6c34ffd2-node-expat-2-0-0 node-expat@2.0.0
+384 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
+385 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
+386 silly addNameRange number 2 { name: 'ltx', range: '>=0.1.1', hasData: true }
+387 silly addNameRange versions [ 'ltx',
+387 silly addNameRange   [ '0.0.1',
+387 silly addNameRange     '0.0.3',
+387 silly addNameRange     '0.0.4',
+387 silly addNameRange     '0.0.5',
+387 silly addNameRange     '0.1.0',
+387 silly addNameRange     '0.1.1',
+387 silly addNameRange     '0.1.2',
+387 silly addNameRange     '0.1.3',
+387 silly addNameRange     '0.2.0',
+387 silly addNameRange     '0.2.1',
+387 silly addNameRange     '0.2.2',
+387 silly addNameRange     '0.2.3',
+387 silly addNameRange     '0.2.4' ] ]
+388 verbose addNamed [ 'ltx', '0.2.4' ]
+389 verbose addNamed [ '0.2.4', '0.2.4' ]
+390 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
+391 verbose lock ltx@0.2.4 /Users/meshachjackson/.npm/b461e8c1-ltx-0-2-4.lock
+392 verbose read json /Users/meshachjackson/.npm/ltx/0.2.4/package/package.json
+393 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
+394 silly lockFile b461e8c1-ltx-0-2-4 ltx@0.2.4
 395 silly lockFile 139f7194-ltx-0-1-1 ltx@>= 0.1.1
 396 silly lockFile 139f7194-ltx-0-1-1 ltx@>= 0.1.1
 397 silly resolved [ { name: 'node-expat',
@@ -942,7 +942,7 @@
 475 verbose url raw sax
 476 verbose url resolving [ 'https://registry.npmjs.org/', './sax' ]
 477 verbose url resolved https://registry.npmjs.org/sax
-478 info trying registry request attempt 1 at 01:49:59
+478 info trying registry request attempt 1 at 01:54:55
 479 verbose etag "76AVUL91TQDVV9TYOCORQLLT2"
 480 http GET https://registry.npmjs.org/sax
 481 silly gunzTarPerm extractEntry deps/libexpat/doc/valid-xhtml10.png
@@ -1085,128 +1085,128 @@
 618 silly gunzTarPerm extractEntry deps/libexpat/xmlwf/xmlwf.c
 619 silly gunzTarPerm extractEntry deps/libexpat/xmlwf/xmlwf.dsp
 620 silly gunzTarPerm extractEntry deps/libexpat/xmlwf/xmlwin32url.cxx
-621 http 304 https://registry.npmjs.org/sax
-622 silly registry.get cb [ 304,
-622 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
-622 silly registry.get     etag: '"76AVUL91TQDVV9TYOCORQLLT2"',
-622 silly registry.get     date: 'Sun, 08 Sep 2013 08:49:57 GMT',
-622 silly registry.get     'content-length': '0' } ]
-623 verbose etag sax from cache
-624 silly addNameRange number 2 { name: 'sax', range: '>=0.3.5', hasData: true }
-625 silly addNameRange versions [ 'sax',
-625 silly addNameRange   [ '0.1.0',
-625 silly addNameRange     '0.1.1',
-625 silly addNameRange     '0.1.2',
-625 silly addNameRange     '0.1.3',
-625 silly addNameRange     '0.1.4',
-625 silly addNameRange     '0.1.5',
-625 silly addNameRange     '0.2.0',
-625 silly addNameRange     '0.2.1',
-625 silly addNameRange     '0.2.2',
-625 silly addNameRange     '0.2.3',
-625 silly addNameRange     '0.2.4',
-625 silly addNameRange     '0.2.5',
-625 silly addNameRange     '0.3.0',
-625 silly addNameRange     '0.3.1',
-625 silly addNameRange     '0.3.2',
-625 silly addNameRange     '0.3.3',
-625 silly addNameRange     '0.3.4',
-625 silly addNameRange     '0.3.5',
-625 silly addNameRange     '0.4.1',
-625 silly addNameRange     '0.4.0',
-625 silly addNameRange     '0.4.2',
-625 silly addNameRange     '0.4.3',
-625 silly addNameRange     '0.5.0',
-625 silly addNameRange     '0.5.1',
-625 silly addNameRange     '0.5.2',
-625 silly addNameRange     '0.5.3',
-625 silly addNameRange     '0.5.4',
-625 silly addNameRange     '0.5.5' ] ]
-626 verbose addNamed [ 'sax', '0.5.5' ]
-627 verbose addNamed [ '0.5.5', '0.5.5' ]
-628 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
-629 verbose lock sax@0.5.5 /Users/meshachjackson/.npm/ab358b1e-sax-0-5-5.lock
-630 verbose read json /Users/meshachjackson/.npm/sax/0.5.5/package/package.json
-631 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
-632 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
-633 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
-634 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
-635 silly resolved [ { name: 'sax',
-635 silly resolved     description: 'An evented streaming XML parser in JavaScript',
-635 silly resolved     author:
-635 silly resolved      { name: 'Isaac Z. Schlueter',
-635 silly resolved        email: 'i@izs.me',
-635 silly resolved        url: 'http://blog.izs.me/' },
-635 silly resolved     version: '0.5.5',
-635 silly resolved     main: 'lib/sax.js',
-635 silly resolved     license: 'BSD',
-635 silly resolved     scripts: { test: 'node test/index.js' },
-635 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sax-js.git' },
-635 silly resolved     contributors:
-635 silly resolved      [ [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object],
-635 silly resolved        [Object] ],
-635 silly resolved     readme: '# sax js\n\nA sax-style parser for XML and HTML.\n\nDesigned with [node](http://nodejs.org/) in mind, but should work fine in\nthe browser or other CommonJS implementations.\n\n## What This Is\n\n* A very simple tool to parse through an XML string.\n* A stepping stone to a streaming HTML parser.\n* A handy way to deal with RSS and other mostly-ok-but-kinda-broken XML \n  docs.\n\n## What This Is (probably) Not\n\n* An HTML Parser - That\'s a fine goal, but this isn\'t it.  It\'s just\n  XML.\n* A DOM Builder - You can use it to build an object model out of XML,\n  but it doesn\'t do that out of the box.\n* XSLT - No DOM = no querying.\n* 100% Compliant with (some other SAX implementation) - Most SAX\n  implementations are in Java and do a lot more than this does.\n* An XML Validator - It does a little validation when in strict mode, but\n  not much.\n* A Schema-Aware XSD Thing - Schemas are an exercise in fetishistic \n  masochism.\n* A DTD-aware Thing - Fetching DTDs is a much bigger job.\n\n## Regarding `<!DOCTYPE`s and `<!ENTITY`s\n\nThe parser will handle the basic XML entities in text nodes and attribute\nvalues: `&amp; &lt; &gt; &apos; &quot;`. It\'s possible to define additional\nentities in XML by putting them in the DTD. This parser doesn\'t do anything\nwith that. If you want to listen to the `ondoctype` event, and then fetch\nthe doctypes, and read the entities and add them to `parser.ENTITIES`, then\nbe my guest.\n\nUnknown entities will fail in strict mode, and in loose mode, will pass\nthrough unmolested.\n\n## Usage\n\n    var sax = require("./lib/sax"),\n      strict = true, // set to false for html-mode\n      parser = sax.parser(strict);\n\n    parser.onerror = function (e) {\n      // an error happened.\n    };\n    parser.ontext = function (t) {\n      // got some text.  t is the string of text.\n    };\n    parser.onopentag = function (node) {\n      // opened a tag.  node has "name" and "attributes"\n    };\n    parser.onattribute = function (attr) {\n      // an attribute.  attr has "name" and "value"\n    };\n    parser.onend = function () {\n      // parser stream is done, and ready to have more stuff written to it.\n    };\n\n    parser.write(\'<xml>Hello, <who name="world">world</who>!</xml>\').close();\n\n    // stream usage\n    // takes the same options as the parser\n    var saxStream = require("sax").createStream(strict, options)\n    saxStream.on("error", function (e) {\n      // unhandled errors will throw, since this is a proper node\n      // event emitter.\n      console.error("error!", e)\n      // clear the error\n      this._parser.error = null\n      this._parser.resume()\n    })\n    saxStream.on("opentag", function (node) {\n      // same object as above\n    })\n    // pipe is supported, and it\'s readable/writable\n    // same chunks coming in also go out.\n    fs.createReadStream("file.xml")\n      .pipe(saxStream)\n      .pipe(fs.createWriteStream("file-copy.xml"))\n\n\n\n## Arguments\n\nPass the following arguments to the parser function.  All are optional.\n\n`strict` - Boolean. Whether or not to be a jerk. Default: `false`.\n\n`opt` - Object bag of settings regarding string formatting.  All default to `false`.\n\nSettings supported:\n\n* `trim` - Boolean. Whether or not to trim text and comment nodes.\n* `normalize` - Boolean. If true, then turn any whitespace into a single\n  space.\n* `lowercase` - Boolean. If true, then lowercase tag names and attribute names\n  in loose mode, rather than uppercasing them.\n* `xmlns` - Boolean. If true, then namespaces are supported.\n* `position` - Boolean. If false, then don\'t track line/col/position.\n\n## Methods\n\n`write` - Write bytes onto the stream. You don\'t have to do this all at\nonce. You can keep writing as much as you want.\n\n`close` - Close the stream. Once closed, no more data may be written until\nit is done processing the buffer, which is signaled by the `end` event.\n\n`resume` - To gracefully handle errors, assign a listener to the `error`\nevent. Then, when the error is taken care of, you can call `resume` to\ncontinue parsing. Otherwise, the parser will not continue while in an error\nstate.\n\n## Members\n\nAt all times, the parser object will have the following members:\n\n`line`, `column`, `position` - Indications of the position in the XML\ndocument where the parser currently is looking.\n\n`startTagPosition` - Indicates the position where the current tag starts.\n\n`closed` - Boolean indicating whether or not the parser can be written to.\nIf it\'s `true`, then wait for the `ready` event to write again.\n\n`strict` - Boolean indicating whether or not the parser is a jerk.\n\n`opt` - Any options passed into the constructor.\n\n`tag` - The current tag being dealt with.\n\nAnd a bunch of other stuff that you probably shouldn\'t touch.\n\n## Events\n\nAll events emit with a single argument. To listen to an event, assign a\nfunction to `on<eventname>`. Functions get executed in the this-context of\nthe parser object. The list of supported events are also in the exported\n`EVENTS` array.\n\nWhen using the stream interface, assign handlers using the EventEmitter\n`on` function in the normal fashion.\n\n`error` - Indication that something bad happened. The error will be hanging\nout on `parser.error`, and must be deleted before parsing can continue. By\nlistening to this event, you can keep an eye on that kind of stuff. Note:\nthis happens *much* more in strict mode. Argument: instance of `Error`.\n\n`text` - Text node. Argument: string of text.\n\n`doctype` - The `<!DOCTYPE` declaration. Argument: doctype string.\n\n`processinginstruction` - Stuff like `<?xml foo="blerg" ?>`. Argument:\nobject with `name` and `body` members. Attributes are not parsed, as\nprocessing instructions have implementation dependent semantics.\n\n`sgmldeclaration` - Random SGML declarations. Stuff like `<!ENTITY p>`\nwould trigger this kind of event. This is a weird thing to support, so it\nmight go away at some point. SAX isn\'t intended to be used to parse SGML,\nafter all.\n\n`opentag` - An opening tag. Argument: object with `name` and `attributes`.\nIn non-strict mode, tag names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, then it will contain\nnamespace binding information on the `ns` member, and will have a\n`local`, `prefix`, and `uri` member.\n\n`closetag` - A closing tag. In loose mode, tags are auto-closed if their\nparent closes. In strict mode, well-formedness is enforced. Note that\nself-closing tags will have `closeTag` emitted immediately after `openTag`.\nArgument: tag name.\n\n`attribute` - An attribute node.  Argument: object with `name` and `value`.\nIn non-strict mode, attribute names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, it will also contains namespace\ninformation.\n\n`comment` - A comment node.  Argument: the string of the comment.\n\n`opencdata` - The opening tag of a `<![CDATA[` block.\n\n`cdata` - The text of a `<![CDATA[` block. Since `<![CDATA[` blocks can get\nquite large, this event may fire multiple times for a single block, if it\nis broken up into multiple `write()`s. Argument: the string of random\ncharacter data.\n\n`closecdata` - The closing tag (`]]>`) of a `<![CDATA[` block.\n\n`opennamespace` - If the `xmlns` option is set, then this event will\nsignal the start of a new namespace binding.\n\n`closenamespace` - If the `xmlns` option is set, then this event will\nsignal the end of a namespace binding.\n\n`end` - Indication that the closed stream has ended.\n\n`ready` - Indication that the stream has reset, and is ready to be written\nto.\n\n`noscript` - In non-strict mode, `<script>` tags trigger a `"script"`\nevent, and their contents are not checked for special xml characters.\nIf you pass `noscript: true`, then this behavior is suppressed.\n\n## Reporting Problems\n\nIt\'s best to write a failing test if you find an issue.  I will always\naccept pull requests with failing tests if they demonstrate intended\nbehavior, but it is very hard to figure out what issue you\'re describing\nwithout a test.  Writing a test is also the best way for you yourself\nto figure out if you really understand the issue you think you have with\nsax-js.\n',
-635 silly resolved     readmeFilename: 'README.md',
-635 silly resolved     _id: 'sax@0.5.5',
-635 silly resolved     _from: 'sax@>=0.3.5' } ]
-636 info install sax@0.5.5 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx
-637 info installOne sax@0.5.5
-638 verbose from cache /Users/meshachjackson/.npm/sax/0.5.5/package/package.json
-639 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax unbuild
-640 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-641 verbose tar unpack /Users/meshachjackson/.npm/sax/0.5.5/package.tgz
-642 silly lockFile 0fa3912d-ode-modules-ltx-node-modules-sax /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
-643 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax /Users/meshachjackson/.npm/0fa3912d-ode-modules-ltx-node-modules-sax.lock
-644 silly lockFile f9d7c8e1-ackson-npm-sax-0-5-5-package-tgz /Users/meshachjackson/.npm/sax/0.5.5/package.tgz
-645 verbose lock /Users/meshachjackson/.npm/sax/0.5.5/package.tgz /Users/meshachjackson/.npm/f9d7c8e1-ackson-npm-sax-0-5-5-package-tgz.lock
-646 silly gunzTarPerm modes [ '755', '644' ]
-647 silly gunzTarPerm extractEntry package.json
-648 silly gunzTarPerm extractEntry README.md
-649 silly gunzTarPerm extractEntry LICENSE
-650 silly gunzTarPerm extractEntry AUTHORS
-651 silly gunzTarPerm extractEntry LICENSE-W3C.html
-652 silly gunzTarPerm extractEntry component.json
-653 silly gunzTarPerm extractEntry examples/example.js
-654 silly gunzTarPerm extractEntry examples/get-products.js
-655 silly gunzTarPerm extractEntry examples/hello-world.js
-656 silly gunzTarPerm extractEntry examples/pretty-print.js
-657 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
-658 silly gunzTarPerm extractEntry examples/not-pretty.xml
-659 silly gunzTarPerm extractEntry examples/shopping.xml
-660 silly gunzTarPerm extractEntry examples/strict.dtd
-661 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
-662 silly lockFile 8d8ee039-ode-xmpp-node-modules-node-expat /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
-663 silly lockFile 8d8ee039-ode-xmpp-node-modules-node-expat /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
-664 silly lockFile 7c180ef9-npm-node-expat-2-0-0-package-tgz /Users/meshachjackson/.npm/node-expat/2.0.0/package.tgz
-665 silly lockFile 7c180ef9-npm-node-expat-2-0-0-package-tgz /Users/meshachjackson/.npm/node-expat/2.0.0/package.tgz
-666 info preinstall node-expat@2.0.0
-667 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
-668 verbose readDependencies using package.json deps
-669 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
-670 verbose readDependencies using package.json deps
-671 silly resolved []
-672 verbose about to build /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
-673 info build /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
-674 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
-675 verbose linkStuff [ false,
-675 verbose linkStuff   false,
-675 verbose linkStuff   false,
-675 verbose linkStuff   '/Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules' ]
-676 info linkStuff node-expat@2.0.0
-677 verbose linkBins node-expat@2.0.0
-678 verbose linkMans node-expat@2.0.0
-679 verbose rebuildBundles node-expat@2.0.0
-680 info install node-expat@2.0.0
-681 verbose unsafe-perm in lifecycle true
-682 silly exec sh "-c" "node-gyp rebuild"
-683 silly sh,-c,node-gyp rebuild,/Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat spawning
+621 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
+622 silly lockFile 8d8ee039-ode-xmpp-node-modules-node-expat /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
+623 silly lockFile 8d8ee039-ode-xmpp-node-modules-node-expat /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
+624 silly lockFile 7c180ef9-npm-node-expat-2-0-0-package-tgz /Users/meshachjackson/.npm/node-expat/2.0.0/package.tgz
+625 silly lockFile 7c180ef9-npm-node-expat-2-0-0-package-tgz /Users/meshachjackson/.npm/node-expat/2.0.0/package.tgz
+626 info preinstall node-expat@2.0.0
+627 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
+628 verbose readDependencies using package.json deps
+629 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
+630 verbose readDependencies using package.json deps
+631 silly resolved []
+632 verbose about to build /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
+633 info build /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat
+634 verbose from cache /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat/package.json
+635 verbose linkStuff [ false,
+635 verbose linkStuff   false,
+635 verbose linkStuff   false,
+635 verbose linkStuff   '/Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules' ]
+636 info linkStuff node-expat@2.0.0
+637 verbose linkBins node-expat@2.0.0
+638 verbose linkMans node-expat@2.0.0
+639 verbose rebuildBundles node-expat@2.0.0
+640 info install node-expat@2.0.0
+641 verbose unsafe-perm in lifecycle true
+642 silly exec sh "-c" "node-gyp rebuild"
+643 silly sh,-c,node-gyp rebuild,/Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/node-expat spawning
+644 http 304 https://registry.npmjs.org/sax
+645 silly registry.get cb [ 304,
+645 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+645 silly registry.get     etag: '"76AVUL91TQDVV9TYOCORQLLT2"',
+645 silly registry.get     date: 'Sun, 08 Sep 2013 08:54:52 GMT',
+645 silly registry.get     'content-length': '0' } ]
+646 verbose etag sax from cache
+647 silly addNameRange number 2 { name: 'sax', range: '>=0.3.5', hasData: true }
+648 silly addNameRange versions [ 'sax',
+648 silly addNameRange   [ '0.1.0',
+648 silly addNameRange     '0.1.1',
+648 silly addNameRange     '0.1.2',
+648 silly addNameRange     '0.1.3',
+648 silly addNameRange     '0.1.4',
+648 silly addNameRange     '0.1.5',
+648 silly addNameRange     '0.2.0',
+648 silly addNameRange     '0.2.1',
+648 silly addNameRange     '0.2.2',
+648 silly addNameRange     '0.2.3',
+648 silly addNameRange     '0.2.4',
+648 silly addNameRange     '0.2.5',
+648 silly addNameRange     '0.3.0',
+648 silly addNameRange     '0.3.1',
+648 silly addNameRange     '0.3.2',
+648 silly addNameRange     '0.3.3',
+648 silly addNameRange     '0.3.4',
+648 silly addNameRange     '0.3.5',
+648 silly addNameRange     '0.4.1',
+648 silly addNameRange     '0.4.0',
+648 silly addNameRange     '0.4.2',
+648 silly addNameRange     '0.4.3',
+648 silly addNameRange     '0.5.0',
+648 silly addNameRange     '0.5.1',
+648 silly addNameRange     '0.5.2',
+648 silly addNameRange     '0.5.3',
+648 silly addNameRange     '0.5.4',
+648 silly addNameRange     '0.5.5' ] ]
+649 verbose addNamed [ 'sax', '0.5.5' ]
+650 verbose addNamed [ '0.5.5', '0.5.5' ]
+651 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
+652 verbose lock sax@0.5.5 /Users/meshachjackson/.npm/ab358b1e-sax-0-5-5.lock
+653 verbose read json /Users/meshachjackson/.npm/sax/0.5.5/package/package.json
+654 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
+655 silly lockFile ab358b1e-sax-0-5-5 sax@0.5.5
+656 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
+657 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
+658 silly resolved [ { name: 'sax',
+658 silly resolved     description: 'An evented streaming XML parser in JavaScript',
+658 silly resolved     author:
+658 silly resolved      { name: 'Isaac Z. Schlueter',
+658 silly resolved        email: 'i@izs.me',
+658 silly resolved        url: 'http://blog.izs.me/' },
+658 silly resolved     version: '0.5.5',
+658 silly resolved     main: 'lib/sax.js',
+658 silly resolved     license: 'BSD',
+658 silly resolved     scripts: { test: 'node test/index.js' },
+658 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sax-js.git' },
+658 silly resolved     contributors:
+658 silly resolved      [ [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object],
+658 silly resolved        [Object] ],
+658 silly resolved     readme: '# sax js\n\nA sax-style parser for XML and HTML.\n\nDesigned with [node](http://nodejs.org/) in mind, but should work fine in\nthe browser or other CommonJS implementations.\n\n## What This Is\n\n* A very simple tool to parse through an XML string.\n* A stepping stone to a streaming HTML parser.\n* A handy way to deal with RSS and other mostly-ok-but-kinda-broken XML \n  docs.\n\n## What This Is (probably) Not\n\n* An HTML Parser - That\'s a fine goal, but this isn\'t it.  It\'s just\n  XML.\n* A DOM Builder - You can use it to build an object model out of XML,\n  but it doesn\'t do that out of the box.\n* XSLT - No DOM = no querying.\n* 100% Compliant with (some other SAX implementation) - Most SAX\n  implementations are in Java and do a lot more than this does.\n* An XML Validator - It does a little validation when in strict mode, but\n  not much.\n* A Schema-Aware XSD Thing - Schemas are an exercise in fetishistic \n  masochism.\n* A DTD-aware Thing - Fetching DTDs is a much bigger job.\n\n## Regarding `<!DOCTYPE`s and `<!ENTITY`s\n\nThe parser will handle the basic XML entities in text nodes and attribute\nvalues: `&amp; &lt; &gt; &apos; &quot;`. It\'s possible to define additional\nentities in XML by putting them in the DTD. This parser doesn\'t do anything\nwith that. If you want to listen to the `ondoctype` event, and then fetch\nthe doctypes, and read the entities and add them to `parser.ENTITIES`, then\nbe my guest.\n\nUnknown entities will fail in strict mode, and in loose mode, will pass\nthrough unmolested.\n\n## Usage\n\n    var sax = require("./lib/sax"),\n      strict = true, // set to false for html-mode\n      parser = sax.parser(strict);\n\n    parser.onerror = function (e) {\n      // an error happened.\n    };\n    parser.ontext = function (t) {\n      // got some text.  t is the string of text.\n    };\n    parser.onopentag = function (node) {\n      // opened a tag.  node has "name" and "attributes"\n    };\n    parser.onattribute = function (attr) {\n      // an attribute.  attr has "name" and "value"\n    };\n    parser.onend = function () {\n      // parser stream is done, and ready to have more stuff written to it.\n    };\n\n    parser.write(\'<xml>Hello, <who name="world">world</who>!</xml>\').close();\n\n    // stream usage\n    // takes the same options as the parser\n    var saxStream = require("sax").createStream(strict, options)\n    saxStream.on("error", function (e) {\n      // unhandled errors will throw, since this is a proper node\n      // event emitter.\n      console.error("error!", e)\n      // clear the error\n      this._parser.error = null\n      this._parser.resume()\n    })\n    saxStream.on("opentag", function (node) {\n      // same object as above\n    })\n    // pipe is supported, and it\'s readable/writable\n    // same chunks coming in also go out.\n    fs.createReadStream("file.xml")\n      .pipe(saxStream)\n      .pipe(fs.createWriteStream("file-copy.xml"))\n\n\n\n## Arguments\n\nPass the following arguments to the parser function.  All are optional.\n\n`strict` - Boolean. Whether or not to be a jerk. Default: `false`.\n\n`opt` - Object bag of settings regarding string formatting.  All default to `false`.\n\nSettings supported:\n\n* `trim` - Boolean. Whether or not to trim text and comment nodes.\n* `normalize` - Boolean. If true, then turn any whitespace into a single\n  space.\n* `lowercase` - Boolean. If true, then lowercase tag names and attribute names\n  in loose mode, rather than uppercasing them.\n* `xmlns` - Boolean. If true, then namespaces are supported.\n* `position` - Boolean. If false, then don\'t track line/col/position.\n\n## Methods\n\n`write` - Write bytes onto the stream. You don\'t have to do this all at\nonce. You can keep writing as much as you want.\n\n`close` - Close the stream. Once closed, no more data may be written until\nit is done processing the buffer, which is signaled by the `end` event.\n\n`resume` - To gracefully handle errors, assign a listener to the `error`\nevent. Then, when the error is taken care of, you can call `resume` to\ncontinue parsing. Otherwise, the parser will not continue while in an error\nstate.\n\n## Members\n\nAt all times, the parser object will have the following members:\n\n`line`, `column`, `position` - Indications of the position in the XML\ndocument where the parser currently is looking.\n\n`startTagPosition` - Indicates the position where the current tag starts.\n\n`closed` - Boolean indicating whether or not the parser can be written to.\nIf it\'s `true`, then wait for the `ready` event to write again.\n\n`strict` - Boolean indicating whether or not the parser is a jerk.\n\n`opt` - Any options passed into the constructor.\n\n`tag` - The current tag being dealt with.\n\nAnd a bunch of other stuff that you probably shouldn\'t touch.\n\n## Events\n\nAll events emit with a single argument. To listen to an event, assign a\nfunction to `on<eventname>`. Functions get executed in the this-context of\nthe parser object. The list of supported events are also in the exported\n`EVENTS` array.\n\nWhen using the stream interface, assign handlers using the EventEmitter\n`on` function in the normal fashion.\n\n`error` - Indication that something bad happened. The error will be hanging\nout on `parser.error`, and must be deleted before parsing can continue. By\nlistening to this event, you can keep an eye on that kind of stuff. Note:\nthis happens *much* more in strict mode. Argument: instance of `Error`.\n\n`text` - Text node. Argument: string of text.\n\n`doctype` - The `<!DOCTYPE` declaration. Argument: doctype string.\n\n`processinginstruction` - Stuff like `<?xml foo="blerg" ?>`. Argument:\nobject with `name` and `body` members. Attributes are not parsed, as\nprocessing instructions have implementation dependent semantics.\n\n`sgmldeclaration` - Random SGML declarations. Stuff like `<!ENTITY p>`\nwould trigger this kind of event. This is a weird thing to support, so it\nmight go away at some point. SAX isn\'t intended to be used to parse SGML,\nafter all.\n\n`opentag` - An opening tag. Argument: object with `name` and `attributes`.\nIn non-strict mode, tag names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, then it will contain\nnamespace binding information on the `ns` member, and will have a\n`local`, `prefix`, and `uri` member.\n\n`closetag` - A closing tag. In loose mode, tags are auto-closed if their\nparent closes. In strict mode, well-formedness is enforced. Note that\nself-closing tags will have `closeTag` emitted immediately after `openTag`.\nArgument: tag name.\n\n`attribute` - An attribute node.  Argument: object with `name` and `value`.\nIn non-strict mode, attribute names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, it will also contains namespace\ninformation.\n\n`comment` - A comment node.  Argument: the string of the comment.\n\n`opencdata` - The opening tag of a `<![CDATA[` block.\n\n`cdata` - The text of a `<![CDATA[` block. Since `<![CDATA[` blocks can get\nquite large, this event may fire multiple times for a single block, if it\nis broken up into multiple `write()`s. Argument: the string of random\ncharacter data.\n\n`closecdata` - The closing tag (`]]>`) of a `<![CDATA[` block.\n\n`opennamespace` - If the `xmlns` option is set, then this event will\nsignal the start of a new namespace binding.\n\n`closenamespace` - If the `xmlns` option is set, then this event will\nsignal the end of a namespace binding.\n\n`end` - Indication that the closed stream has ended.\n\n`ready` - Indication that the stream has reset, and is ready to be written\nto.\n\n`noscript` - In non-strict mode, `<script>` tags trigger a `"script"`\nevent, and their contents are not checked for special xml characters.\nIf you pass `noscript: true`, then this behavior is suppressed.\n\n## Reporting Problems\n\nIt\'s best to write a failing test if you find an issue.  I will always\naccept pull requests with failing tests if they demonstrate intended\nbehavior, but it is very hard to figure out what issue you\'re describing\nwithout a test.  Writing a test is also the best way for you yourself\nto figure out if you really understand the issue you think you have with\nsax-js.\n',
+658 silly resolved     readmeFilename: 'README.md',
+658 silly resolved     _id: 'sax@0.5.5',
+658 silly resolved     _from: 'sax@>=0.3.5' } ]
+659 info install sax@0.5.5 into /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx
+660 info installOne sax@0.5.5
+661 verbose from cache /Users/meshachjackson/.npm/sax/0.5.5/package/package.json
+662 info /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax unbuild
+663 verbose read json /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
+664 verbose tar unpack /Users/meshachjackson/.npm/sax/0.5.5/package.tgz
+665 silly lockFile 0fa3912d-ode-modules-ltx-node-modules-sax /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
+666 verbose lock /Users/meshachjackson/cita/josi/node_modules/hubot-hipchat/node_modules/node-xmpp/node_modules/ltx/node_modules/sax /Users/meshachjackson/.npm/0fa3912d-ode-modules-ltx-node-modules-sax.lock
+667 silly lockFile f9d7c8e1-ackson-npm-sax-0-5-5-package-tgz /Users/meshachjackson/.npm/sax/0.5.5/package.tgz
+668 verbose lock /Users/meshachjackson/.npm/sax/0.5.5/package.tgz /Users/meshachjackson/.npm/f9d7c8e1-ackson-npm-sax-0-5-5-package-tgz.lock
+669 silly gunzTarPerm modes [ '755', '644' ]
+670 silly gunzTarPerm extractEntry package.json
+671 silly gunzTarPerm extractEntry README.md
+672 silly gunzTarPerm extractEntry LICENSE
+673 silly gunzTarPerm extractEntry AUTHORS
+674 silly gunzTarPerm extractEntry LICENSE-W3C.html
+675 silly gunzTarPerm extractEntry component.json
+676 silly gunzTarPerm extractEntry examples/example.js
+677 silly gunzTarPerm extractEntry examples/get-products.js
+678 silly gunzTarPerm extractEntry examples/hello-world.js
+679 silly gunzTarPerm extractEntry examples/pretty-print.js
+680 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
+681 silly gunzTarPerm extractEntry examples/not-pretty.xml
+682 silly gunzTarPerm extractEntry examples/shopping.xml
+683 silly gunzTarPerm extractEntry examples/strict.dtd
 684 silly gunzTarPerm extractEntry examples/test.html
 685 silly gunzTarPerm extractEntry examples/test.xml
 686 silly gunzTarPerm extractEntry lib/sax.js
